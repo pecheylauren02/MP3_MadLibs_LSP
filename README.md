@@ -96,3 +96,10 @@ This game aims to ensure that users can:
 - Replay the game as many times as they want to, to explore different results
 
 
+#### Market Review 
+
+Before designing the game, I reviewed other Mad Libs games, as well as researched on the original version of the game to see how it could be implemented as an online game (see below). I did this in order to get a feel of how they presented themselves, as well as which content and features they offered. I also reviewed what appeared to work well for the user and what needed improvements (see Key Takeaways). 
+
+[jfbeq](LINK HERE) | [jfbeq](LINK HERE) | [jfbeq](LINK HERE) | [jfbeq](LINK HERE) | [jfbeq](LINK HERE)
+
+
