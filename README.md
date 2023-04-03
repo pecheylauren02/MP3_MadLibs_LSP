@@ -5,13 +5,11 @@
 #### By Lauren Pechey
 [Click here to view the live web application](LIVE LINK HERE)
 
-#### HELLO EVERYONE!
+#### HELLO AND WELCOME!
 
-Welcome to the documentation for my command-line python game: The Maddest MadLibs Game!
-MadLibs is one of the world’s greatest word games, and can make anyone the funniest person alive! 
-—and can make anyone the funniest person in the room!  Mad Libs are stories with words removed and replaced by blank spaces. 
+Here you can find the documentation for my command-line Python terminal game: The Maddest Mad Libs Game! Mad Libs is known as one of the world’s funniest word games, and can turn anyone into a comedian without even trying! Originally invented by by Leonard Stern and Roger Price in 1953, [Mad Libs](https://www.madlibs.com/) are simple stories with words removed and replaced by blank spaces. In this version of the game, the user will be given the opportunity to select a story title from a list of titles displayed to them in a random order. Without knowing the story, the user is required to fill in the blanks with nouns, verbs, adjectives, colours, adverbs, exclamations, and many more! These words are inserted into the blank spaces, and after the user has completed all of the prompts, the full story is displayed to them with their inputs. Because the user is not aware of the context of the story beforehand, their responses generate hilarious results which will entertain them and whoever they read it aloud to! 
 
-has been built using HTML5, CSS3 and JavaScript as an educational Project offered as part of Code Institute’s Diploma in Full Stack Software Development. Disclaimer: This quiz is not backed up by psychological research, and thus the results are designed for entertainment purposes only. Please use the table of contents below to navigate through all of the planning, features, deployment, testing and more!
+This project has been built using only Python, as an educational Project offered as part of Code Institute’s Diploma in Full Stack Software Development. The original game was designed in hardcopy books, so this version allows the user to play through an online platform. Please use the table of contents below to navigate through all of the planning, features, deployment, testing and more!
 
 ## Table of Contents
 
