@@ -61,3 +61,38 @@ This project has been built using only Python, as an educational Project offered
         - [Performance](#performance)
 5. [Deployment](#deployment)
 6. [Credits](#credits)
+
+## Project Development and Planning 
+
+### Project Goals 
+
+#### Project Purpose
+
+This back-end python project was planned and developed using principles of User Experience (UX) design, which include the five planes of Strategy, Scope, Structure, Skeleton, and Surface. Using these principles, the aim was to create a fun, easy-to-use and entertaining version of Mad Libs on an online platform! 
+
+#### Client Goals
+
+The Maddest Mad Libs game was built as a milestone project for my Diploma in Fullstack Software Development with [Code Institute](https://codeinstitute.net/global/full-stack-software-development-diploma/). It is an interactive word game designed to entertain users of all ages and backgrounds who want to be entertained while with friends or at a party. Despite this being built for educational reasons, it was still treated as a real-world application for potential clients interested in learning about their personalities in a fun, engaging way. Thus, this client's goals would be:
+
+- Engaging the users by allowing them to enter prompts of their choice
+- Entertaining users by generating random stories with their unique responses
+- Ensuring that the instructions and prompts are clear, and the game is simple to navigate
+
+#### Target Audience
+
+- This game is designed for users of any background or age, but will most likely be used for entertainment purposes, such as during social events and gatherings
+- It is also likely to draw in users who enjoy playing word games or creating stories
+- The simplicity of the website makes it easy for adults, teenagers and even children to play, and replay, the game as many times as they want, and access different results each time
+
+#### User Goals 
+
+This game aims to ensure that users can:
+
+- Be given access to clear instructions on how to play the game 
+- Choose a story title they are interested in
+- Follow the input prompts easily with no delays or interruptions
+- Play an interactive, functional, fun game
+- Be entertained with a fun or silly story result after answering all of the questions
+- Replay the game as many times as they want to, to explore different results
+
+
