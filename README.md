@@ -108,23 +108,16 @@ Before designing the game, I reviewed other Mad Libs games, as well as researche
 - The game should not have any delays or interruptions after the user enters a prompt
 - The instructions should be simple and easy to understand
 - There should be a maximum of 10 prompts, to keep the user engaged and interested
-- The game 
-
-- 10 questions is the ideal number to keep the user engaged and interested
-- Many quizzes do not offer a back button to allow the user to change their responses
-- Clear, enticing images are displayed in the results section
-- Most quizzes had a retake quiz button to allow the user to take the quiz again
 
 ### User Stories
 
-In a real-world application, this kind of quiz will mostly likely be used by a visitor once, rather than repeatedly, as it would likely form part of a larger website e.g. a website about personality types and research. Therefore, all user stories relate to a first-time user. As a first-time user, I would like to:
+In a real-world application, this kind of game will mostly likely be used by a visitor as many times as they want to be entertained, and  would likely form part of a larger website e.g. a website with a selection of other online games for users to choose from. Therefore, all user stories relate to a first-time user. As a first-time user, I would like to:
 
-- take part in a fun, interesting quiz and learn more about my personality
-- find out what the quiz is about and what to expect before starting the quiz
-- navigate easily through the quiz questions 
-- have the option of retaking the quiz if I don't like the result
-- learn more about why I was matched with a specific Supervillain at the end of the quiz
-- sign up with my name quickly and easily
-- access the quiz on any device
+- take part in a fun, interesting game
+- find out what the game is about and what to expect before starting
+- be able to choose which type of story I want to create a Mad Lib about
+- navigate easily through the game prompts  
+- have the option of replaying the game if I don't like the result
+- access the game on any device
 
 These user stories gave me a clear scope for the website and enabled me to stay on track with the project, preventing issues like scope creep at a later stage after the coding process. 
