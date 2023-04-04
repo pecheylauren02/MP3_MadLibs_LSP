@@ -121,3 +121,58 @@ In a real-world application, this kind of game will mostly likely be used by a v
 - access the game on any device
 
 These user stories gave me a clear scope for the website and enabled me to stay on track with the project, preventing issues like scope creep at a later stage after the coding process. 
+
+
+## Deployment
+
+### Heroku
+
+The project was deployed using Code Institute's mock terminal for Heroku. The steps to deploy are as follows: 
+1. Fork or clone this repository (see steps on how to do this [here](#forking-the-github-repository))
+2. Navigate to your heroku dashboard, click "New" and select "Create new app".
+
+<details><summary>Screenshots</summary>
+
+<img src="">
+
+</details>
+
+3. Input a meaningful name for your app and choose the region best suited to your location.
+
+<details><summary>Screenshots</summary>
+
+<img src="">
+
+</details>
+
+4. Select "Settings" from the tabs and click "Reveal Config Vars".
+5. Input PORT and 8000 as one config var and click add. 
+6. Input CREDS and the content of your Google Sheet API creds file as another config var and click add.
+7. Click "Add buildpack".
+8. Add "nodejs" and "python" from the list or search if necessary, remember to click save.
+9. Python must be the first buildpack. They can be dragged into the correct position if needed.
+10. Select "Deploy" from the tabs.
+11. Select "GitHub - Connect to GitHub" from deployment methods.
+12. Click "Connect to GitHub" in the created section.
+13. Search for the GitHub repository by name.
+14. Click to connect to the relevant repo.
+15. Either click Enable Automatic Deploys for automatic deploys or Deploy Branch to deploy manually. Manually deployed branches will need re-deploying each time the repo is updated.
+16. Click View to view the deployed site. Note: It may take a moment to become available.
+
+### Forking the GitHub Repository
+
+You can fork the repository by following these steps:
+1. Go to the GitHub repository.
+1. Click on Fork button in upper right hand corner.
+
+### Cloning the GitHub Repository
+
+You can clone the repository to use locally by following these steps:
+1. Navigate to the GitHub Repository you want to clone.
+2. Click on the code drop down button.
+3. Click on HTTPS.
+4. Copy the repository link to the clipboard.
+5. Open your IDE of choice (git must be installed for the next steps).
+6. Type git clone copied-git-url into the IDE terminal.
+
+The project will now be cloned locally for you to use.
