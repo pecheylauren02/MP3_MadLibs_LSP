@@ -129,7 +129,7 @@ These user stories gave me a clear scope for the website and enabled me to stay 
 
 The project was deployed using Code Institute's mock terminal for Heroku. The steps to deploy are as follows: 
 1. Fork or clone this repository (see steps on how to do this [here](#forking-the-github-repository))
-2. Navigate to your heroku dashboard, click "New" and select "Create new app".
+2. Navigate to your Heroku Dashboard and select "Create new app".
 
 <details><summary>Screenshots</summary>
 
@@ -146,18 +146,17 @@ The project was deployed using Code Institute's mock terminal for Heroku. The st
 </details>
 
 4. Select "Settings" from the tabs and click "Reveal Config Vars".
-5. Input PORT and 8000 as one config var and click add. 
-6. Input CREDS and the content of your Google Sheet API creds file as another config var and click add.
-7. Click "Add buildpack".
-8. Add "nodejs" and "python" from the list or search if necessary, remember to click save.
-9. Python must be the first buildpack. They can be dragged into the correct position if needed.
-10. Select "Deploy" from the tabs.
-11. Select "GitHub - Connect to GitHub" from deployment methods.
-12. Click "Connect to GitHub" in the created section.
-13. Search for the GitHub repository by name.
-14. Click to connect to the relevant repo.
-15. Either click Enable Automatic Deploys for automatic deploys or Deploy Branch to deploy manually. Manually deployed branches will need re-deploying each time the repo is updated.
-16. Click View to view the deployed site. Note: It may take a moment to become available.
+    - Input PORT and 8000 as one config var and click add. 
+    - Input CREDS and the content of your Google Sheet API creds file as another config var and click add.
+5. Click "Add buildpack".
+    - Add "nodejs" and "python" from the list or search if necessary, remember to click save.
+    - Note: Python must be the first buildpack.
+6. Select "Deploy" from the tabs.
+7. Select "GitHub - Connect to GitHub" from deployment methods, then click "Connect to GitHub" in the created section.
+8. Search for your GitHub repository by name and select it.
+9. Either click Enable Automatic Deploys for automatic deploys or Deploy Branch to deploy manually. 
+    - Note: Manually deployed branches will need re-deploying each time the repo is updated.
+10. Click View to view the deployed site. Note: It may take a moment to become available.
 
 ### Forking the GitHub Repository
 
