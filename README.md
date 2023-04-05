@@ -174,7 +174,7 @@ The project was deployed using Code Institute's mock terminal for Heroku. The st
 
 <details><summary>Screenshots</summary>
 
-<img src="">
+<img src="docs/images/heroku-create-new-app.png">
 
 </details>
 
@@ -182,17 +182,39 @@ The project was deployed using Code Institute's mock terminal for Heroku. The st
 
 <details><summary>Screenshots</summary>
 
-<img src="">
+<img src="docs/images/heroku-app-name.png">
 
 </details>
 
 4. Select "Settings" from the tabs and click "Reveal Config Vars".
     - Input PORT and 8000 as one config var and click add. 
     - Input CREDS and the content of your Google Sheet API creds file as another config var and click add.
+
+<details><summary>Screenshots</summary>
+
+<img src="">
+
+</details>
+
 5. Click "Add buildpack".
     - Add "nodejs" and "python" from the list or search if necessary, remember to click save.
     - Note: Python must be the first buildpack.
+
+<details><summary>Screenshots</summary>
+
+<img src="">
+
+</details>
+
 6. Select "Deploy" from the tabs.
+
+<details><summary>Screenshots</summary>
+
+<img src="">
+
+</details>
+
+
 7. Select "GitHub - Connect to GitHub" from deployment methods, then click "Connect to GitHub" in the created section.
 8. Search for your GitHub repository by name and select it.
 9. Either click Enable Automatic Deploys for automatic deploys or Deploy Branch to deploy manually. 
