@@ -7,11 +7,16 @@
 
 #### HELLO AND WELCOME!
 
-Here you can find the documentation for my command-line Python terminal game: The Maddest Mad Libs Game! Mad Libs is known as one of the world’s funniest word games, and can turn anyone into a comedian without even trying! Originally invented by by Leonard Stern and Roger Price in 1953, [Mad Libs](https://www.madlibs.com/) are simple stories with words removed and replaced by blank spaces. In this version of the game, the user will be given the opportunity to select a story title from a list of titles displayed to them in a random order. 
+Here you can find the documentation for my command-line Python terminal game: The Maddest Mad Libs Game! Mad Libs is known as one of the world’s funniest word games, and can turn anyone into a comedian without even trying! Originally invented by by Leonard Stern and Roger Price in 1953, [Mad Libs](https://www.madlibs.com/) are simple stories with words removed and replaced by blank spaces. 
 
-Without knowing the story, the user is required to fill in the blanks with nouns, verbs, adjectives, colours, adverbs, exclamations, and many more! These words are inserted into the blank spaces, and after the user has completed all of the prompts, the full story is displayed to them with their inputs. Because the user is not aware of the context of the story beforehand, their responses generate hilarious results which will entertain them and whoever they read it aloud to! 
+This project has been built using only Python, as an educational Project offered as part of Code Institute’s Diploma in Full Stack Software Development. The original game was designed in hardcopy books, so this version allows the player to play through an online platform. Please use the table of contents below to navigate through all of the planning, features, deployment, testing and more!
 
-This project has been built using only Python, as an educational Project offered as part of Code Institute’s Diploma in Full Stack Software Development. The original game was designed in hardcopy books, so this version allows the user to play through an online platform. Please use the table of contents below to navigate through all of the planning, features, deployment, testing and more!
+### How To Play
+
+- In this version of the game, the player will be given the opportunity to select a story title from a list of titles displayed to them in a random order. 
+- Without knowing the story, the player is required to fill in the blanks with nouns, verbs, adjectives, colours, adverbs, exclamations, and many more! 
+- These words are inserted into the blank spaces, and after the player has completed all of the prompts, the full story is displayed to them with their inputs. 
+- Because the player is not aware of the context of the story beforehand, their responses generate hilarious results which will entertain them and whoever they read it aloud to! 
 
 ## Table of Contents
 
@@ -74,19 +79,19 @@ This back-end python project was planned and developed using principles of User 
 
 The Maddest Mad Libs game was built as a milestone project for my Diploma in Fullstack Software Development with [Code Institute](https://codeinstitute.net/global/full-stack-software-development-diploma/). It is an interactive word game designed to entertain users of all ages and backgrounds who want to be entertained while with friends or at a party. Despite this being built for educational reasons, it was still treated as a real-world application for potential clients interested in learning about their personalities in a fun, engaging way. Thus, this client's goals would be:
 
-- Engaging the users by allowing them to enter prompts of their choice
-- Entertaining users by generating random stories with their unique responses
+- Engaging the players by allowing them to enter prompts of their choice
+- Entertaining players by generating random stories with their unique responses
 - Ensuring that the instructions and prompts are clear, and the game is simple to navigate
 
 #### Target Audience
 
-- This game is designed for users of any background or age, but will most likely be used for entertainment purposes, such as during social events and gatherings
-- It is also likely to draw in users who enjoy playing word games or creating stories
+- This game is designed for players of any background or age, but will most likely be used for entertainment purposes, such as during social events and gatherings
+- It is also likely to draw in players who enjoy playing word games or creating stories
 - The simplicity of the website makes it easy for adults, teenagers and even children to play, and replay, the game as many times as they want, and access different results each time
 
-#### User Goals 
+#### player Goals 
 
-This game aims to ensure that users can:
+This game aims to ensure that players can:
 
 - Be given access to clear instructions on how to play the game 
 - Choose a story title they are interested in
@@ -98,7 +103,7 @@ This game aims to ensure that users can:
 
 #### Market Review 
 
-Before designing the game, I reviewed other Mad Libs games, as well as researched on the original version of the game to see how it could be implemented as an online game (see below). I did this in order to get a feel of how they presented themselves, as well as which content and features they offered. I also reviewed what appeared to work well for the user and what needed improvements (see Key Takeaways). 
+Before designing the game, I reviewed other Mad Libs games, as well as researched on the original version of the game to see how it could be implemented as an online game (see below). I did this in order to get a feel of how they presented themselves, as well as which content and features they offered. I also reviewed what appeared to work well for the player and what needed improvements (see Key Takeaways). 
 
 [jfbeq](LINK HERE) | [jfbeq](LINK HERE) | [jfbeq](LINK HERE) | [jfbeq](LINK HERE) | [jfbeq](LINK HERE)
 
@@ -107,11 +112,11 @@ Before designing the game, I reviewed other Mad Libs games, as well as researche
 - The game should be clean, simple, and easy to navigate
 - The game should not have any delays or interruptions after the user enters a prompt
 - The instructions should be simple and easy to understand
-- There should be a maximum of 10 prompts, to keep the user engaged and interested
+- There should be a maximum of 10 prompts, to keep the player engaged and interested
 
 ### User Stories
 
-In a real-world application, this kind of game will mostly likely be used by a visitor as many times as they want to be entertained, and  would likely form part of a larger website e.g. a website with a selection of other online games for users to choose from. Therefore, all user stories relate to a first-time user. As a first-time user, I would like to:
+In a real-world application, this kind of game will mostly likely be used by a visitor as many times as they want to be entertained, and  would likely form part of a larger website e.g. a website with a selection of other online games for players to choose from. Therefore, all user stories relate to a first-time user. As a first-time player, I would like to:
 
 - take part in a fun, interesting game
 - find out what the game is about and what to expect before starting
@@ -121,6 +126,19 @@ In a real-world application, this kind of game will mostly likely be used by a v
 - access the game on any device
 
 These user stories gave me a clear scope for the website and enabled me to stay on track with the project, preventing issues like scope creep at a later stage after the coding process. 
+
+## How to Play
+
+1. The player is first introduced to the game and how it works.
+2. The player will then be given a list of story titles to choose from, by entering the number of the story title. 
+3. After they have selected their story title, the player must enter "Y" to play. 
+4. The player will be given 10 prompts, one at a time, which will ask them to enter a particular part of speech, e.g. "Enter a noun: ".
+    - Note: If the player enters an invalid input, such as a number, they will be given an error message and asked to re-enter their word of choice.
+    - Note 2: If the player enters an invalid part of speech, e.g. a noun instead of an adjective, they will also receive an error message and will be required to enter the correct part of speech.
+5.  The player will be timed per prompt for 7 seconds, to increase the urgency of the game and to keep the player engaged. 
+6. After the player answers all 10 prompts correctly, the story result with their inputs will be displayed to them and they will hopefully be entertained by their answers.
+7. The player has the option to replay the game as many times as they want, and can choose a different story title each time. 
+
 
 ## Technologies Used 
 
