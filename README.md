@@ -192,7 +192,17 @@ The project was deployed using Code Institute's mock terminal for Heroku. The st
 
 <details><summary>Screenshots</summary>
 
-<img src="">
+<img src="docs/images/heroku-settings-tab.png">
+
+_Settings Tab_
+
+<img src="docs/images/heroku-config-vars.png">
+
+_Config Vars_
+
+<img src="docs/images/heroku-input-creds.png">
+
+_Input CREDS_
 
 </details>
 
@@ -202,7 +212,13 @@ The project was deployed using Code Institute's mock terminal for Heroku. The st
 
 <details><summary>Screenshots</summary>
 
-<img src="">
+<img src="docs/images/heroku-select-buildpacks.png">
+
+_Adding a buildpack_
+
+<img src="docs/images/heroku-correct-order-buildpacks.png">
+
+_Putting the buildpacks in the correct order_
 
 </details>
 
@@ -210,16 +226,42 @@ The project was deployed using Code Institute's mock terminal for Heroku. The st
 
 <details><summary>Screenshots</summary>
 
-<img src="">
+<img src="docs/images/heroku-deploy-tab.png">
 
 </details>
 
-
 7. Select "GitHub - Connect to GitHub" from deployment methods, then click "Connect to GitHub" in the created section.
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/images/heroku-connect-github.png">
+
+</details>
+
 8. Search for your GitHub repository by name and select it.
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/images/heroku-select-github.png">
+
+</details>
+
 9. Either click Enable Automatic Deploys for automatic deploys or Deploy Branch to deploy manually. 
     - Note: Manually deployed branches will need re-deploying each time the repo is updated.
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/images/heroku-branch-deploy.png">
+
+</details>
+
 10. Click View to view the deployed site. Note: It may take a moment to become available.
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/images/heroku-view.png">
+
+</details>
 
 ### Forking the GitHub Repository
 
