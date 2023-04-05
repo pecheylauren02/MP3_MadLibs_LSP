@@ -280,3 +280,14 @@ You can clone the repository to use locally by following these steps:
 6. Type git clone copied-git-url into the IDE terminal.
 
 The project will now be cloned locally for you to use.
+
+## Credits
+
+### Design and Planning
+
+### Code
+
+### Acknowledgements
+
+- My mentor, Rohit Sharma, for all of his help and advice throughout the project.
+- The whole team at [Code Institute](https://codeinstitute.net/) for their teaching and support.
