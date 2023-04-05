@@ -122,6 +122,29 @@ In a real-world application, this kind of game will mostly likely be used by a v
 
 These user stories gave me a clear scope for the website and enabled me to stay on track with the project, preventing issues like scope creep at a later stage after the coding process. 
 
+## Technologies Used 
+
+This website used Python as the main language, alongside some already built-in languages from the Code Institute Template. A list of those included in the project can be seen as follows: 
+
+### Languages 
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+### Tools 
+- [Lucid Flowchart](https://www.lucidchart.com/pages/)
+     - Lucid Flowchart was used to map the logic of the Mad Libs game during the initial design process.
+- [Git](https://git-scm.com/)
+    - Git was used for version control via GitPod, by using the terminal to Git and Push to GitHub.
+- [GitHub](https://github.com/)
+    - GitHub was used to store the project code after being created in GitPod/Git.
+- [Gitpod](https://www.gitpod.io/)
+    - Gitpod was used to create, edit and preview the project's code.
+- [Heroku](https://dashboard.heroku.com/login)
+    - Heroku was used to deploy the Project.
+- [Favicon.io](https://favicon.io/favicon-converter/)
+    - Used to create and add the favicon to the browser tab.
 
 ## Deployment
 
