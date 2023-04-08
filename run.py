@@ -3,6 +3,28 @@
 
 # Instructions
 
+# Story Title Selection 
+
+# Define the list of story titles
+
+story_titles = ["A Peculiar Adventure", "A Strange Fairytale", "A Day at the Office", 
+                "One Summer Vacation", "A Scary Encounter", "A Day at the Beach", 
+                "My First Day at School", "A Wild Party"]
+
+# Print the list of story titles for the user to see
+print("Please select a story by entering the corresponding number:")
+for i, title in enumerate(story_titles):
+    print(f"{i+1}. {title}")
+
+# Ask the user to select a story
+selected_story_index = int(input("Enter the number of the story you'd like to read: ")) - 1
+
+# Retrieve the selected story title
+selected_story_title = story_titles[selected_story_index]
+
+# Print the selected story title for the user to see
+print(f"You have selected the story: {selected_story_title}")
+
 # Mad Libs One of Eight
 
 # User inputs One of Eight: Status: DONE ALL 20
@@ -27,16 +49,7 @@ adjective_five: input("Enter another adjective: ")
 feeling_four = input("Enter another feeling: ")
 verb_two = input("Enter a verb in the present tense: ")
 
-# Declaring Story Titles
 
-title_one = "A Peculiar Adventure"
-title_two = "A Strange Fairytale"
-title_three = "A Day at the Office"
-title_four = "One Summer Vacation"
-title_five = "A Scary Encounter"
-title_six = "A Day at the Beach"
-title_seven = "My First Day at School"
-title_eight = "A Wild Party"
 
 # Mad Libs Two of Eight
 # Story Template One of Eight
