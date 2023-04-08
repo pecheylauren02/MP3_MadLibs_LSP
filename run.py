@@ -1,3 +1,40 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+# Welcome message
+# Instructions
+
+# Mad Libs One of Eight
+# Story Template One of Eight
+# User inputs One of Eight
+
+
+
+
+# Mad Libs Two of Eight
+# Story Template One of Eight
+# User inputs One of Eight
+
+# Mad Libs One of Eight
+# Story Template One of Eight
+# User inputs One of Eight
+
+# Mad Libs One of Eight
+# Story Template One of Eight
+# User inputs One of Eight
+
+# Mad Libs One of Eight
+# Story Template One of Eight
+# User inputs One of Eight
+
+# Mad Libs One of Eight
+# Story Template One of Eight
+# User inputs One of Eight
+
+# Mad Libs One of Eight
+# Story Template One of Eight
+# User inputs One of Eight
+
+# Mad Libs One of Eight
+# Story Template One of Eight
+# User inputs One of Eight
+
+
+
