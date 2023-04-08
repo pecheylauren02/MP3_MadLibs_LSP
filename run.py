@@ -45,7 +45,7 @@ noun_three = input("Enter another noun: ")
 noun_four = input("Enter another noun: ")
 feeling_three = input("Enter another feeling: ")
 number_one = input("Enter a random number: ")
-adjective_five: input("Enter another adjective: ")
+adjective_five = input("Enter another adjective: ")
 feeling_four = input("Enter another feeling: ")
 verb_two = input("Enter a verb in the present tense: ")
 
