@@ -27,16 +27,16 @@ adjective_five: input("Enter another adjective: ")
 feeling_four = input("Enter another feeling: ")
 verb_two = input("Enter a verb in the present tense: ")
 
-# Story Titles
+# Declaring Story Titles
 
-story_one = "A Peculiar Adventure"
-story_one = "A Peculiar Adventure"
-story_one = "A Peculiar Adventure"
-story_one = "A Peculiar Adventure"
-story_one = "A Peculiar Adventure"
-story_one = "A Peculiar Adventure"
-story_one = "A Peculiar Adventure"
-story_one = "A Peculiar Adventure"
+title_one = "A Peculiar Adventure"
+title_two = "A Strange Fairytale"
+title_three = "A Day at the Office"
+title_four = "One Summer Vacation"
+title_five = "A Scary Encounter"
+title_six = "A Day at the Beach"
+title_seven = "My First Day at School"
+title_eight = "A Wild Party"
 
 # Mad Libs Two of Eight
 # Story Template One of Eight
