@@ -1,5 +1,4 @@
 # Welcome message
-
 # Instructions
 
 # Story Title Selection 
@@ -7,7 +6,7 @@
 # Define the list of story titles
 
 story_titles = ["A Peculiar Adventure", "A Strange Fairytale", "A Day at the Office", 
-                "One Summer Vacation", "A Scary Encounter", "A Day at the Beach", 
+                "One Interesting Vacation", "A Scary Encounter", "A Day at the Beach", 
                 "My First Day at School", "A Wild Party"]
 
 # Print the list of story titles for the user to see
@@ -152,25 +151,67 @@ elif selected_story_title == "A Day at the Office":
     story_three = f'''It was just another {feeling_one} day in the office in {city_one} when I arrived at my 
     large {noun_one}. I sat down at my {noun_one} and opened up my {noun_two} to start my {adjective_one} work. 
     But before I could even begin, my {feeling_two} coworker walked in and started {verb_one} loudly 
-    about their {noun_three} problems. I tried to tune them out, but their voice was so annoying that I couldn't {9. verb_two}.
+    about their {noun_three} problems. I tried to tune them out, but their voice was so annoying that I couldn't {verb_two}.
     
     After what felt like {any_number} hours of their constant {verb_one}, I decided to take a {adjective_two} 
     break and visit the office in {city_two}.As I walked {adverb_one} down the hallway, I noticed a {adjective_three} 
     smell coming from the break room. I cautiously peeked inside, and to my horror, I saw that someone had left their {noun_four} 
     in the microwave for way too long.
     
-    The {noun_four} was now a {adjective_four} mess, and the entire room smelled like burnt {plural_noun_four}.
-    Feeling {18. feeling_three}, I quickly made my way back to my {noun_one}, only to find that my {noun_two} had 
+    The {noun_four} was now a {adjective_four} mess, and the entire room smelled like burnt {plural_noun_one}.
+    Feeling {feeling_three}, I quickly made my way back to my {noun_one}, only to find that my {noun_two} had 
     mysteriously disappeared! After a few minutes of searching {adverb_one}, I finally found it hiding under a pile of 
     dirty {clothing_plural}.
     
     So if you're ever feeling bored at work, just remember to keep your eyes and ears open for any weird moments that might 
     come your way. You never know what kind of {noun_three} might be waiting just around the corner in {city_one}!'''
 
-# User inputs One of Eight
+    print(story_three)
 
-# Mad Libs One of Eight
-# Story Template One of Eight
+# User inputs Four of Eight
+
+elif = selected_story_title == "One Interesting Vacation":
+    
+    season_one = input("Enter a season: ")
+    adjective_one = input("Enter an adjective: ")
+    country = input("Enter the name of a country: ")
+    adjective_two = input("Enter another adjective: ")
+    feeling_one = input("Enter a feeling: ")
+    clothing = input("Enter an item of clothing: ")
+    adjective_three = input("Enter another adjective: ")
+    adverb_one = input("Enter an adverb: ")
+    noun_one = input("Enter a noun: ")
+    plural_noun_one = input("Enter a plural noun: ")
+    adjective_four = input("Enter another adjective: ")
+    adverb_one = input("Enter an adverb: ")
+    noun_three = input("Enter another noun: ")
+    feeling_two = input("Enter another feeling: ")
+    place_one = input("Enter a place: ")
+    exclamation_one = input("Enter an exclamation, e.g. 'OMG!': ")
+    adjective_five = input("Enter another adjective: ")
+    verb_one = input("Enter a verb: ")
+    verb_two = input("Enter another verb: ")
+    noun_four = input("Enter another noun: ")
+
+    # Story Template Four of Eight
+
+    story_four = f'''Last {season_one}, I decided to take a {adjective_one} vacation to {country}, and boy was it 
+    {adjective_two}! On the first day of my trip, I woke up feeling {feeling_one} and ready for adventure. I threw 
+    on my {Item of clothing} and headed out into the {adjective_three} unknown.
+    
+    As I walked {adverb_one} through the streets, I came across a handsome {noun_one} who was juggling {plural_noun_two}. 
+    I couldn't help but stop and watch in amazement as they threw the {plural_noun_two} higher and higher into the air.
+    After the {noun_one} finished their act, I decided to continue my {adjective_three} journey. But before I could make 
+    it very far, a {adjective_four} bird flew {adverb_one} right into my {noun_three}! I was so startled that I nearly 
+    fell over, but luckily the bird flew away unharmed.
+
+    Feeling a bit shaken and {feeling_two}, I decided to take a break at a nearby {place_one}. I ordered a {adjective} 
+    drink and sat down to people-watch. That's when I heard a loud {exclamation_one} coming from outside. I opened my 
+    window and saw that a {adjective_four} parade was going by! I quickly got dressed and joined the parade, 
+    {verb_one + 'ing'} and {verb_three + 'ing'} along to the music. It was so much fun that I almost forgot about my 
+    {noun_four}! I can't wait to see where my next crazy adventure takes me!'''
+
+
 # User inputs One of Eight
 
 # Mad Libs One of Eight
