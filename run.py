@@ -123,8 +123,6 @@ elif selected_story_title == "A Strange Fairytale":
 
 # User inputs Three of Eight
 
-# Story Template Three of Eight
-
 elif selected_story_title == "A Day at the Office":
 
     feeling_one = input("Enter a feeling: ")
@@ -147,6 +145,8 @@ elif selected_story_title == "A Day at the Office":
     feeling_three = input("Enter another feeling: ")
     noun_three = input("Enter another noun: ")
     clothing_plural = input("Enter an item of clothing (plural): ")
+
+# Story Template Three of Eight
 
     story_three = f'''It was just another {feeling_one} day in the office in {city_one} when I arrived at my 
     large {noun_one}. I sat down at my {noun_one} and opened up my {noun_two} to start my {adjective_one} work. 
@@ -193,7 +193,7 @@ elif selected_story_title == "One Interesting Vacation":
     verb_two = input("Enter another verb ending in -ing: ")
     noun_four = input("Enter another noun: ")
 
-    # Story Template Four of Eight
+# Story Template Four of Eight
 
     story_four = f'''Last {season_one}, I decided to take a {adjective_one} vacation to {country}, and boy was it 
     {adjective_two}! On the first day of my trip, I woke up feeling {feeling_one} and ready for adventure. I threw 
@@ -213,11 +213,52 @@ elif selected_story_title == "One Interesting Vacation":
 
     print(story_four)
 
+# User inputs Five of Eight
 
-# User inputs One of Eight
+elif selected_story_title == "A Scary Encounter":
 
-# Mad Libs One of Eight
+    adjective_one = input("Enter an adjective: ")
+    noun_one = input("Enter a noun: ")
+    verb_one = input("Enter a verb ending in -ing: ")
+    feeling_one = input("Enter a feeling: ")
+    adjective_two = input("Enter an adjective: ")
+    adjective_three = input("Enter another adjective: ")
+    adverb_one = input("Enter an adverb: ")
+    adverb_two = input("Enter another adverb: ")
+    clothing_one = input("Enter an item of clothing: ")
+    noun_two = input("Enter another noun: ")
+    adjective_four = input("Enter another adjective: ")
+    clothing_two = input("Enter another item of clothing: ")
+    verb_two = input("Enter another verb ending in -ing: ")
+    body_part = input("Enter a body part: ")
+    feeling_one = input("Enter a feeling: ")
+    noun_two = input("Enter another noun: ")
+    noun_three = input("Enter another noun: ")
+    verb_three = input("Enter another verb ending in -ing: ")
+    feeling_two = input("Enter another feeling: ")
+
 # Story Template One of Eight
+
+    story_five = f'''One {adjective_one} night, I was walking home from a {noun_one} party when I suddenly felt like someone 
+    was {verb_one} me. I turned around, but there was no one there. Feeling a bit {feeling_one}, I quickened my pace 
+    and started walking faster. But then, I heard a {adjective_two} noise coming from behind me. I turned around again, and 
+    this time I saw a {adjective_three} figure lurking {adverb_one} in the shadows.
+
+    I tried to run {adverb_two}, but my {clothing_one} got caught on a {noun_one}, and I fell to the ground. The 
+    {adjective_three} figure approached me slowly, and I realized that it was actually a {noun_two} wearing a {adjective_four} 
+    {clothing_two}. I screamed for help, but no one seemed to hear me. The {noun_two} just stood there, {verb_two} at 
+    me with its tiny {body_part}.
+
+    Feeling {feeling_one}, I tried to think of a way to escape. That's when I remembered the {noun_one} that I had in my {noun_three}. 
+    I pulled it out and aimed it at the {noun_two}, hoping that it would scare it away. To my surprise, the {noun_two} started 
+    {verb_three} and ran away as fast as it could. I got up and ran home as quickly as possible, feeling {feeling_two} 
+    the entire time.
+
+    As I lay in bed that night, I couldn't help but wonder what other {adjective_one} encounters I might have in the future. 
+    But for now, I was just grateful to be safe and sound in bed.'''
+
+    print(story_five)
+
 # User inputs One of Eight
 
 # Mad Libs One of Eight
