@@ -272,7 +272,7 @@ elif selected_story_title == "A Day at the Beach":
     adjective_three = input("Enter another adjective: ")
     verb_one = input("Enter a verb: ")
     adjective_four = input("Enter another adjective: ")
-    verb_two = input("Enter another verb: ")
+    verb_two = input("Enter a verb ending in -ing: ")
     body_part = input("Enter a body part: ")
     noun_four = input("Enter another noun: ")
     place_one = input("Enter a place: ")
@@ -288,13 +288,13 @@ elif selected_story_title == "A Day at the Beach":
 
 # Story Template Six of Eight
 
-    story_six = f"One {adjective_one} {type_of_holiday}, I headed to the beach with my {adjective_two} {plural_noun_one}. 
-    We packed a {noun_two} full of snacks, sunscreen, and {plural_noun_three} and set off on our adventure. As soon as we 
+    story_six = f"""One {adjective_one} {type_of_holiday}, I headed to the beach with my {adjective_two} {plural_noun_one}. 
+    We packed a {noun_two} full of snacks, sunscreen, and {plural_noun_two} and set off on our adventure. As soon as we 
     arrived, we could feel the {adjective_three} sun beating down on us. We quickly unpacked and set up our {noun_two} and 
     got ready to hit the waves and {verb_one}.
     
     But as soon as I jumped in, I realized that the water was freezing {adjective_four}! I swam out to my friends, who were 
-    {verb_two + -ing} and having a great time. I decided to join in, even though I could barely feel my {body_part}. As we 
+    {verb_two} and having a great time. I decided to join in, even though I could barely feel my {body_part}. As we 
     played in the water, we suddenly heard a loud {noun_four} coming from the {place_one}. We swam back to find a 
     {adjective_five} crowd of people gathered around a {noun_five} that had washed up {adverb_one} on the beach.
     
@@ -303,7 +303,9 @@ elif selected_story_title == "A Day at the Beach":
     on the {noun_six}. We all screamed and ran away {adverb_two}, narrowly avoiding being hit {number} by the {animal_one}.
     
     After that crazy encounter, we decided to pack up and head home. As we drove away, we couldn't help but laugh at the 
-    absurdity of our day at the beach."
+    absurdity of our day at the beach."""
+
+    print(story_six)
 # User inputs One of Eight
 
 # Mad Libs One of Eight
