@@ -27,6 +27,7 @@ print(f"You have selected the story: {selected_story_title}")
 # Mad Libs One of Eight
 
 # User inputs One of Eight: Status: DONE ALL 20
+
 if selected_story_title == "A Peculiar Adventure": 
 
     adjective_one = input("Enter an adjective: ")
@@ -50,7 +51,7 @@ if selected_story_title == "A Peculiar Adventure":
     feeling_four = input("Enter another feeling: ")
     verb_two = input("Enter a verb in the present tense: ")
 
-    # Story Template One of Eight
+# Story Template One of Eight
 
     story_one = f"""One {adjective_one} day, I woke up feeling {feeling_one}
     and decided to go on a crazy adventure. I grabbed my trusty {noun_one} and
@@ -99,7 +100,7 @@ elif selected_story_title == "A Strange Fairytale":
     random_date = input("Enter a random date, e.g. 1995: ")
     any_number = input("Enter a random number: ")
 
-    # Story Template Two of Eight
+# Story Template Two of Eight
 
     story_two = f"""Once upon a time, in a land far, far away, there was a {adjective_one} {noun_one} who 
     loved to {verb_one}. One day, while {verb_two + 'ing'} in the {place_one}, the {adjective_one} {noun_one} 
@@ -121,12 +122,33 @@ elif selected_story_title == "A Strange Fairytale":
 
     print(story_two)
 
-# Mad Libs One of Eight
+# User inputs Three of Eight
 
-# User inputs One of Eight
+# Story Template Three of Eight
 
-# Mad Libs One of Eight
-# Story Template One of Eight
+elif selected_story_title == "A Day at the Office":
+
+    feeling_one = input("Enter a feeling: ")
+    city_one = input("Enter the name of a city: ")
+    noun_one = input("Enter a noun: ")
+    noun_two = input("Enter another noun: ")
+    adjective_one = input("Enter an adjective: ")
+    feeling_two = input("Enter a feeling: ")
+    verb_one = input("Enter a verb: ")
+    noun_three = input("Enter a noun: ")
+    verb_two = input("Enter another verb: ")
+    any_number = input("Enter a random number: ")
+    adjective_two = input("Enter another adjective: ")
+    city_two = input("Enter another name of a city: ")
+    adverb_one = input("Enter an adverb: ")
+    adjective_three = input("Enter another adjective: ")
+    noun_four = input("Enter another noun: ")
+    adjective_four = input("Enter another adjective: ")
+    plural_noun_one = input("Enter a plural noun: ")
+    feeling_three = input("Enter another feeling: ")
+    noun_three = input("Enter another noun: ")
+    clothing_plural = input("Enter an item of clothing (plural): ")
+
 # User inputs One of Eight
 
 # Mad Libs One of Eight
