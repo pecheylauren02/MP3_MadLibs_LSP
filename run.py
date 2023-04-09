@@ -350,6 +350,7 @@ elif selected_story_title == "My First Day at School":
     As the day came to an end, I felt happy and {adjective_four}. So if you're feeling {adjective_four} about your first 
     day of school, just remember that it's a new adventure full of surprises and {adjective_one} moments."""
 
+    print(story_seven)
 
 
 # Mad Libs One of Eight
