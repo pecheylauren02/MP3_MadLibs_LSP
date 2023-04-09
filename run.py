@@ -353,9 +353,47 @@ elif selected_story_title == "My First Day at School":
     print(story_seven)
 
 
-# Mad Libs One of Eight
+# User inputs Eight of Eight
+
+elif selected_story_title == "A Wild Party":
+
+    adjective_one = input("Enter an adjective: ")
+    body_part = input("Enter the name of a body part: ")
+    adjective_two = input("Enter another adjective: ")
+    adjective_three = input("Enter another adjective: ")
+    plural_noun_one = input("Enter a plural noun: ")
+    verb_one = input("Enter a verb ending in -ing: ")
+    verb_two = input("Enter another verb ending in -ing: ")
+    adjective_four = input("Enter another adjective: ")
+    noun_one = input("Enter a noun: ")
+    adverb_one = input("Enter an adverb: ")
+    verb_three = input("Enter another verb ending in -ing: ")
+    adjective_five = input("Enter another adjective: ")
+    colour = input("Enter a colour: ")
+    clothing_plural = input("Enter an item of clothing(plural): ")
+    number = input("Enter a random number: ")
+    plural_noun_two = input("Enter another plural noun: ")
+    adverb_two = input("Enter another adverb: ")
+    verb_four = input("Enter another verb ending in -ing: ")
+    adjective_six = input("Enter another adjective: ")
+    plural_noun_three = input("Enter another plural noun: ")
+    verb_five = input("Enter another verb ending in -ing: ")
+
 # Story Template One of Eight
-# User inputs One of Eight
 
+    story_eight = f""" Last night I went to the craziest party ever. It was so {adjective_one} that my {body_part}
+    is still recovering from it. When I arrived, the music was {adjective_two} and the dance floor was packed with 
+    {adjective_three} people and wild {plural_noun_one}. I started {verb_one} to the beat and before I knew 
+    it, I was {verb_two} with a group of {adjective_four} strangers.
 
+    Things really got out of hand when someone suggested we play {noun_one} pong. I've never been good at that game, 
+    but I managed to {adverb_one} {verb_three} a few shots and impress everyone. As the night went on, more and more 
+    people and {plural_noun_one} showed up. 
+    
+    There were {adjective_five} characters in crazy costumes, some wearing {colour}{clothing_plural}. I even saw one 
+    magician trying to juggle {number}{plural_noun_two} while riding a unicycle. A lot of the night became blurry 
+    after that, but I found myself {adverb_two}{verb_four} on a couch with a {adjective_six} person who I had 
+    never met before. We started talking about {plural_noun_three} and ended up {verb_five} all night.
 
+    The party didn't really start to wind down until the early hours of the morning. It was definitely a night I'll 
+    never forget!"""
