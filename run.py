@@ -1,10 +1,10 @@
 # Welcome message
-
 print("Welcome to the Maddest Game of Mad Libs you will ever play!")
 print("If you are looking for a night of laughter and fun with your friends and family, then look no further! 
 print("Mad Libs is one of the world's greatest word games.")
 print("It can make anyone the funniest person in the room, without even trying!") 
 
+# Instructions
 response = input("Want to learn how to play? Y/N: ")
 if response.upper() == "Y":
     print("\nWhat are Mad Libs?\n")
@@ -18,32 +18,15 @@ if response.upper() == "Y":
     print("Your story will then be displayed for you to read aloud with hilarious results.")
     print("There are no winners or losers in this game, only laughter!\n")
 
-Ready to play? Y/NCode this for me in python:
+    play_response = input("Ready to play? Y/N: ")
+    if play_response.upper() == "Y":
+        print("Let's get started")
+    else: 
+        print("Okay, maybe next time!")
+else:
+    print("Okay, maybe next time!")
 
-WELCOME MESSAGE:
 
-Welcome to the Maddest Game of Mad Libs you’ll ever play! If you’re looking for a night of laughter and fun with your friends and family, then look no further. 
-
-Mad Libs is one of the world’s greatest word games! It can make anyone the funniest person in the room, without even trying. 
-
-Want to learn how to play? Y/N
-
-INSTRUCTIONS:
- What are Mad Libs?
-
-Mad Libs are stories with words removed and replaced by blank spaces. 
-
-Here’s how to play:
-Choose a story title from the list given, by entering the number of the title. 
-You will be given a total of 20 prompts, asking you to enter a word, without seeing the story beforehand. E.g. “Enter a noun:”
-When you see a prompt, enter your answer. The prompts will ask you for a mix of adjectives, nouns, exclamations, colours, adverbs, and more! 
-When you finish entering all of the prompts correctly, these words will be inserted into the blanks of the story title you chose. 
-Your story will then be displayed for you to read aloud with hilarious results. 
-There are no winners or losers in this game, only laughter!
-
-Ready to play? Y/N
-
-# Instructions
 
 # Story Title Selection 
 
