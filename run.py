@@ -259,10 +259,51 @@ elif selected_story_title == "A Scary Encounter":
 
     print(story_five)
 
-# User inputs One of Eight
+# User inputs Six of Eight
 
-# Mad Libs One of Eight
-# Story Template One of Eight
+elif selected_story_title == "A Day at the Beach":
+
+    adjective_one = input("Enter an adjective: ")
+    type_of_holiday = input("Enter a type of holiday, e.g. Christmas: ")
+    adjective_two = input("Enter another adjective: ")
+    plural_noun_one = input("Enter a plural noun: ")
+    noun_two = input("Enter another noun: ")
+    plural_noun_two = input("Enter another plural noun: ")
+    adjective_three = input("Enter another adjective: ")
+    verb_one = input("Enter a verb: ")
+    adjective_four = input("Enter another adjective: ")
+    verb_two = input("Enter another verb: ")
+    body_part = input("Enter a body part: ")
+    noun_four = input("Enter another noun: ")
+    place_one = input("Enter a place: ")
+    adjective_five = input("Enter another adjective: ")
+    noun_five = input("Enter another noun: ")
+    adverb_one = input("Enter an adverb: ")
+    adjective_six = input("Enter another adjective: ")
+    noun_six = input("Enter another noun: ")
+    animal_one = input("Enter a type of animal: ")
+    verb_three = input("Enter another verb: ")
+    adverb_two = input("Enter another adverb: ")
+    number = input("Enter a random number: ")
+
+# Story Template Six of Eight
+
+    story_six = f"One {adjective_one} {type_of_holiday}, I headed to the beach with my {adjective_two} {plural_noun_one}. 
+    We packed a {noun_two} full of snacks, sunscreen, and {plural_noun_three} and set off on our adventure. As soon as we 
+    arrived, we could feel the {adjective_three} sun beating down on us. We quickly unpacked and set up our {noun_two} and 
+    got ready to hit the waves and {verb_one}.
+    
+    But as soon as I jumped in, I realized that the water was freezing {adjective_four}! I swam out to my friends, who were 
+    {verb_two + -ing} and having a great time. I decided to join in, even though I could barely feel my {body_part}. As we 
+    played in the water, we suddenly heard a loud {noun_four} coming from the {place_one}. We swam back to find a 
+    {adjective_five} crowd of people gathered around a {noun_five} that had washed up {adverb_one} on the beach.
+    
+    Feeling curious, we pushed our way through the crowd to get a closer look. As we approached, we could smell the 
+    {adjective_six} stench of the dead {noun_six}. Suddenly, a massive {animal_one}. swooped down and started {verb_three} 
+    on the {noun_six}. We all screamed and ran away {adverb_two}, narrowly avoiding being hit {number} by the {animal_one}.
+    
+    After that crazy encounter, we decided to pack up and head home. As we drove away, we couldn't help but laugh at the 
+    absurdity of our day at the beach."
 # User inputs One of Eight
 
 # Mad Libs One of Eight
