@@ -397,3 +397,5 @@ elif selected_story_title == "A Wild Party":
 
     The party didn't really start to wind down until the early hours of the morning. It was definitely a night I'll 
     never forget!"""
+
+    print(story_eight)
