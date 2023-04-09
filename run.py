@@ -306,7 +306,51 @@ elif selected_story_title == "A Day at the Beach":
     absurdity of our day at the beach."""
 
     print(story_six)
-# User inputs One of Eight
+
+# User inputs Seven of Eight
+
+elif selected_story_title == "My First Day at School":
+
+    feeling_one = input("Enter a random number: ")
+    adjective_one = input("Enter a random number: ")
+    adverb_one = input("Enter a random number: ")
+    noun_one = input("Enter a random number: ")
+    adjective_two = input("Enter a random number: ")
+    plural_noun_two = input("Enter a random number: ")
+    verb_one = input("Enter a random number: ")
+    verb_two = input("Enter a random number: ")
+    verb_three = input("Enter a random number: ")
+    noun_three = input("Enter a random number: ")
+    adjective_three = input("Enter a random number: ")
+    place = input("Enter a random number: ")
+    plural_noun_four = input("Enter a random number: ")
+    plural_noun_five = input("Enter a random number: ")
+    verb_four = input("Enter a random number: ")
+    Name_one = input("Enter a random number: ")
+    Superhero = input("Enter a random number: ")
+    plural_noun_five = input("Enter a random number: ")
+    plural_noun_six = input("Enter a random number: ")
+    adjective_four = input("Enter a random number: ")
+
+    story_seven = f"""
+    On my first day of school, I felt {feeling_one} as I walked into the classroom. My {adjective_one} teacher greeted 
+    me with a big smile and {adverb_one} showed me to my {noun_one}. As I sat down, I couldn't help but notice the 
+    {adjective_two} students and {plural_noun_two} around me. Some were {verb_one + 'ing'}, while others were 
+    {verb_two + 'ing'} and {verb_three + 'ing'} all over the classroom.
+    
+    Just as the teacher was about to start the lesson, an enormous {noun_three} burst into the room. It was a 
+    {adjective_three} {noun_three} who had lost their way to the {place}. The teacher quickly helped them find their way, 
+    and we all had a good laugh about it.
+    
+    As the day went on, we learned about {plural_noun_four} and {plural_noun_five}. No matter what we were learning, we 
+    were always {verb_four + 'ing'} and having a good time. During recess, I made some new friends called {Name_one} and 
+    {Superhero} who showed me their cool {plural_noun_five} and {plural_noun_six}. We played games and laughed so hard 
+    that we almost forgot we were at school.
+    
+    As the day came to an end, I felt happy and {adjective_four}. So if you're feeling {adjective_four} about your first 
+    day of school, just remember that it's a new adventure full of surprises and {adjective_one} moments."""
+
+
 
 # Mad Libs One of Eight
 # Story Template One of Eight
