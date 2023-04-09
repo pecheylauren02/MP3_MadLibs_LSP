@@ -311,40 +311,40 @@ elif selected_story_title == "A Day at the Beach":
 
 elif selected_story_title == "My First Day at School":
 
-    feeling_one = input("Enter a random number: ")
-    adjective_one = input("Enter a random number: ")
-    adverb_one = input("Enter a random number: ")
-    noun_one = input("Enter a random number: ")
-    adjective_two = input("Enter a random number: ")
-    plural_noun_two = input("Enter a random number: ")
-    verb_one = input("Enter a random number: ")
-    verb_two = input("Enter a random number: ")
-    verb_three = input("Enter a random number: ")
-    noun_three = input("Enter a random number: ")
-    adjective_three = input("Enter a random number: ")
-    place = input("Enter a random number: ")
-    plural_noun_four = input("Enter a random number: ")
-    plural_noun_five = input("Enter a random number: ")
-    verb_four = input("Enter a random number: ")
-    Name_one = input("Enter a random number: ")
-    Superhero = input("Enter a random number: ")
-    plural_noun_five = input("Enter a random number: ")
-    plural_noun_six = input("Enter a random number: ")
-    adjective_four = input("Enter a random number: ")
+    feeling_one = input("Enter a feeling: ")
+    adjective_one = input("Enter an adjective: ")
+    adverb_one = input("Enter an adverb: ")
+    noun_one = input("Enter a noun: ")
+    adjective_two = input("Enter another adjective: ")
+    plural_noun_one = input("Enter a plural noun: ")
+    verb_one = input("Enter a verb ending in -ing: ")
+    verb_two = input("Enter another verb ending in -ing: ")
+    verb_three = input("Enter another verb ending in -ing: ")
+    noun_three = input("Enter another noun: ")
+    adjective_three = input("Enter another adjective: ")
+    place = input("Enter a place: ")
+    plural_noun_two = input("Enter another plural noun: ")
+    plural_noun_three = input("Enter another plural noun: ")
+    verb_four = input("Enter another verb ending in -ing: ")
+    name = input("Enter the name of someone you know: ")
+    superhero = input("Enter the name of your favourite superhero: ")
+    plural_noun_four = input("Enter another plural noun: ")
+    plural_noun_five = input("Enter another plural noun: ")
+    adjective_four = input("Enter another adjective: ")
 
     story_seven = f"""
     On my first day of school, I felt {feeling_one} as I walked into the classroom. My {adjective_one} teacher greeted 
     me with a big smile and {adverb_one} showed me to my {noun_one}. As I sat down, I couldn't help but notice the 
-    {adjective_two} students and {plural_noun_two} around me. Some were {verb_one + 'ing'}, while others were 
-    {verb_two + 'ing'} and {verb_three + 'ing'} all over the classroom.
+    {adjective_two} students and {plural_noun_one} around me. Some were {verb_one}, while others were 
+    {verb_two} and {verb_three} all over the classroom.
     
     Just as the teacher was about to start the lesson, an enormous {noun_three} burst into the room. It was a 
     {adjective_three} {noun_three} who had lost their way to the {place}. The teacher quickly helped them find their way, 
     and we all had a good laugh about it.
     
-    As the day went on, we learned about {plural_noun_four} and {plural_noun_five}. No matter what we were learning, we 
-    were always {verb_four + 'ing'} and having a good time. During recess, I made some new friends called {Name_one} and 
-    {Superhero} who showed me their cool {plural_noun_five} and {plural_noun_six}. We played games and laughed so hard 
+    As the day went on, we learned about {plural_noun_two} and {plural_noun_three}. No matter what we were learning, we 
+    were always {verb_four} and having a good time. During recess, I made some new friends called {name} and 
+    {superhero} who showed me their cool {plural_noun_four} and {plural_noun_five}. We played games and laughed so hard 
     that we almost forgot we were at school.
     
     As the day came to an end, I felt happy and {adjective_four}. So if you're feeling {adjective_four} about your first 
