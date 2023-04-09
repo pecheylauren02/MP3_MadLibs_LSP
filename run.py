@@ -1,6 +1,6 @@
 # Welcome message
 print("Welcome to the Maddest Game of Mad Libs you will ever play!")
-print("If you are looking for a night of laughter and fun with your friends and family, then look no further! 
+print("If you are looking for a night of laughter and fun with your friends and family, then look no further!")
 print("Mad Libs is one of the world's greatest word games.")
 print("It can make anyone the funniest person in the room, without even trying!") 
 
@@ -25,8 +25,6 @@ if response.upper() == "Y":
         print("Okay, maybe next time!")
 else:
     print("Okay, maybe next time!")
-
-
 
 # Story Title Selection 
 
