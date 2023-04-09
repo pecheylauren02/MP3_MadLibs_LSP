@@ -170,7 +170,7 @@ elif selected_story_title == "A Day at the Office":
 
 # User inputs Four of Eight
 
-elif = selected_story_title == "One Interesting Vacation":
+elif selected_story_title == "One Interesting Vacation":
     
     season_one = input("Enter a season: ")
     adjective_one = input("Enter an adjective: ")
@@ -189,27 +189,29 @@ elif = selected_story_title == "One Interesting Vacation":
     place_one = input("Enter a place: ")
     exclamation_one = input("Enter an exclamation, e.g. 'OMG!': ")
     adjective_five = input("Enter another adjective: ")
-    verb_one = input("Enter a verb: ")
-    verb_two = input("Enter another verb: ")
+    verb_one = input("Enter a verb ending in -ing: ")
+    verb_two = input("Enter another verb ending in -ing: ")
     noun_four = input("Enter another noun: ")
 
     # Story Template Four of Eight
 
     story_four = f'''Last {season_one}, I decided to take a {adjective_one} vacation to {country}, and boy was it 
     {adjective_two}! On the first day of my trip, I woke up feeling {feeling_one} and ready for adventure. I threw 
-    on my {Item of clothing} and headed out into the {adjective_three} unknown.
+    on my {clothing} and headed out into the {adjective_three} unknown.
     
-    As I walked {adverb_one} through the streets, I came across a handsome {noun_one} who was juggling {plural_noun_two}. 
-    I couldn't help but stop and watch in amazement as they threw the {plural_noun_two} higher and higher into the air.
+    As I walked {adverb_one} through the streets, I came across a handsome {noun_one} who was juggling {plural_noun_one}. 
+    I couldn't help but stop and watch in amazement as they threw the {plural_noun_one} higher and higher into the air.
     After the {noun_one} finished their act, I decided to continue my {adjective_three} journey. But before I could make 
     it very far, a {adjective_four} bird flew {adverb_one} right into my {noun_three}! I was so startled that I nearly 
     fell over, but luckily the bird flew away unharmed.
 
-    Feeling a bit shaken and {feeling_two}, I decided to take a break at a nearby {place_one}. I ordered a {adjective} 
+    Feeling a bit shaken and {feeling_two}, I decided to take a break at a nearby {place_one}. I ordered a {adjective_four} 
     drink and sat down to people-watch. That's when I heard a loud {exclamation_one} coming from outside. I opened my 
-    window and saw that a {adjective_four} parade was going by! I quickly got dressed and joined the parade, 
-    {verb_one + 'ing'} and {verb_three + 'ing'} along to the music. It was so much fun that I almost forgot about my 
+    window and saw that a {adjective_five} parade was going by! I quickly got dressed and joined the parade, 
+    {verb_one} and {verb_two} along to the music. It was so much fun that I almost forgot about my 
     {noun_four}! I can't wait to see where my next crazy adventure takes me!'''
+
+    print(story_four)
 
 
 # User inputs One of Eight
