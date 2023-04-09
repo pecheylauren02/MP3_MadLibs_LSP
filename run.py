@@ -149,6 +149,24 @@ elif selected_story_title == "A Day at the Office":
     noun_three = input("Enter another noun: ")
     clothing_plural = input("Enter an item of clothing (plural): ")
 
+    story_three = f'''It was just another {1. feeling_one} day in the office in {2. city_one} when I arrived at my 
+    large {3. noun_one}. I sat down at my {3. noun_one} and opened up my {4. noun_two} to start my {5. adjective_one} work. 
+    But before I could even begin, my {6. feeling_two} coworker walked in and started {7. verb_one + 'ing'} loudly 
+    about their {8. noun_three} problems. I tried to tune them out, but their voice was so annoying that I couldn't {9. verb_two}.
+    
+    After what felt like {10. Any number} hours of their constant {7. verb_one + 'ing'}, I decided to take a {11. adjective_two} 
+    break and visit the office in {12. city_two}.As I walked {13. adverb_one} down the hallway, I noticed a {14. adjective_three} 
+    smell coming from the break room. I cautiously peeked inside, and to my horror, I saw that someone had left their {15. noun_four} 
+    in the microwave for way too long.
+    
+    The {15. noun_four} was now a {16. adjective_four} mess, and the entire room smelled like burnt {17. plural_noun_four}.
+    Feeling {18. feeling_three}, I quickly made my way back to my {3. noun_one}, only to find that my {4. noun_two} had 
+    mysteriously disappeared! After a few minutes of searching {19. adverb_one}, I finally found it hiding under a pile of 
+    dirty {20. Piece of clothing(plural)}.
+    
+    So if you're ever feeling bored at work, just remember to keep your eyes and ears open for any weird moments that might come your way.
+    You never know what kind of {15. noun_three} might be waiting just around the corner in {2. city_one}!'''
+
 # User inputs One of Eight
 
 # Mad Libs One of Eight
