@@ -1,4 +1,4 @@
-"""
+""" STORY ONE
         adjective_one = input("Enter an adjective: ")
         feeling_one = input("Enter a feeling: ")
         noun_one = input("Enter a noun: ")
@@ -19,4 +19,26 @@
         adjective_five = input("Enter another adjective: ")
         feeling_four = input("Enter another feeling: ")
         verb_two = input("Enter a verb in the present tense: ")
+
+    STORY TWO
+         adjective_one = input("Enter an adjective: ")
+        noun_one = input("Enter a noun: ")
+        verb_one = input("Enter a verb ending in -ing: ")
+        verb_two = input("Enter another verb: ")
+        place_one = input("Enter a place: ")
+        adjective_two = input("Enter another adjective: ")
+        noun_two = input("Enter another noun: ")
+        verb_three = input("Enter another verb: ")
+        adjective_three = input("Enter another adjective: ")
+        noun_three = input("Enter another noun: ")
+        exclamation = input("Enter an exclamation, e.g. 'OMG!' or 'Wow!' or 'Oh no!': ")
+        adjective_four = input("Enter another adjective: ")
+        verb_four = input("Enter a verb in the past tense: ")
+        verb_five = input("Enter another verb ending in -ing: ")
+        adverb_one = input("Enter an adverb: ")
+        noun_four = input("Enter another noun: ")
+        verb_six = input("Enter another verb in the past tense: ")
+        random_date = input("Enter a random date, e.g. 1995: ")
+        any_number = input("Enter a random number: ")
      """
+
