@@ -1,3 +1,8 @@
+# imported modules
+
+# to create progress bar
+from tqdm import tqdm 
+
 # Welcome message
 print("Welcome to the Maddest Game of Mad Libs you will ever play!")
 print("If you are looking for a night of laughter and fun with your friends and family, then look no further!")
@@ -12,11 +17,10 @@ if response.upper() == "Y":
     print("\nHere's how to play:")
     print("Choose a story title from the list given, by entering the number of the title.")
     print("1. You will be given a total of 20 prompts, asking you to enter a word, without seeing the story beforehand. E.g. 'Enter a noun: '")
-    print("You will be given a total of 20 prompts, asking you to enter a word, without seeing the story beforehand. E.g. 'Enter a noun:'")
-    print("When you see a prompt, enter your answer. The prompts will ask you for a mix of adjectives, nouns, exclamations, colours, adverbs, and more!")
-    print("When you finish entering all of the prompts correctly, these words will be inserted into the blanks of the story title you chose.")
-    print("Your story will then be displayed for you to read aloud with hilarious results.")
-    print("There are no winners or losers in this game, only laughter!\n")
+    print("2. When you see a prompt, enter your answer. The prompts will ask you for a mix of adjectives, nouns, exclamations, colours, adverbs, and more!")
+    print("3. When you finish entering all of the prompts correctly, these words will be inserted into the blanks of the story title you chose.")
+    print("4. Your story will then be displayed for you to read aloud with hilarious results.")
+    print("5. There are no winners or losers in this game, only laughter!\n")
 
     play_response = input("Ready to play? Y/N: ")
     if play_response.upper() == "Y":

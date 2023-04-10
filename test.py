@@ -1,4 +1,5 @@
-   adjective_one = input("Enter an adjective: ")
+"""
+        adjective_one = input("Enter an adjective: ")
         feeling_one = input("Enter a feeling: ")
         noun_one = input("Enter a noun: ")
         place_one = input("Enter a place: ")
@@ -18,3 +19,4 @@
         adjective_five = input("Enter another adjective: ")
         feeling_four = input("Enter another feeling: ")
         verb_two = input("Enter a verb in the present tense: ")
+     """
