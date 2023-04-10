@@ -1,10 +1,5 @@
 # imported modules
 
-
-
-# to create progress bar
-from tqdm import tqdm 
-
 # Welcome message
 print("Welcome to the Maddest Game of Mad Libs you will ever play!")
 print("If you are looking for a night of laughter and fun with your friends and family, then look no further!")
@@ -121,7 +116,7 @@ def play_madlibs():
         From {inputs[17]}, the {inputs[0]} {inputs[1]} made a promise to themselves to always be open to new experiences 
         and never to be afraid of a little {inputs[2]}. And who knows? Maybe they'll even meet another {inputs[18]} 
         {inputs[11]} {inputs[15]} along the way.
-        The end."""
+        The end"""
 
         print(story_two)
 
@@ -137,7 +132,8 @@ def play_madlibs():
 
     # Story Template Three of Eight
 
-        story_three = f'''It was just another {inputs[0]} day in the office in {inputs[1]} when I arrived at my 
+        story_three = f'''
+        It was just another {inputs[0]} day in the office in {inputs[1]} when I arrived at my 
         large {inputs[2]}. I sat down at my {inputs[2]} and opened up my {inputs[3]} to start my {inputs[4]} work. 
         But before I could even begin, my {inputs[5]} coworker walked in and started {inputs[6]} loudly 
         about their {inputs[7]} problems. I tried to tune them out, but their voice was so annoying that I couldn't {inputs[8]}.
@@ -153,7 +149,8 @@ def play_madlibs():
         dirty {inputs[18]}.
                 
         So if you're ever feeling bored at work, just remember to keep your eyes and ears open for any weird moments that might 
-        come your way. You never know what kind of {inputs[19]} might be waiting just around the corner in {inputs[1]}!'''
+        come your way. You never know what kind of {inputs[19]} might be waiting just around the corner in {inputs[1]}!
+        '''
 
         print(story_three)
 
@@ -388,5 +385,6 @@ def play_madlibs():
         never forget!"""
 
         print(story_eight)
+
 
 play_madlibs()
