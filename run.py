@@ -159,29 +159,10 @@ def play_madlibs():
     elif selected_story_title == "One Interesting Vacation":
 
         words = ['a season', 'an adjective', 'a country', 'another adjective', 'a feeling', 'an item of clothing', 'another adjective',
-              'adverb', 'noun', 'plural noun', 'adjective', 'adverb', 'noun', 'feeling', 'place', 'exclamation',
-              'adjective', 'verb ending in -ing', 'verb ending in -ing', 'noun']
-        
-        season_one = input("Enter a season: ")
-        adjective_one = input("Enter an adjective: ")
-        country = input("Enter the name of a country: ")
-        adjective_two = input("Enter another adjective: ")
-        feeling_one = input("Enter a feeling: ")
-        clothing = input("Enter an item of clothing: ")
-        adjective_three = input("Enter another adjective: ")
-        adverb_one = input("Enter an adverb: ")
-        noun_one = input("Enter a noun: ")
-        plural_noun_one = input("Enter a plural noun: ")
-        adjective_four = input("Enter another adjective: ")
-        adverb_one = input("Enter an adverb: ")
-        noun_three = input("Enter another noun: ")
-        feeling_two = input("Enter another feeling: ")
-        place_one = input("Enter a place: ")
-        exclamation_one = input("Enter an exclamation, e.g. 'OMG!': ")
-        adjective_five = input("Enter another adjective: ")
-        verb_one = input("Enter a verb ending in -ing: ")
-        verb_two = input("Enter another verb ending in -ing: ")
-        noun_four = input("Enter another noun: ")
+              'an adverb', 'a noun', 'a plural noun', 'another adjective', 'an adverb', 'another noun', 'another feeling', 'a place', 'an exclamation',
+              'another adjective', 'a verb ending in -ing', 'another verb ending in -ing', 'another noun']
+
+        inputs = [input(f"Enter {word}: ") for word in words]
 
     # Story Template Four of Eight
 
