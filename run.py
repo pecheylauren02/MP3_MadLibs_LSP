@@ -129,34 +129,19 @@ def play_madlibs():
 
     elif selected_story_title == "A Day at the Office":
 
-        feeling_one = input("Enter a feeling: ")
-        city_one = input("Enter the name of a city: ")
-        noun_one = input("Enter a noun: ")
-        noun_two = input("Enter another noun: ")
-        adjective_one = input("Enter an adjective: ")
-        feeling_two = input("Enter a feeling: ")
-        verb_one = input("Enter a verb ending in -ing: ")
-        noun_three = input("Enter a noun: ")
-        verb_two = input("Enter another verb: ")
-        any_number = input("Enter a random number: ")
-        adjective_two = input("Enter another adjective: ")
-        city_two = input("Enter another name of a city: ")
-        adverb_one = input("Enter an adverb: ")
-        adjective_three = input("Enter another adjective: ")
-        noun_four = input("Enter another noun: ")
-        adjective_four = input("Enter another adjective: ")
-        plural_noun_one = input("Enter a plural noun: ")
-        feeling_three = input("Enter another feeling: ")
-        noun_three = input("Enter another noun: ")
-        clothing_plural = input("Enter an item of clothing (plural): ")
+        words = ['a feeling', 'a city', 'a noun', 'another noun', 'an adjective', 'another feeling', 'a verb ending in -ing', 
+        'another noun', 'another verb', 'a random number', 'another adjective', 'another city', 'an adverb', 'another adjective', 
+        'another noun', 'another adjective', 'a plural noun', 'another feeling', 'another noun', 'an item of clothing (plural)']
+
+        inputs = [input(f"Enter {word}: ") for word in words]
 
     # Story Template Three of Eight
 
-        story_three = f'''It was just another {feeling_one} day in the office in {city_one} when I arrived at my 
-        large {noun_one}. I sat down at my {noun_one} and opened up my {noun_two} to start my {adjective_one} work. 
-        But before I could even begin, my {feeling_two} coworker walked in and started {verb_one} loudly 
-        about their {noun_three} problems. I tried to tune them out, but their voice was so annoying that I couldn't {verb_two}.
-        
+        story_three = f'''It was just another {user_inputs[0]} day in the office in {user_inputs[1]} when I arrived at my 
+        large {user_inputs[2]}. I sat down at my {user_inputs[2]} and opened up my {user_inputs[3]} to start my {user_inputs[4]} work. 
+        But before I could even begin, my {user_inputs[5]} coworker walked in and started {user_inputs[6]} loudly 
+        about their {user_inputs[7]} problems. I tried to tune them out, but their voice was so annoying that I couldn't {user_inputs[8]}.
+                
         After what felt like {any_number} hours of their constant {verb_one}, I decided to take a {adjective_two} 
         break and visit the office in {city_two}.As I walked {adverb_one} down the hallway, I noticed a {adjective_three} 
         smell coming from the break room. I cautiously peeked inside, and to my horror, I saw that someone had left their {noun_four} 

@@ -40,5 +40,28 @@
         verb_six = input("Enter another verb in the past tense: ")
         random_date = input("Enter a random date, e.g. 1995: ")
         any_number = input("Enter a random number: ")
+
+    STORY THREE
+
+        feeling_one = input("Enter a feeling: ")
+        city_one = input("Enter the name of a city: ")
+        noun_one = input("Enter a noun: ")
+        noun_two = input("Enter another noun: ")
+        adjective_one = input("Enter an adjective: ")
+        feeling_two = input("Enter a feeling: ")
+        verb_one = input("Enter a verb ending in -ing: ")
+        noun_three = input("Enter a noun: ")
+        verb_two = input("Enter another verb: ")
+        any_number = input("Enter a random number: ")
+        adjective_two = input("Enter another adjective: ")
+        city_two = input("Enter another name of a city: ")
+        adverb_one = input("Enter an adverb: ")
+        adjective_three = input("Enter another adjective: ")
+        noun_four = input("Enter another noun: ")
+        adjective_four = input("Enter another adjective: ")
+        plural_noun_one = input("Enter a plural noun: ")
+        feeling_three = input("Enter another feeling: ")
+        noun_three = input("Enter another noun: ")
+        clothing_plural = input("Enter an item of clothing (plural): ")
      """
 
