@@ -194,6 +194,8 @@ def play_madlibs():
                 'another verb ending in -ing', 'body part', 'another feeling', 'another noun',
                 'another noun', 'another verb ending in -ing', 'another feeling']
 
+         inputs = [input(f"Enter {word}: ") for word in words]
+
     # Story Template One of Eight
 
         story_five = f'''One {inputs[0]} night, I was walking home from a {inputs[1]} party when I suddenly felt like someone 
