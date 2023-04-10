@@ -8,6 +8,9 @@ print("It can make anyone the funniest person in the room, without even trying!"
 
 # Instructions
 response = input("Want to learn how to play? Y/N: ")
+while response.upper() not in ("Y", "N"):
+    print("Invalid response. Please enter Y or N.")
+    response = input("Want to learn how to play? Y/N: ")
 if response.upper() == "Y":
     print("\nWhat are Mad Libs?\n")
     print("Mad Libs are stories with words removed and replaced by blank spaces.")
@@ -20,12 +23,15 @@ if response.upper() == "Y":
     print("5. There are no winners or losers in this game, only laughter!\n")
 
     play_response = input("Ready to play? Y/N: ")
+    while play_response.upper() not in ("Y", "N"):
+        print("Invalid response. Please enter Y or N.")
+        play_response = input("Ready to play? Y/N: ")
     if play_response.upper() == "Y":
-        print("Let's get started")
+        print("Let's get started!")
     else: 
         print("Okay, maybe next time!")
 else:
-    print("Okay, maybe next time!")
+    print("Okay, maybe next time!")5
 
 # Story Title Selection 
 
@@ -194,7 +200,7 @@ def play_madlibs():
                 'another verb ending in -ing', 'body part', 'another feeling', 'another noun',
                 'another noun', 'another verb ending in -ing', 'another feeling']
 
-         inputs = [input(f"Enter {word}: ") for word in words]
+        inputs = [input(f"Enter {word}: ") for word in words]
 
     # Story Template One of Eight
 
