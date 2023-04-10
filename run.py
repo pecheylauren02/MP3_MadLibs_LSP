@@ -157,6 +157,10 @@ def play_madlibs():
     # User inputs Four of Eight
 
     elif selected_story_title == "One Interesting Vacation":
+
+        words = ['a season', 'an adjective', 'a country', 'another adjective', 'a feeling', 'an item of clothing', 'another adjective',
+              'adverb', 'noun', 'plural noun', 'adjective', 'adverb', 'noun', 'feeling', 'place', 'exclamation',
+              'adjective', 'verb ending in -ing', 'verb ending in -ing', 'noun']
         
         season_one = input("Enter a season: ")
         adjective_one = input("Enter an adjective: ")

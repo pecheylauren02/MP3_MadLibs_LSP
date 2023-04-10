@@ -63,5 +63,27 @@
         feeling_three = input("Enter another feeling: ")
         noun_three = input("Enter another noun: ")
         clothing_plural = input("Enter an item of clothing (plural): ")
+
+    STORY FOUR 
+        season_one = input("Enter a season: ")
+        adjective_one = input("Enter an adjective: ")
+        country = input("Enter the name of a country: ")
+        adjective_two = input("Enter another adjective: ")
+        feeling_one = input("Enter a feeling: ")
+        clothing = input("Enter an item of clothing: ")
+        adjective_three = input("Enter another adjective: ")
+        adverb_one = input("Enter an adverb: ")
+        noun_one = input("Enter a noun: ")
+        plural_noun_one = input("Enter a plural noun: ")
+        adjective_four = input("Enter another adjective: ")
+        adverb_one = input("Enter an adverb: ")
+        noun_three = input("Enter another noun: ")
+        feeling_two = input("Enter another feeling: ")
+        place_one = input("Enter a place: ")
+        exclamation_one = input("Enter an exclamation, e.g. 'OMG!': ")
+        adjective_five = input("Enter another adjective: ")
+        verb_one = input("Enter a verb ending in -ing: ")
+        verb_two = input("Enter another verb ending in -ing: ")
+        noun_four = input("Enter another noun: ")
      """
 
