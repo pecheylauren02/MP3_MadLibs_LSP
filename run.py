@@ -166,21 +166,21 @@ def play_madlibs():
 
     # Story Template Four of Eight
 
-        story_four = f'''Last {season_one}, I decided to take a {adjective_one} vacation to {country}, and boy was it 
-        {adjective_two}! On the first day of my trip, I woke up feeling {feeling_one} and ready for adventure. I threw 
-        on my {clothing} and headed out into the {adjective_three} unknown.
+        story_four = f'''Last {inputs[0]}, I decided to take a {inputs[1]} vacation to {inputs[2]}, and boy was it 
+        {inputs[3]}! On the first day of my trip, I woke up feeling {inputs[4]} and ready for adventure. I threw 
+        on my {inputs[5]} and headed out into the {inputs[6]} unknown.
         
-        As I walked {adverb_one} through the streets, I came across a handsome {noun_one} who was juggling {plural_noun_one}. 
-        I couldn't help but stop and watch in amazement as they threw the {plural_noun_one} higher and higher into the air.
-        After the {noun_one} finished their act, I decided to continue my {adjective_three} journey. But before I could make 
-        it very far, a {adjective_four} bird flew {adverb_one} right into my {noun_three}! I was so startled that I nearly 
+        As I walked {inputs[7]} through the streets, I came across a handsome {inputs[8]} who was juggling {inputs[9]}. 
+        I couldn't help but stop and watch in amazement as they threw the {inputs[9]} higher and higher into the air.
+        After the {inputs[8]} finished their act, I decided to continue my {inputs[6]} journey. But before I could make 
+        it very far, a {inputs[10]} bird flew {inputs[11]} right into my {inputs[12]}! I was so startled that I nearly 
         fell over, but luckily the bird flew away unharmed.
 
-        Feeling a bit shaken and {feeling_two}, I decided to take a break at a nearby {place_one}. I ordered a {adjective_four} 
-        drink and sat down to people-watch. That's when I heard a loud {exclamation_one} coming from outside. I opened my 
-        window and saw that a {adjective_five} parade was going by! I quickly got dressed and joined the parade, 
-        {verb_one} and {verb_two} along to the music. It was so much fun that I almost forgot about my 
-        {noun_four}! I can't wait to see where my next crazy adventure takes me!'''
+        Feeling a bit shaken and {inputs[13]}, I decided to take a break at a nearby {inputs[14]}. I ordered a {inputs[10]} 
+        drink and sat down to people-watch. That's when I heard a loud {inputs[15]} coming from outside. I opened my 
+        window and saw that a {inputs[16]} parade was going by! I quickly got dressed and joined the parade, 
+        {inputs[17]} and {inputs[18]} along to the music. It was so much fun that I almost forgot about my 
+        {inputs[19]}! I can't wait to see where my next crazy adventure takes me!'''
 
         print(story_four)
 
