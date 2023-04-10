@@ -16,7 +16,7 @@ This project has been built using only Python, as an educational Project offered
 - In this version of the game, the player will be given the opportunity to select a story title from a list of titles displayed to them in a random order. 
 - Without knowing the story, the player is required to fill in the blanks with nouns, verbs, adjectives, colours, adverbs, exclamations, and many more! 
 - These words are inserted into the blank spaces, and after the player has completed all of the prompts, the full story is displayed to them with their inputs. 
-- Because the player is not aware of the context of the story beforehand, their responses generate hilarious results which will entertain them and whoever they read it aloud to! 
+- Because the player is not aware of the context of the story beforehand, their inputs generate hilarious results which will entertain them and whoever they read it aloud to! 
 
 ## Table of Contents
 
@@ -80,7 +80,7 @@ This back-end python project was planned and developed using principles of User 
 The Maddest Mad Libs game was built as a milestone project for my Diploma in Fullstack Software Development with [Code Institute](https://codeinstitute.net/global/full-stack-software-development-diploma/). It is an interactive word game designed to entertain users of all ages and backgrounds who want to be entertained while with friends or at a party. Despite this being built for educational reasons, it was still treated as a real-world application for potential clients interested in learning about their personalities in a fun, engaging way. Thus, this client's goals would be:
 
 - Engaging the players by allowing them to enter prompts of their choice
-- Entertaining players by generating random stories with their unique responses
+- Entertaining players by generating random stories with their unique inputs
 - Ensuring that the instructions and prompts are clear, and the game is simple to navigate
 
 #### Target Audience

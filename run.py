@@ -194,44 +194,24 @@ def play_madlibs():
                 'another verb ending in -ing', 'body part', 'another feeling', 'another noun',
                 'another noun', 'another verb ending in -ing', 'another feeling']
 
-        adjective_one = input("Enter an adjective: ")
-        noun_one = input("Enter a noun: ")
-        verb_one = input("Enter a verb ending in -ing: ")
-        feeling_one = input("Enter a feeling: ")
-        adjective_two = input("Enter an adjective: ")
-        adjective_three = input("Enter another adjective: ")
-        adverb_one = input("Enter an adverb: ")
-        adverb_two = input("Enter another adverb: ")
-        clothing_one = input("Enter an item of clothing: ")
-        noun_two = input("Enter another noun: ")
-        adjective_four = input("Enter another adjective: ")
-        clothing_two = input("Enter another item of clothing: ")
-        verb_two = input("Enter another verb ending in -ing: ")
-        body_part = input("Enter a body part: ")
-        feeling_one = input("Enter a feeling: ")
-        noun_two = input("Enter another noun: ")
-        noun_three = input("Enter another noun: ")
-        verb_three = input("Enter another verb ending in -ing: ")
-        feeling_two = input("Enter another feeling: ")
-
     # Story Template One of Eight
 
-        story_five = f'''One {adjective_one} night, I was walking home from a {noun_one} party when I suddenly felt like someone 
-        was {verb_one} me. I turned around, but there was no one there. Feeling a bit {feeling_one}, I quickened my pace 
-        and started walking faster. But then, I heard a {adjective_two} noise coming from behind me. I turned around again, and 
-        this time I saw a {adjective_three} figure lurking {adverb_one} in the shadows.
+        story_five = f'''One {inputs[0]} night, I was walking home from a {inputs[1]} party when I suddenly felt like someone 
+        was {inputs[2]} me. I turned around, but there was no one there. Feeling a bit {inputs[3]}, I quickened my pace 
+        and started walking faster. But then, I heard a {inputs[4]} noise coming from behind me. I turned around again, and 
+        this time I saw a {inputs[5]} figure lurking {inputs[6]} in the shadows.
+        
+        I tried to run {inputs[7]}, but my {inputs[8]} got caught on a {inputs[1]}, and I fell to the ground. The 
+        {inputs[5]} figure approached me slowly, and I realized that it was actually a {inputs[9]} wearing a {inputs[10]} 
+        {inputs[11]}. I screamed for help, but no one seemed to hear me. The {inputs[9]} just stood there, {inputs[12]} at 
+        me with its tiny {inputs[13]}.
 
-        I tried to run {adverb_two}, but my {clothing_one} got caught on a {noun_one}, and I fell to the ground. The 
-        {adjective_three} figure approached me slowly, and I realized that it was actually a {noun_two} wearing a {adjective_four} 
-        {clothing_two}. I screamed for help, but no one seemed to hear me. The {noun_two} just stood there, {verb_two} at 
-        me with its tiny {body_part}.
-
-        Feeling {feeling_one}, I tried to think of a way to escape. That's when I remembered the {noun_one} that I had in my {noun_three}. 
-        I pulled it out and aimed it at the {noun_two}, hoping that it would scare it away. To my surprise, the {noun_two} started 
-        {verb_three} and ran away as fast as it could. I got up and ran home as quickly as possible, feeling {feeling_two} 
+        Feeling {inputs[3]}, I tried to think of a way to escape. That's when I remembered the {inputs[1]} that I had in my {inputs[14]}. 
+        I pulled it out and aimed it at the {inputs[9]}, hoping that it would scare it away. To my surprise, the {inputs[9]} started 
+        {inputs[15]} and ran away as fast as it could. I got up and ran home as quickly as possible, feeling {inputs[16]} 
         the entire time.
 
-        As I lay in bed that night, I couldn't help but wonder what other {adjective_one} encounters I might have in the future. 
+        As I lay in bed that night, I couldn't help but wonder what other {inputs[0]} encounters I might have in the future. 
         But for now, I was just grateful to be safe and sound in bed.'''
 
         print(story_five)
