@@ -26,12 +26,13 @@ if response.upper() == "Y":
     while play_response.upper() not in ("Y", "N"):
         print("Invalid response. Please enter Y or N.")
         play_response = input("Ready to play? Y/N: ")
-    if play_response.upper() == "Y":
-        print("Let's get started!")
-    else: 
+    if play_response.upper() == "N":
         print("Okay, maybe next time!")
+        exit()
+    else: 
+        print("Let's get started!")
 else:
-    print("Okay, maybe next time!")5
+    print("Okay, maybe next time!")
 
 # Story Title Selection 
 
