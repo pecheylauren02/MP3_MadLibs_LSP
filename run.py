@@ -137,14 +137,14 @@ def play_madlibs():
 
     # Story Template Three of Eight
 
-        story_three = f'''It was just another {user_inputs[0]} day in the office in {user_inputs[1]} when I arrived at my 
-        large {user_inputs[2]}. I sat down at my {user_inputs[2]} and opened up my {user_inputs[3]} to start my {user_inputs[4]} work. 
-        But before I could even begin, my {user_inputs[5]} coworker walked in and started {user_inputs[6]} loudly 
-        about their {user_inputs[7]} problems. I tried to tune them out, but their voice was so annoying that I couldn't {user_inputs[8]}.
+        story_three = f'''It was just another {inputs[0]} day in the office in {inputs[1]} when I arrived at my 
+        large {inputs[2]}. I sat down at my {inputs[2]} and opened up my {inputs[3]} to start my {inputs[4]} work. 
+        But before I could even begin, my {inputs[5]} coworker walked in and started {inputs[6]} loudly 
+        about their {inputs[7]} problems. I tried to tune them out, but their voice was so annoying that I couldn't {inputs[8]}.
                 
-        After what felt like {any_number} hours of their constant {verb_one}, I decided to take a {adjective_two} 
-        break and visit the office in {city_two}.As I walked {adverb_one} down the hallway, I noticed a {adjective_three} 
-        smell coming from the break room. I cautiously peeked inside, and to my horror, I saw that someone had left their {noun_four} 
+        After what felt like {inputs[9]} hours of their constant {inputs[6]}, I decided to take a {inputs[10]} 
+        break and visit the office in {inputs[11]}.As I walked {inputs[12]} down the hallway, I noticed a {inputs[13]} 
+        smell coming from the break room. I cautiously peeked inside, and to my horror, I saw that someone had left their {inputs[14]} 
         in the microwave for way too long.
         
         The {noun_four} was now a {adjective_four} mess, and the entire room smelled like burnt {plural_noun_one}.
