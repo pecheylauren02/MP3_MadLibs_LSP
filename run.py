@@ -188,6 +188,12 @@ def play_madlibs():
 
     elif selected_story_title == "A Scary Encounter":
 
+        words = ['adjective', 'noun', 'verb ending in -ing', 'feeling',
+                'adjective', 'another adjective', 'adverb', 'another adverb',
+                'item of clothing', 'another noun', 'another adjective', 'another item of clothing',
+                'another verb ending in -ing', 'body part', 'another feeling', 'another noun',
+                'another noun', 'another verb ending in -ing', 'another feeling']
+
         adjective_one = input("Enter an adjective: ")
         noun_one = input("Enter a noun: ")
         verb_one = input("Enter a verb ending in -ing: ")

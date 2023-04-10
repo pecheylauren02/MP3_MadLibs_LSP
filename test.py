@@ -85,5 +85,27 @@
         verb_one = input("Enter a verb ending in -ing: ")
         verb_two = input("Enter another verb ending in -ing: ")
         noun_four = input("Enter another noun: ")
+
+    STORY FIVE 
+        adjective_one = input("Enter an adjective: ")
+        noun_one = input("Enter a noun: ")
+        verb_one = input("Enter a verb ending in -ing: ")
+        feeling_one = input("Enter a feeling: ")
+        adjective_two = input("Enter an adjective: ")
+        adjective_three = input("Enter another adjective: ")
+        adverb_one = input("Enter an adverb: ")
+        adverb_two = input("Enter another adverb: ")
+        clothing_one = input("Enter an item of clothing: ")
+        noun_two = input("Enter another noun: ")
+        adjective_four = input("Enter another adjective: ")
+        clothing_two = input("Enter another item of clothing: ")
+        verb_two = input("Enter another verb ending in -ing: ")
+        body_part = input("Enter a body part: ")
+        feeling_one = input("Enter a feeling: ")
+        noun_two = input("Enter another noun: ")
+        noun_three = input("Enter another noun: ")
+        verb_three = input("Enter another verb ending in -ing: ")
+        feeling_two = input("Enter another feeling: ")
+
      """
 
