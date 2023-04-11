@@ -311,9 +311,15 @@ def play_madlibs():
                 'another verb ending in -ing', 'another adjective', 'another plural noun', 'another verb ending in -ing']
 
         inputs = [input(f"Enter {word}: ") for word in words]
+        
+        inputs = [input(f"Enter {word}: ") for word in words]
 
     # Story Template One of Eight
 
+        story_eight = f"""Last night I went to the craziest party ever. It was so {inputs[0]} that my {inputs[1]}
+        is still recovering from it. When I arrived, the music was {inputs[2]} and the dance floor was packed with 
+        {inputs[3]} people and wild {inputs[4]}. I started {inputs[5]} to the beat and before I knew 
+        it, I was {inputs[6]} with a group of {inputs[7]} strangers.
         story_eight = f"""Last night I went to the craziest party ever. It was so {inputs[0]} that my {inputs[1]}
         is still recovering from it. When I arrived, the music was {inputs[2]} and the dance floor was packed with 
         {inputs[3]} people and wild {inputs[4]}. I started {inputs[5]} to the beat and before I knew 
@@ -322,7 +328,14 @@ def play_madlibs():
         Things really got out of hand when someone suggested we play {inputs[8]} pong. I've never been good at that game, 
         but I managed to {inputs[9]} {inputs[10]} a few shots and impress everyone. As the night went on, more and more 
         people and {inputs[4]} showed up. 
+        Things really got out of hand when someone suggested we play {inputs[8]} pong. I've never been good at that game, 
+        but I managed to {inputs[9]} {inputs[10]} a few shots and impress everyone. As the night went on, more and more 
+        people and {inputs[4]} showed up. 
         
+        There were {inputs[11]} characters in crazy costumes, some wearing {inputs[12]}{inputs[13]}. I even saw one 
+        magician trying to juggle {inputs[14]}{inputs[15]} while riding a unicycle. A lot of the night became blurry 
+        after that, but I found myself {inputs[16]}{inputs[17]} on a couch with a {inputs[18]} person who I had 
+        never met before. We started talking about {inputs[19]} and ended up {inputs[20]} all night.
         There were {inputs[11]} characters in crazy costumes, some wearing {inputs[12]}{inputs[13]}. I even saw one 
         magician trying to juggle {inputs[14]}{inputs[15]} while riding a unicycle. A lot of the night became blurry 
         after that, but I found myself {inputs[16]}{inputs[17]} on a couch with a {inputs[18]} person who I had 
