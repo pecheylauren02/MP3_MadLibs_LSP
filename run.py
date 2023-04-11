@@ -301,7 +301,8 @@ def play_madlibs():
         
         As the day came to an end, I felt happy and {inputs[19]}. So if you're feeling {inputs[19]} about your first day 
         of school, just remember that it's a new adventure full of surprises and {inputs[1]} moments."""
-    print(story_seven)
+        
+        print(story_seven)
 
 
     # User inputs Eight of Eight
