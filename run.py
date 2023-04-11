@@ -282,47 +282,26 @@ def play_madlibs():
           'another plural noun', 'another plural noun', 'another verb ending in -ing', 'the name of someone you know',
           'your favourite superhero', 'another plural noun', 'another plural noun', 'another adjective']
 
-
-        feeling_one = input("Enter a feeling: ")
-        adjective_one = input("Enter an adjective: ")
-        adverb_one = input("Enter an adverb: ")
-        noun_one = input("Enter a noun: ")
-        adjective_two = input("Enter another adjective: ")
-        plural_noun_one = input("Enter a plural noun: ")
-        verb_one = input("Enter a verb ending in -ing: ")
-        verb_two = input("Enter another verb ending in -ing: ")
-        verb_three = input("Enter another verb ending in -ing: ")
-        noun_three = input("Enter another noun: ")
-        adjective_three = input("Enter another adjective: ")
-        place = input("Enter a place: ")
-        plural_noun_two = input("Enter another plural noun: ")
-        plural_noun_three = input("Enter another plural noun: ")
-        verb_four = input("Enter another verb ending in -ing: ")
-        name = input("Enter the name of someone you know: ")
-        superhero = input("Enter the name of your favourite superhero: ")
-        plural_noun_four = input("Enter another plural noun: ")
-        plural_noun_five = input("Enter another plural noun: ")
-        adjective_four = input("Enter another adjective: ")
+        inputs = [input(f"Enter {word}: ") for word in words]
 
         story_seven = f"""
-        On my first day of school, I felt {feeling_one} as I walked into the classroom. My {adjective_one} teacher greeted 
-        me with a big smile and {adverb_one} showed me to my {noun_one}. As I sat down, I couldn't help but notice the 
-        {adjective_two} students and {plural_noun_one} around me. Some were {verb_one}, while others were 
-        {verb_two} and {verb_three} all over the classroom.
+        On my first day of school, I felt {inputs[0]} as I walked into the classroom. My {inputs[1]} teacher greeted 
+        me with a big smile and {inputs[2]} showed me to my {inputs[3]}. As I sat down, I couldn't help but notice the 
+        {inputs[4]} students and {inputs[5]} around me. Some were {inputs[6]}, while others were {inputs[7]} and {inputs[8]} 
+        all over the classroom.
         
-        Just as the teacher was about to start the lesson, an enormous {noun_three} burst into the room. It was a 
-        {adjective_three} {noun_three} who had lost their way to the {place}. The teacher quickly helped them find their way, 
+        Just as the teacher was about to start the lesson, an enormous {inputs[9]} burst into the room. It was a 
+        {inputs[10]} {inputs[9]} who had lost their way to the {inputs[11]}. The teacher quickly helped them find their way, 
         and we all had a good laugh about it.
         
-        As the day went on, we learned about {plural_noun_two} and {plural_noun_three}. No matter what we were learning, we 
-        were always {verb_four} and having a good time. During recess, I made some new friends called {name} and 
-        {superhero} who showed me their cool {plural_noun_four} and {plural_noun_five}. We played games and laughed so hard 
-        that we almost forgot we were at school.
+        As the day went on, we learned about {inputs[12]} and {inputs[13]}. No matter what we were learning, we were always 
+        {inputs[14]} and having a good time. During recess, I made some new friends called {inputs[15]} and {inputs[16]} who 
+        showed me their cool {inputs[17]} and {inputs[18]}. We played games and laughed so hard that we almost forgot we were 
+        at school.
         
-        As the day came to an end, I felt happy and {adjective_four}. So if you're feeling {adjective_four} about your first 
-        day of school, just remember that it's a new adventure full of surprises and {adjective_one} moments."""
-
-        print(story_seven)
+        As the day came to an end, I felt happy and {inputs[19]}. So if you're feeling {inputs[19]} about your first day 
+        of school, just remember that it's a new adventure full of surprises and {inputs[1]} moments."""
+    print(story_seven)
 
 
     # User inputs Eight of Eight

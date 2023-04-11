@@ -107,6 +107,27 @@
         verb_three = input("Enter another verb ending in -ing: ")
         feeling_two = input("Enter another feeling: ")
 
+    STORY SEVEN 
 
+    feeling_one = input("Enter a feeling: ")
+        adjective_one = input("Enter an adjective: ")
+        adverb_one = input("Enter an adverb: ")
+        noun_one = input("Enter a noun: ")
+        adjective_two = input("Enter another adjective: ")
+        plural_noun_one = input("Enter a plural noun: ")
+        verb_one = input("Enter a verb ending in -ing: ")
+        verb_two = input("Enter another verb ending in -ing: ")
+        verb_three = input("Enter another verb ending in -ing: ")
+        noun_three = input("Enter another noun: ")
+        adjective_three = input("Enter another adjective: ")
+        place = input("Enter a place: ")
+        plural_noun_two = input("Enter another plural noun: ")
+        plural_noun_three = input("Enter another plural noun: ")
+        verb_four = input("Enter another verb ending in -ing: ")
+        name = input("Enter the name of someone you know: ")
+        superhero = input("Enter the name of your favourite superhero: ")
+        plural_noun_four = input("Enter another plural noun: ")
+        plural_noun_five = input("Enter another plural noun: ")
+        adjective_four = input("Enter another adjective: ")
      """
 
