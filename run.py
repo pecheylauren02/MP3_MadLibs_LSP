@@ -229,6 +229,11 @@ def play_madlibs():
 
     elif selected_story_title == "A Day at the Beach":
 
+        words = ['adjective', 'type of holiday', 'adjective', 'plural noun', 'noun', 
+        'plural noun', 'adjective', 'verb', 'adjective', 'verb ending in -ing', 
+        'body part', 'noun', 'place', 'adjective', 'noun', 'adverb', 'adjective', 
+        'noun', 'type of animal', 'verb', 'adverb', 'random number']
+
         adjective_one = input("Enter an adjective: ")
         type_of_holiday = input("Enter a type of holiday, e.g. Christmas: ")
         adjective_two = input("Enter another adjective: ")
@@ -303,7 +308,6 @@ def play_madlibs():
         of school, just remember that it's a new adventure full of surprises and {inputs[1]} moments."""
         
         print(story_seven)
-
 
     # User inputs Eight of Eight
 

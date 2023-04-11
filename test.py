@@ -107,6 +107,30 @@
         verb_three = input("Enter another verb ending in -ing: ")
         feeling_two = input("Enter another feeling: ")
 
+    STORY SIX
+        adjective_one = input("Enter an adjective: ")
+        type_of_holiday = input("Enter a type of holiday, e.g. Christmas: ")
+        adjective_two = input("Enter another adjective: ")
+        plural_noun_one = input("Enter a plural noun: ")
+        noun_two = input("Enter another noun: ")
+        plural_noun_two = input("Enter another plural noun: ")
+        adjective_three = input("Enter another adjective: ")
+        verb_one = input("Enter a verb: ")
+        adjective_four = input("Enter another adjective: ")
+        verb_two = input("Enter a verb ending in -ing: ")
+        body_part = input("Enter a body part: ")
+        noun_four = input("Enter another noun: ")
+        place_one = input("Enter a place: ")
+        adjective_five = input("Enter another adjective: ")
+        noun_five = input("Enter another noun: ")
+        adverb_one = input("Enter an adverb: ")
+        adjective_six = input("Enter another adjective: ")
+        noun_six = input("Enter another noun: ")
+        animal_one = input("Enter a type of animal: ")
+        verb_three = input("Enter another verb: ")
+        adverb_two = input("Enter another adverb: ")
+        number = input("Enter a random number: ")
+
     STORY SEVEN 
 
     feeling_one = input("Enter a feeling: ")
