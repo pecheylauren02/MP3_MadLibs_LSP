@@ -2,11 +2,18 @@
 import sys
 import time
 
-"""# Welcome message
-print("Welcome to the Maddest Game of Mad Libs you will ever play!")
-print("If you are looking for a night of laughter and fun with your friends and family, then look no further!")
-print("Mad Libs is one of the world's greatest word games.")
-print("It can make anyone the funniest person in the room, without even trying!") """
+# Welcome message
+
+def typewriter_print(text):
+    for character in text:
+        sys.stdout.write(character)
+        sys.stdout.flush()
+        time.sleep(0.05)
+
+typewriter_print("Welcome to the Maddest Game of Mad Libs you will ever play!")
+typewriter_print("If you are looking for a night of laughter and fun with your friends and family, then look no further!")
+typewriter_print("Mad Libs is one of the world's greatest word games.")
+typewriter_print("It can make anyone the funniest person in the room, without even trying!")
 
 # Instructions
 response = input("Want to learn how to play? Y/N: ")
