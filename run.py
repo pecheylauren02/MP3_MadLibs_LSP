@@ -296,6 +296,11 @@ def play_madlibs():
 
     elif selected_story_title == "A Wild Party":
 
+        words = ['an adjective', 'a body part', 'another adjective', 'another adjective', 'a plural noun', 'a verb ending in -ing',
+                'another verb ending in -ing', 'another adjective', 'a noun', 'an adverb', 'another verb ending in -ing', 'another adjective',
+                'a colour', 'an item of clothing (plural)', 'a random number', 'a plural noun', 'an adverb',
+                'another verb ending in -ing', 'another adjective', 'another plural noun', 'another verb ending in -ing']
+
         adjective_one = input("Enter an adjective: ")
         body_part = input("Enter the name of a body part: ")
         adjective_two = input("Enter another adjective: ")
