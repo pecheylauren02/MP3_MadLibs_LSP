@@ -1,10 +1,12 @@
 # imported modules
+import sys
+import time
 
-# Welcome message
+"""# Welcome message
 print("Welcome to the Maddest Game of Mad Libs you will ever play!")
 print("If you are looking for a night of laughter and fun with your friends and family, then look no further!")
 print("Mad Libs is one of the world's greatest word games.")
-print("It can make anyone the funniest person in the room, without even trying!") 
+print("It can make anyone the funniest person in the room, without even trying!") """
 
 # Instructions
 response = input("Want to learn how to play? Y/N: ")
@@ -302,7 +304,7 @@ def play_madlibs():
                 'another verb ending in -ing', 'another adjective', 'another plural noun', 'another verb ending in -ing']
 
         inputs = [input(f"Enter {word}: ") for word in words]
-        
+
     # Story Template One of Eight
 
         story_eight = f"""Last night I went to the craziest party ever. It was so {inputs[0]} that my {inputs[1]}
