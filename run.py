@@ -311,15 +311,9 @@ def play_madlibs():
                 'another verb ending in -ing', 'another adjective', 'another plural noun', 'another verb ending in -ing']
 
         inputs = [input(f"Enter {word}: ") for word in words]
-        
-        inputs = [input(f"Enter {word}: ") for word in words]
 
     # Story Template One of Eight
 
-        story_eight = f"""Last night I went to the craziest party ever. It was so {inputs[0]} that my {inputs[1]}
-        is still recovering from it. When I arrived, the music was {inputs[2]} and the dance floor was packed with 
-        {inputs[3]} people and wild {inputs[4]}. I started {inputs[5]} to the beat and before I knew 
-        it, I was {inputs[6]} with a group of {inputs[7]} strangers.
         story_eight = f"""Last night I went to the craziest party ever. It was so {inputs[0]} that my {inputs[1]}
         is still recovering from it. When I arrived, the music was {inputs[2]} and the dance floor was packed with 
         {inputs[3]} people and wild {inputs[4]}. I started {inputs[5]} to the beat and before I knew 
