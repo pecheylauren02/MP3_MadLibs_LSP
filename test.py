@@ -153,5 +153,29 @@
         plural_noun_four = input("Enter another plural noun: ")
         plural_noun_five = input("Enter another plural noun: ")
         adjective_four = input("Enter another adjective: ")
+
+    STORY EIGHT
+
+        adjective_one = input("Enter an adjective: ")
+        body_part = input("Enter the name of a body part: ")
+        adjective_two = input("Enter another adjective: ")
+        adjective_three = input("Enter another adjective: ")
+        plural_noun_one = input("Enter a plural noun: ")
+        verb_one = input("Enter a verb ending in -ing: ")
+        verb_two = input("Enter another verb ending in -ing: ")
+        adjective_four = input("Enter another adjective: ")
+        noun_one = input("Enter a noun: ")
+        adverb_one = input("Enter an adverb: ")
+        verb_three = input("Enter another verb ending in -ing: ")
+        adjective_five = input("Enter another adjective: ")
+        colour = input("Enter a colour: ")
+        clothing_plural = input("Enter an item of clothing(plural): ")
+        number = input("Enter a random number: ")
+        plural_noun_two = input("Enter another plural noun: ")
+        adverb_two = input("Enter another adverb: ")
+        verb_four = input("Enter another verb ending in -ing: ")
+        adjective_six = input("Enter another adjective: ")
+        plural_noun_three = input("Enter another plural noun: ")
+        verb_five = input("Enter another verb ending in -ing: ")
      """
 
