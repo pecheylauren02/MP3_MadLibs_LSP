@@ -277,6 +277,12 @@ def play_madlibs():
 
     elif selected_story_title == "My First Day at School":
 
+        words = ['a feeling', 'an adjective', 'an adverb', 'a noun', 'another adjective', 'a plural noun', 'a verb ending in -ing',
+          'another verb ending in -ing', 'another verb ending in -ing', 'another noun', 'another adjective', 'a place',
+          'another plural noun', 'another plural noun', 'another verb ending in -ing', 'the name of someone you know',
+          'your favourite superhero', 'another plural noun', 'another plural noun', 'another adjective']
+
+
         feeling_one = input("Enter a feeling: ")
         adjective_one = input("Enter an adjective: ")
         adverb_one = input("Enter an adverb: ")
