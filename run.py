@@ -10,39 +10,41 @@ def typewriter_print(text):
         sys.stdout.flush()
         time.sleep(0.05)
 
-typewriter_print("Welcome to the Maddest Game of Mad Libs you will ever play!")
-typewriter_print("If you are looking for a night of laughter and fun with your friends and family, then look no further!")
-typewriter_print("Mad Libs is one of the world's greatest word games.")
-typewriter_print("It can make anyone the funniest person in the room, without even trying!")
+def start_game():
 
-# Instructions
-response = input("Want to learn how to play? Y/N: ")
-while response.upper() not in ("Y", "N"):
-    print("Invalid response. Please enter Y or N.")
+    typewriter_print("Welcome to the Maddest Game of Mad Libs you will ever play!")
+    typewriter_print("If you are looking for a night of laughter and fun with your friends and family, then look no further!")
+    typewriter_print("Mad Libs is one of the world's greatest word games.")
+    typewriter_print("It can make anyone the funniest person in the room, without even trying!")
+
+    # Instructions
     response = input("Want to learn how to play? Y/N: ")
-if response.upper() == "Y":
-    print("\nWhat are Mad Libs?\n")
-    print("Mad Libs are stories with words removed and replaced by blank spaces.")
-    print("\nHere's how to play:")
-    print("Choose a story title from the list given, by entering the number of the title.")
-    print("1. You will be given a total of 20 prompts, asking you to enter a word, without seeing the story beforehand. E.g. 'Enter a noun: '")
-    print("2. When you see a prompt, enter your answer. The prompts will ask you for a mix of adjectives, nouns, exclamations, colours, adverbs, and more!")
-    print("3. When you finish entering all of the prompts correctly, these words will be inserted into the blanks of the story title you chose.")
-    print("4. Your story will then be displayed for you to read aloud with hilarious results.")
-    print("5. There are no winners or losers in this game, only laughter!\n")
-
-    play_response = input("Ready to play? Y/N: ")
-    while play_response.upper() not in ("Y", "N"):
+    while response.upper() not in ("Y", "N"):
         print("Invalid response. Please enter Y or N.")
-        play_response = input("Ready to play? Y/N: ")
-    if play_response.upper() == "N":
-        print("Okay, maybe next time!")
-        exit()
-    else: 
-        print("Let's get started!")
-else:
-    print("Okay, maybe next time!")
+        response = input("Want to learn how to play? Y/N: ")
+    if response.upper() == "Y":
+        print("\nWhat are Mad Libs?\n")
+        print("Mad Libs are stories with words removed and replaced by blank spaces.")
+        print("\nHere's how to play:")
+        print("Choose a story title from the list given, by entering the number of the title.")
+        print("1. You will be given a total of 20 prompts, asking you to enter a word, without seeing the story beforehand. E.g. 'Enter a noun: '")
+        print("2. When you see a prompt, enter your answer. The prompts will ask you for a mix of adjectives, nouns, exclamations, colours, adverbs, and more!")
+        print("3. When you finish entering all of the prompts correctly, these words will be inserted into the blanks of the story title you chose.")
+        print("4. Your story will then be displayed for you to read aloud with hilarious results.")
+        print("5. There are no winners or losers in this game, only laughter!\n")
 
+        play_response = input("Ready to play? Y/N: ")
+        while play_response.upper() not in ("Y", "N"):
+            print("Invalid response. Please enter Y or N.")
+            play_response = input("Ready to play? Y/N: ")
+        if play_response.upper() == "N":
+            print("Okay, maybe next time!")
+        else:
+            print("Let's get started!")
+            play_madlibs()
+    else:
+        print("Okay, maybe next time!")
+    
 # Story Title Selection 
 
 # Define the list of story titles
@@ -339,6 +341,8 @@ def play_madlibs():
         never forget!"""
 
         print(story_eight)
+        
+if __name__ == "__main__":
+    start_game()
 
 
-play_madlibs()
