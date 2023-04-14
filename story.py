@@ -46,8 +46,8 @@ STORIES = [
               {1} stumbled upon a {inputs[5]} {inputs[6]} who was {7} with
               a {8} {9}. "Hey there, {10}!" exclaimed the {0} {1}. "Would you
               like to join us in our {11} {2}?"\n
-              Without hesitation, the {5} {6} agreed and soon found themselves 
-              {2} with the {5} {6} and their {8} {9}. They {12} and {12}, and 
+              Without hesitation, the {5} {6} agreed and soon found themselves
+              {2} with the {5} {6} and their {8} {9}. They {12} and {12}, and
               even did a little {13} together.\n
               But then, out of nowhere, a {11} {15} appeared and started
               throwing things {14} at them! The {0} {1} and the {5} {6} were
@@ -77,29 +77,50 @@ STORIES = [
                   annoying that I couldn't {8}. After what felt like {9}
                   hours of their constant {6}, I decided to take a {10}
                   break and visit the office in {11}.As I walked {12} down
-                  the hallway, I noticed a {13} smell coming from the 
+                  the hallway, I noticed a {13} smell coming from the
                   break room.\n
                   I cautiously peeked inside, and to my horror, I saw that
-                  someone had left their {14} in the microwave for way too 
-                  long. The {14} was now a {15} mess, and the entire 
+                  someone had left their {14} in the microwave for way too
+                  long. The {14} was now a {15} mess, and the entire
                   room smelled like burnt {16}.\n Feeling {17}, I quickly
                   made my way back to my {2}, only to find that my {3}
                   had mysteriously disappeared! After a few minutes
                   of searching {12}, I finally found it hiding under a
-                  pile of dirty {18}. \n
+                  pile of dirty {18}.\n
                   So if you're ever feeling bored at work, just remember
                   to keep your eyes and ears open for any weird moments
                   that might come your way. You never know what kind of
                   {19} might be waiting just around the corner in {1}!"""
     },
     {
-      'title': ' '
+      'title': 'One Interesting Vacation',
       'words': ['a season', 'an adjective', 'a country', 'another adjective',
                 'a feeling', 'an item of clothing', 'another adjective',
                 'an adverb', 'a noun', 'a plural noun', 'another adjective',
                 'an adverb', 'another noun', 'another feeling', 'a place',
                 'an exclamation', 'another adjective', 'a verb ending in -ing',
                 'another verb ending in -ing', 'another noun'],
-                
+      'text': f"""Last {0}, I decided to take a {1} vacation to {2},
+              and boy was it {3}! On the first day of my trip, I woke
+              up feeling {4} and ready for adventure. I threw
+              on my {5} and headed out into the {6} unknown.\n
+              As I walked {7} through the streets, I came across
+              a handsome {8} who was juggling {9}. I couldn't help but
+              stop and watch in amazement as they threw the {9} higher
+              and higher into the air.\n
+              After the {8} finished their act, I decided to continue
+              my {6} journey. But before I could make it very far,
+              a {10} bird flew {11} right into my {12}! I was so
+              startled that I nearly fell over, but luckily the
+              bird flew away unharmed.\n
+              Feeling a bit shaken and {13}, I decided to take a
+              break at a nearby {14}. I ordered a {10} drink and
+              sat down to people-watch. That's when I heard a loud
+              {15} coming from outside. I opened my window and saw
+              that a {16} parade was going by! I quickly got dressed
+              and joined the parade, {17} and {18} along to the music.
+              It was so much fun that I almost forgot about my
+              {19}! I can't wait to see where my next crazy adventure
+              takes me!"""
     }
 ]
