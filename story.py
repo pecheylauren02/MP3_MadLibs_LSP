@@ -32,4 +32,14 @@ STORIES = [
                 what kind of {7} and {4} things you might find
                 along the way!"""
     },
+    {
+      'title': 'A Strange Fairytale',
+      'words': ['an adjective', 'a noun', 'a verb ending in -ing',
+                'another verb', 'a place', 'another adjective',
+                'another noun', 'another verb', 'another adjective',
+                'another noun', 'an exclamation', 'another adjective',
+                'a verb in the past tense', 'another verb ending in -ing',
+                'an adverb', 'another noun', 'another verb in the past tense',
+                'a random date', 'a random number']
+    }
 ]
