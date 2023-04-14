@@ -91,5 +91,15 @@ STORIES = [
                   to keep your eyes and ears open for any weird moments
                   that might come your way. You never know what kind of
                   {19} might be waiting just around the corner in {1}!"""
+    },
+    {
+      'title': ' '
+      'words': ['a season', 'an adjective', 'a country', 'another adjective',
+                'a feeling', 'an item of clothing', 'another adjective',
+                'an adverb', 'a noun', 'a plural noun', 'another adjective',
+                'an adverb', 'another noun', 'another feeling', 'a place',
+                'an exclamation', 'another adjective', 'a verb ending in -ing',
+                'another verb ending in -ing', 'another noun'],
+                
     }
 ]
