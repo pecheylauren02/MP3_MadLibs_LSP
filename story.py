@@ -57,8 +57,17 @@ STORIES = [
               And who knows? Maybe they'll even meet another {18} {11} {15}
               along the way.\n
               The end"""
-      },
-      {
-
-      }
+    },
+    {
+      'title': 'A Day at the Office',
+      'words': ['a feeling', 'a city', 'a noun', 'another noun',
+                'an adjective', 'another feeling', 'a verb ending in -ing',
+                'another noun', 'another verb', 'a random number',
+                'another adjective', 'another city', 'an adverb',
+                'another adjective', 'another noun', 'another adjective',
+                'a plural noun', 'another feeling', 'another noun',
+                'an item of clothing (plural)'],
+      'text': 
+              
+    }
 ]
