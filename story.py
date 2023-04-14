@@ -8,7 +8,7 @@ STORIES = [
                 'a feeling', 'another noun', 'another noun',
                 'another feeling', 'a number', 'another adjective',
                 'another feeling', 'a verb in the present tense'],
-        'text': f"""One {0} day, I woke up feeling {1} and decided to go
+      'text': f"""One {0} day, I woke up feeling {1} and decided to go
                 on a crazy adventure. I grabbed my trusty {2} and set off
                 into the {3} wilderness. As I walked, I came across a {4} {5}
                 who asked me for help. 'I've lost my {6}!' they exclaimed.\n
@@ -40,6 +40,25 @@ STORIES = [
                 'another noun', 'an exclamation', 'another adjective',
                 'a verb in the past tense', 'another verb ending in -ing',
                 'an adverb', 'another noun', 'another verb in the past tense',
-                'a random date', 'a random number']
-    }
+                'a random date', 'a random number'],
+      'text': f"""Once upon a time, in a land far, far away, there was a
+              {0} {1} who loved to {2}. One day, while {3} in the {4}, the {0} {1}
+              stumbled upon a {inputs[5]} {inputs[6]} who was {7} with
+              a {8} {9}. "Hey there, {10}!" exclaimed the {0} {1}. "Would you
+              like to join us in our {11} {2}?"\n
+              Without hesitation, the {5} {6} agreed and soon found themselves {2}
+              with the {5} {6} and their {8} {9}. They {12} and {12}, and even
+              did a little {13} together.\n
+              But then, out of nowhere, a {11} {15} appeared and started
+              throwing things {14} at them! The {0} {1} and the {5} {6} were afraid,
+              but to their surprise, the {8} {9} stood tall and {16} the {11} {15}.\n
+              From {17}, the {0} {1} made a promise to themselves to always be
+              open to new experiences and never to be afraid of a little {2}.
+              And who knows? Maybe they'll even meet another {18} {11} {15}
+              along the way.\n
+              The end"""
+      },
+      {
+
+      }
 ]
