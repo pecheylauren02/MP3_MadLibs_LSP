@@ -78,15 +78,15 @@ STORIES = [
                   the hallway, I noticed a {13} smell coming from the break room.\n
                   I cautiously peeked inside, and to my horror, I saw that
                   someone had left their {14} in the microwave for way too long.
-    
-    The {14} was now a {15} mess, and the entire room smelled like burnt {16}.
-    Feeling {17}, I quickly made my way back to my {2}, only to find that my {3} had 
-    mysteriously disappeared! After a few minutes of searching {12}, I finally found it hiding under a pile of 
-    dirty {18}.
-            
-    So if you're ever feeling bored at work, just remember to keep your eyes and ears open for any weird moments that might 
-    come your way. You never know what kind of {19} might be waiting just around the corner in {1}!
-    ''"""
+                  The {14} was now a {15} mess, and the entire room smelled like 
+                  burnt {16}.\n Feeling {17}, I quickly made my way back to my {2},
+                  only to find that my {3} had mysteriously disappeared! After a
+                  few minutes of searching {12}, I finally found it hiding under a
+                  pile of dirty {18}. \n
+                  So if you're ever feeling bored at work, just remember to
+                  keep your eyes and ears open for any weird moments that might
+                  come your way. You never know what kind of {19} might be waiting
+                  just around the corner in {1}!"""
 
               
     }
