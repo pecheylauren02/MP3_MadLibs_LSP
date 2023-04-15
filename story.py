@@ -9,28 +9,28 @@ STORIES = [
                 'another feeling', 'a number', 'another adjective',
                 'another feeling', 'a verb in the present tense'],
       'text': f"""One {0} day, I woke up feeling {1} and decided to go
-                on a crazy adventure. I grabbed my trusty {2} and set off
-                into the {3} wilderness. As I walked, I came across a {4} {5}
-                who asked me for help. 'I've lost my {6}!' they exclaimed.\n
-                Being the {7} person I am, I offered to help. We {8} high and
-                low, through dense forests and mysterious {9}, until finally we
-                found the missing {6}. The {6} was so {10} that we couldn't
-                resist taking a selfie {11} with it. Feeling {12}, I said
-                goodbye to my new friend, {5}, and continued on my wild
-                adventure.\n
-                Soon, I stumbled upon a giant {13} who challenged me to
-                a {14} contest. I was feeling {15}, so I accepted. We
-                went back and forth, with each of us throwing {16}
-                punches at each other. In the end, I emerged victorious,
-                much to the {17} disappointment of my opponent.
-                Exhausted but {18}, I returned home and went straight
-                to bed.\n
-                As I drifted off to {19}, I couldn't help but think
-                that it had been a truly remarkable day. So if you're
-                feeling {1} and in need of an adventure, grab your {2}
-                and set off into the {10} unknown. Who knows
-                what kind of {7} and {4} things you might find
-                along the way!"""
+              on a crazy adventure. I grabbed my trusty {2} and set off
+              into the {3} wilderness. As I walked, I came across a {4} {5}
+              who asked me for help. 'I've lost my {6}!' they exclaimed.\n
+              Being the {7} person I am, I offered to help. We {8} high and
+              low, through dense forests and mysterious {9}, until finally we
+              found the missing {6}. The {6} was so {10} that we couldn't
+              resist taking a selfie {11} with it. Feeling {12}, I said
+              goodbye to my new friend, {5}, and continued on my wild
+              adventure.\n
+              Soon, I stumbled upon a giant {13} who challenged me to
+              a {14} contest. I was feeling {15}, so I accepted. We
+              went back and forth, with each of us throwing {16}
+              punches at each other. In the end, I emerged victorious,
+              much to the {17} disappointment of my opponent.
+              Exhausted but {18}, I returned home and went straight
+              to bed.\n
+              As I drifted off to {19}, I couldn't help but think
+              that it had been a truly remarkable day. So if you're
+              feeling {1} and in need of an adventure, grab your {2}
+              and set off into the {10} unknown. Who knows
+              what kind of {7} and {4} things you might find
+              along the way!"""
     },
     {
       'title': 'A Strange Fairytale',
@@ -69,28 +69,28 @@ STORIES = [
                 'a plural noun', 'another feeling', 'another noun',
                 'an item of clothing (plural)'],
       'text': f"""It was just another {0} day in the office in {1} when I
-                  arrived at my large {2}. I sat down at my {2} and opened
-                  up my {3} to start my {4} work. But before I
-                  could even begin, my {5} coworker walked in and
-                  started {6} loudly about their {7} problems.
-                  I tried to tune them out, but their voice was so
-                  annoying that I couldn't {8}. After what felt like {9}
-                  hours of their constant {6}, I decided to take a {10}
-                  break and visit the office in {11}.As I walked {12} down
-                  the hallway, I noticed a {13} smell coming from the
-                  break room.\n
-                  I cautiously peeked inside, and to my horror, I saw that
-                  someone had left their {14} in the microwave for way too
-                  long. The {14} was now a {15} mess, and the entire
-                  room smelled like burnt {16}.\n Feeling {17}, I quickly
-                  made my way back to my {2}, only to find that my {3}
-                  had mysteriously disappeared! After a few minutes
-                  of searching {12}, I finally found it hiding under a
-                  pile of dirty {18}.\n
-                  So if you're ever feeling bored at work, just remember
-                  to keep your eyes and ears open for any weird moments
-                  that might come your way. You never know what kind of
-                  {19} might be waiting just around the corner in {1}!"""
+              arrived at my large {2}. I sat down at my {2} and opened
+              up my {3} to start my {4} work. But before I
+              could even begin, my {5} coworker walked in and
+              started {6} loudly about their {7} problems.
+              I tried to tune them out, but their voice was so
+              annoying that I couldn't {8}. After what felt like {9}
+              hours of their constant {6}, I decided to take a {10}
+              break and visit the office in {11}.As I walked {12} down
+              the hallway, I noticed a {13} smell coming from the
+              break room.\n
+              I cautiously peeked inside, and to my horror, I saw that
+              someone had left their {14} in the microwave for way too
+              long. The {14} was now a {15} mess, and the entire
+              room smelled like burnt {16}.\n Feeling {17}, I quickly
+              made my way back to my {2}, only to find that my {3}
+              had mysteriously disappeared! After a few minutes
+              of searching {12}, I finally found it hiding under a
+              pile of dirty {18}.\n
+              So if you're ever feeling bored at work, just remember
+              to keep your eyes and ears open for any weird moments
+              that might come your way. You never know what kind of
+              {19} might be waiting just around the corner in {1}!"""
     },
     {
       'title': 'One Interesting Vacation',
@@ -122,5 +122,16 @@ STORIES = [
               It was so much fun that I almost forgot about my
               {19}! I can't wait to see where my next crazy adventure
               takes me!"""
+    },
+    {'title': "A Scary Encounter",
+    'words':  ['adjective', 'noun', 'verb ending in -ing', 'feeling',
+              'adjective', 'another adjective', 'adverb', 'another adverb',
+              'item of clothing', 'another noun', 'another adjective',
+              'another item of clothing', 'another verb ending in -ing',
+              'body part', 'another feeling', 'another noun',
+              'another noun', 'another verb ending in -ing',
+              'another feeling']
+    'text':
+
     }
 ]
