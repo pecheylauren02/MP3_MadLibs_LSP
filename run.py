@@ -1,5 +1,5 @@
 # imported modules
-from story.py import STORIES
+#from story.py import STORIES
 import sys
 import time
 
@@ -13,15 +13,20 @@ def typewriter_print(text):
 
 def start_game():
 
-    typewriter_print("""Welcome to the Maddest Game
-                    of Mad Libs you will ever play!\n""")
-    typewriter_print("""If you are looking for a night
-                    of laughter and fun with your friends
-                    and family, then look no further!\n""")
-    typewriter_print("""Mad Libs is one of the world's greatest
-                    word games./n""")
-    typewriter_print("""It can make anyone the funniest person
-                    in the room, without even trying!\n""")
+    typewriter_print(
+    """Welcome to the Maddest Game
+    of Mad Libs you will ever play!\n""")
+    typewriter_print(
+    """If you are looking for a night
+    of laughter and fun with your friends
+    and family, then look no further!\n""")
+    typewriter_print(
+    """Mad Libs is one of the world's greatest
+    word games.\n""")
+    typewriter_print(
+    """It can make anyone the funniest person
+    in the room, without even trying!\n""")
+
     # Instructions
     response = input("Want to learn how to play? Y/N: ")
     while response.upper() not in ("Y", "N"):
@@ -32,20 +37,20 @@ def start_game():
         print("""Mad Libs are stories with words
               removed and replaced by blank spaces.\n""")
         print("\nHere's how to play:")
-        print("""Choose a story title from the list given,
+        print("""1. Choose a story title from the list given,
               by entering the number of the title.""")
-        print("""1. You will be given a total of 20 prompts, 
+        print("""2. You will be given a total of 20 prompts, 
               asking you to enter a word, without seeing the
               story beforehand. E.g. 'Enter a noun: '\n""")
-        print("""2. When you see a prompt, enter your answer.
+        print("""3. When you see a prompt, enter your answer.
               The prompts will ask you for a mix of adjectives,
               nouns, exclamations, colours, adverbs, and more!\n""")
-        print("""3. When you finish entering all of the prompts
+        print("""4. When you finish entering all of the prompts
               correctly, these words will be inserted into the
               blanks of the story title you chose.\n""")
-        print("""4. Your story will then be displayed for you
-              to read aloud with hilarious results.""")
-        print("""5. There are no winners or losers in this
+        print("""5. Your story will then be displayed for you
+              to read aloud with hilarious results.\n""")
+        print("""6. There are no winners or losers in this
               game, only laughter!\n""")
 
         play_response = input("Ready to play? Y/N: ")
@@ -173,7 +178,7 @@ def play_madlibs():
 
     # Story Template Three of Eight
 
-        story_three = f'''
+        story_three = f"""
         It was just another {inputs[0]} day in the office in {inputs[1]} when I arrived at my 
         large {inputs[2]}. I sat down at my {inputs[2]} and opened up my {inputs[3]} to start my {inputs[4]} work. 
         But before I could even begin, my {inputs[5]} coworker walked in and started {inputs[6]} loudly 
@@ -191,7 +196,7 @@ def play_madlibs():
                 
         So if you're ever feeling bored at work, just remember to keep your eyes and ears open for any weird moments that might 
         come your way. You never know what kind of {inputs[19]} might be waiting just around the corner in {inputs[1]}!
-        '''
+        """
 
         print(story_three)
 
@@ -207,7 +212,7 @@ def play_madlibs():
 
     # Story Template Four of Eight
 
-        story_four = f'''Last {inputs[0]}, I decided to take a {inputs[1]} vacation to {inputs[2]}, and boy was it 
+        story_four = f"""Last {inputs[0]}, I decided to take a {inputs[1]} vacation to {inputs[2]}, and boy was it 
         {inputs[3]}! On the first day of my trip, I woke up feeling {inputs[4]} and ready for adventure. I threw 
         on my {inputs[5]} and headed out into the {inputs[6]} unknown.
         
@@ -221,7 +226,7 @@ def play_madlibs():
         drink and sat down to people-watch. That's when I heard a loud {inputs[15]} coming from outside. I opened my 
         window and saw that a {inputs[16]} parade was going by! I quickly got dressed and joined the parade, 
         {inputs[17]} and {inputs[18]} along to the music. It was so much fun that I almost forgot about my 
-        {inputs[19]}! I can't wait to see where my next crazy adventure takes me!'''
+        {inputs[19]}! I can't wait to see where my next crazy adventure takes me!"""
 
         print(story_four)
 
@@ -239,7 +244,7 @@ def play_madlibs():
 
     # Story Template One of Eight
 
-        story_five = f'''One {inputs[0]} night, I was walking home from a {inputs[1]} party when I suddenly felt like someone 
+        story_five = f"""One {inputs[0]} night, I was walking home from a {inputs[1]} party when I suddenly felt like someone 
         was {inputs[2]} me. I turned around, but there was no one there. Feeling a bit {inputs[3]}, I quickened my pace 
         and started walking faster. But then, I heard a {inputs[4]} noise coming from behind me. I turned around again, and 
         this time I saw a {inputs[5]} figure lurking {inputs[6]} in the shadows.
@@ -255,7 +260,7 @@ def play_madlibs():
         the entire time.
 
         As I lay in bed that night, I couldn't help but wonder what other {inputs[0]} encounters I might have in the future. 
-        But for now, I was just grateful to be safe and sound in bed.'''
+        But for now, I was just grateful to be safe and sound in bed."""
 
         print(story_five)
 

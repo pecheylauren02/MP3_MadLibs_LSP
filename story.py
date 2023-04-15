@@ -43,7 +43,7 @@ STORIES = [
                 'a random date', 'a random number'],
       'text': f"""Once upon a time, in a land far, far away, there was a
               {0} {1} who loved to {2}. One day, while {3} in the {4}, the {0}
-              {1} stumbled upon a {inputs[5]} {inputs[6]} who was {7} with
+              {1} stumbled upon a {5} {6} who was {7} with
               a {8} {9}. "Hey there, {10}!" exclaimed the {0} {1}. "Would you
               like to join us in our {11} {2}?"\n
               Without hesitation, the {5} {6} agreed and soon found themselves
@@ -272,3 +272,18 @@ STORIES = [
                     definitely a night I'll never forget!"""
           }
 ]
+
+index = 1
+
+for item in STORIES:
+    print(str(index) + ":" + item['title'])
+    index+=1
+    
+selected_story_input = 1    
+selected_story_index = selected_story_input -1
+
+selected_story = STORIES[selected_story_index]
+inputs = [input(f"Enter {word}: ") for word in selected_story['words']]
+
+story_text= selected_story['text'].format(*inputs)
+print(story_text)
