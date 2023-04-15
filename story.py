@@ -166,6 +166,30 @@ STORIES = [
                 'a body part', 'another noun', 'a place', 'another adjective',
                 'another noun', 'an adverb', 'another adjective',
                 'another noun', 'a type of animal', 'another verb',
-                'another adverb', 'a random number']
+                'another adverb', 'a random number'],
+      'text': f"""One {0} {1}, I headed to the beach with my {2}
+              {3}. We packed a {4} full of snacks, sunscreen, and {5}
+              and set off on our adventure. As soon as we arrived,
+              we could feel the {6} sun beating down on us.\n
+              We quickly unpacked and set up our {4} and got ready
+              to hit the waves and {7}. But as soon as I jumped in,
+              I realized that the water was freezing {8}! I
+              swam out to my friends, who were {9} and having a
+              great time. I decided to join in, even though I
+              could barely feel my {10}.\n
+              As we played in the water, we suddenly heard a
+              loud {11} coming from the {12}. We swam back to
+              find a {13} crowd of people gathered around a {14}
+              that had washed up {15} on the beach.\n
+              Feeling curious, we pushed our way through the crowd
+              to get a closer look. As we approached,
+              we could smell the {16} stench of the dead {17}.
+              Suddenly, a massive {18} swooped down and started
+              {19} on the {17}. We all screamed and ran away {20},
+              narrowly avoiding being hit {21} by the {18}.\n
+              After that crazy encounter, we decided to pack up
+              and head home. As we drove away, we couldn't help but
+              laugh at the absurdity of our day at the beach."""
+
     }
 ]
