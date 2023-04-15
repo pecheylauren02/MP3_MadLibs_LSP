@@ -224,5 +224,17 @@ STORIES = [
               So if you're feeling {19} about your first day
               of school, just remember that it's a new adventure full of
               surprises and {1} moments."""
+          },
+          {
+            'title': "",
+            'words': ['an adjective', 'a body part', 'another adjective',
+                      'another adjective', 'a plural noun',
+                      'a verb ending in -ing', 'another verb ending in -ing',
+                      'another adjective', 'a noun', 'an adverb',
+                      'another verb ending in -ing', 'another adjective',
+                      'a colour', 'an item of clothing (plural)',
+                      'a random number', 'a plural noun', 'an adverb',
+                      'another verb ending in -ing', 'another adjective',
+                      'another plural noun', 'another verb ending in -ing']
           }
 ]
