@@ -235,6 +235,40 @@ STORIES = [
                       'a colour', 'an item of clothing (plural)',
                       'a random number', 'a plural noun', 'an adverb',
                       'another verb ending in -ing', 'another adjective',
-                      'another plural noun', 'another verb ending in -ing']
+                      'another plural noun', 'another verb ending in -ing'],
+            'text': f"""Last night I went to the craziest party ever. It was
+                    so {0} that my {1} is still recovering from it. When I
+                    arrived, the music was {2} and the dance floor was packed
+                    with {3} people and wild {4}. I started {5} to the beat
+                    and before I knew it, I was {6} with a group of {7}
+                    strangers.\n
+                    Things really got out of hand when someone suggested we
+                    play {8} pong. I've never been good at that game,
+                    but I managed to {9} {10} a few shots and impress
+                    everyone. As the night went on, more and more people
+                    and {4} showed up.\n
+                    Things really got out of hand when someone suggested
+                    we play {8} pong. I've never been good at that game,
+                    but I managed to {9} {10} a few shots and impress
+                    everyone. As the night went on, more and more
+                    people and {4} showed up.\n
+                    There were {11} characters in crazy costumes,
+                    some wearing {12}{13}. I even saw one
+                    magician trying to juggle {14}{15} while riding
+                    a unicycle. A lot of the night became blurry
+                    after that, but I found myself {16}{17} on a
+                    couch with a {18} person who I had never met
+                    before. We started talking about {19} and
+                    ended up {20} all night.\n
+                    There were {11} characters in crazy costumes,
+                    some wearing {12}{13}. I even saw one 
+                    magician trying to juggle {14}{15} while riding
+                    a unicycle. A lot of the night became blurry 
+                    after that, but I found myself {16}{17} on a couch
+                    with a {18} person who I had never met before.
+                    We started talking about {19} and ended up {20} all
+                    night. The party didn't really start to wind down
+                    until the early hours of the morning. It was
+                    definitely a night I'll never forget!"""
           }
 ]
