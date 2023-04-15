@@ -285,7 +285,7 @@ selected_story_index = selected_story_input -1
 selected_story = STORIES[selected_story_index]
 #inputs = [input(f"Enter {word}: ") for word in selected_story['words']]
 
-inputs = [input(f"Enter {}: ") for word in selected_story['words']]
+inputs = [input(f"Enter {word}: ") for word in selected_story['words']]
 
 story_text= selected_story['text'].format(*inputs)
 print(story_text)
