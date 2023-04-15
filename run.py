@@ -114,9 +114,14 @@ def play_madlibs():
                 user_input = input(f"Enter {word}: ")
                 if user_input.isdigit() or user_input.strip() == "":
                     print(f"Invalid input. Please enter {word}.")
+                    print("Fails string check")
+                elif word == 'a number' and (not user_input.isdigit()):
+                    print(f"Invalid input. Please enter {word}.")
+                    print("Fails digit check")
                 else:
                     inputs.append(user_input)
                     break
+
 
     # Story Template One of Eight
 
