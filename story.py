@@ -190,6 +190,39 @@ STORIES = [
               After that crazy encounter, we decided to pack up
               and head home. As we drove away, we couldn't help but
               laugh at the absurdity of our day at the beach."""
-
-    }
+    },
+    {
+      'title': "My First Day at School",
+      'words': ['a feeling', 'an adjective', 'an adverb', 'a noun',
+                'another adjective', 'a plural noun',
+                'a verb ending in -ing', 'another verb ending in -ing',
+                'another verb ending in -ing', 'another noun',
+                'another adjective', 'a place', 'another plural noun',
+                'another plural noun', 'another verb ending in -ing',
+                'the name of someone you know', 'your favourite superhero',
+                'another plural noun', 'another plural noun',
+                'another adjective'],
+      'text': f""" On my first day of school, I felt {0} as I 
+              walked into the classroom. My {1} teacher greeted 
+              me with a big smile and {2} showed me to my {3}.
+              As I sat down, I couldn't help but notice the {4}
+              students and {5} around me. Some were {6},
+              while others were {7} and {8} all over the classroom.\n
+              Just as the teacher was about to start the lesson, an
+              enormous {9} burst into the room. It was a {10} {9}
+              who had lost their way to the {11}.
+              The teacher quickly helped them find their way,
+              and we all had a good laugh about it.\n
+              As the day went on, we learned about {12}
+              and {13}. No matter what we were learning,
+              we were always {14} and having a good time.
+              During recess, I made some new friends called {15}
+              and {16} who showed me their cool {17} and {18}.
+              We played games and laughed so hard that we almost
+              forgot we were at school.\n
+              As the day came to an end, I felt happy and {19}.
+              So if you're feeling {19} about your first day
+              of school, just remember that it's a new adventure full of
+              surprises and {1} moments."""
+          }
 ]
