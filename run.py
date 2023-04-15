@@ -1,4 +1,5 @@
 # imported modules
+from story.py import STORIES
 import sys
 import time
 
@@ -12,11 +13,15 @@ def typewriter_print(text):
 
 def start_game():
 
-    typewriter_print("Welcome to the Maddest Game of Mad Libs you will ever play!")
-    typewriter_print("If you are looking for a night of laughter and fun with your friends and family, then look no further!")
-    typewriter_print("Mad Libs is one of the world's greatest word games.")
-    typewriter_print("It can make anyone the funniest person in the room, without even trying!")
-
+    typewriter_print("""Welcome to the Maddest Game
+                    of Mad Libs you will ever play!\n""")
+    typewriter_print("""If you are looking for a night
+                    of laughter and fun with your friends
+                    and family, then look no further!\n""")
+    typewriter_print("""Mad Libs is one of the world's greatest
+                    word games./n""")
+    typewriter_print("""It can make anyone the funniest person
+                    in the room, without even trying!\n""")
     # Instructions
     response = input("Want to learn how to play? Y/N: ")
     while response.upper() not in ("Y", "N"):
