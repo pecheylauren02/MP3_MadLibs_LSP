@@ -123,15 +123,41 @@ STORIES = [
               {19}! I can't wait to see where my next crazy adventure
               takes me!"""
     },
-    {'title': "A Scary Encounter",
-    'words':  ['adjective', 'noun', 'verb ending in -ing', 'feeling',
-              'adjective', 'another adjective', 'adverb', 'another adverb',
-              'item of clothing', 'another noun', 'another adjective',
-              'another item of clothing', 'another verb ending in -ing',
-              'body part', 'another feeling', 'another noun',
-              'another noun', 'another verb ending in -ing',
-              'another feeling']
-    'text':
+    {
+      'title': "A Scary Encounter",
+      'words':  ['an adjective', 'a noun', 'a verb ending in -ing',
+                 'a feeling', 'another adjective', 'another adjective',
+                 'an adverb', 'another adverb', 'an item of clothing',
+                 'another noun', 'another adjective',
+                 'another item of clothing',
+                 'another verb ending in -ing',
+                 'a body part', 'another feeling', 'another noun',
+                 'another noun', 'another verb ending in -ing',
+                 'another feeling'],
+      'text': f"""One {0} night, I was walking home from a {1} party
+              when I suddenly felt like someone was {2} me. I turned
+              around, but there was no one there. Feeling a bit {3},
+              I quickened my pace and started walking faster. But then,
+              I heard a {4} noise coming from behind me. I turned
+              around again, and this time I saw a {5} figure lurking
+              {6} in the shadows.\n
+              I tried to run {7}, but my {8} got caught on a {1}, and I
+              fell to the ground. The {5} figure approached me slowly,
+              and I realized that it was actually a {9} wearing a {10}
+              {11}. I screamed for help, but no one seemed to hear me.
+              The {9} just stood there, {12} at me with its tiny {13}.\n
+              Feeling {3}, I tried to think of a way to escape. That's
+              when I remembered the {1} that I had in my {14}.
+              I pulled it out and aimed it at the {9}, hoping that
+              it would scare it away. To my surprise, the {9} started
+              {15} and ran away as fast as it could. I got up and ran
+              home as quickly as possible, feeling {16}
+              the entire time.\n
+              As I lay in bed that night, I couldn't help but wonder
+              what other {0} encounters I might have in the future.
+              But for now, I was just grateful to be safe and sound
+              in bed."""
+
 
     }
 ]
