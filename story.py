@@ -202,8 +202,8 @@ STORIES = [
                 'the name of someone you know', 'your favourite superhero',
                 'another plural noun', 'another plural noun',
                 'another adjective'],
-      'text': f""" On my first day of school, I felt {0} as I 
-              walked into the classroom. My {1} teacher greeted 
+      'text': f""" On my first day of school, I felt {0} as I
+              walked into the classroom. My {1} teacher greeted
               me with a big smile and {2} showed me to my {3}.
               As I sat down, I couldn't help but notice the {4}
               students and {5} around me. Some were {6},
@@ -261,9 +261,9 @@ STORIES = [
                     before. We started talking about {19} and
                     ended up {20} all night.\n
                     There were {11} characters in crazy costumes,
-                    some wearing {12}{13}. I even saw one 
+                    some wearing {12}{13}. I even saw one
                     magician trying to juggle {14}{15} while riding
-                    a unicycle. A lot of the night became blurry 
+                    a unicycle. A lot of the night became blurry
                     after that, but I found myself {16}{17} on a couch
                     with a {18} person who I had never met before.
                     We started talking about {19} and ended up {20} all
