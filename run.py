@@ -106,7 +106,17 @@ def play_madlibs():
         'another adjective', 'a verb ending in -ed', 'a plural noun', 'another adjective', 'an adverb', 'a feeling', 
         'another noun', 'another noun', 'another feeling', 'a number', 'another adjective', 'another feeling', 'a verb in the present tense']
 
-        inputs = [input(f"Enter {word}: ") for word in words]
+        #inputs = [input(f"Enter {word}: ") for word in words]
+
+        inputs = []
+        for word in words:
+            while True:
+                user_input = input(f"Enter {word}: ")
+                if user_input.isdigit() or user_input.strip() == "":
+                    print(f"Invalid input. Please enter {word}.")
+                else:
+                    inputs.append(user_input)
+                    break
 
     # Story Template One of Eight
 
