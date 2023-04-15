@@ -157,7 +157,15 @@ STORIES = [
               what other {0} encounters I might have in the future.
               But for now, I was just grateful to be safe and sound
               in bed."""
-
-
+    },
+    {
+      'title': "A Day at the Beach",
+      'words': ['an adjective', 'a type of holiday', 'another adjective',
+                'a plural noun', 'a noun', 'a plural noun', 'an adjective',
+                'a verb', 'another adjective', 'a verb ending in -ing',
+                'a body part', 'another noun', 'a place', 'another adjective',
+                'another noun', 'an adverb', 'another adjective',
+                'another noun', 'a type of animal', 'another verb',
+                'another adverb', 'a random number']
     }
 ]
