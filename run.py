@@ -95,7 +95,10 @@ def start_game():
         if play_response.upper() == "N":
             print("Okay, maybe next time!")
         else:
-            print("\nLet's get started!")
+            print(textwrap.dedent("""\
+                Let's get started!
+
+                """))
             play_madlibs()
     else:
         print("Okay, maybe next time!")
@@ -117,9 +120,8 @@ def play_madlibs():
     # Print the list of story titles for the user to see
     print(textwrap.dedent("""\
         
-        Please select a story by
-        entering the corresponding number: 
-        
+        Below is a list of story titles
+        for you to choose from: 
         """))
     for i, title in enumerate(story_titles):
         print(f"{i+1}. {title}")
@@ -130,8 +132,8 @@ def play_madlibs():
     selected_story_index = None
     while selected_story_index is None:
         user_input = input(textwrap.dedent(
-            """Enter the number of the story you'd like to read: 
             
+            """Enter the number of the story you'd like to read: 
             """))
         if user_input.isnumeric():
             selected_story_index = int(user_input) - 1
