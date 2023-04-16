@@ -9,8 +9,8 @@ def typewriter_print(text):
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
-        time.sleep(0.05)
-    time.sleep(1)
+        time.sleep(0.000001)
+    #time.sleep(1)
     # add a 1-second delay after printing each sentence
 
 def start_game():
@@ -125,9 +125,18 @@ def play_madlibs():
         print(f"{i+1}. {title}")
 
     # Ask the user to select a story
-    selected_story_index = int(input(textwrap.dedent("""\
-        \nEnter the number of the story you'd like to read: 
-        """))) - 1
+    #selected_story_index = int(input(textwrap.dedent("""\
+
+    selected_story_index = None
+    while selected_story_index is None:
+        user_input = input(textwrap.dedent(
+            """Enter the number of the story you'd like to read: 
+            
+            """))
+        if user_input.isnumeric():
+            selected_story_index = int(user_input) - 1
+        else: 
+            print("Invalid input. Please enter a number")
 
     # Retrieve the selected story title
     selected_story_title = story_titles[selected_story_index]
