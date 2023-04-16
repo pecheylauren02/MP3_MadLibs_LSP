@@ -10,10 +10,8 @@ def typewriter_print(text):
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
-        if character != '\n':
-            sound_effect = pygame.mixer.Sound(sound_path)
-            sound_effect.play()
         time.sleep(0.05)
+    time.sleep(1) # add a 1-second delay after printing each sentence
 
 def start_game():
     #Welcome message
@@ -44,7 +42,7 @@ def start_game():
         """))
 
     # Instructions
-    response = input("Want to learn how to play? Y/N: ")
+    response = input("\nWant to learn how to play? Y/N: ")
     while response.upper() not in ("Y", "N"):
         print("Invalid response. Please enter Y or N.")
         response = input("Want to learn how to play? Y/N: ")
@@ -96,7 +94,7 @@ def start_game():
                 game, only laughter!
                 """))
 
-        play_response = input("Ready to play? Y/N: ")
+        play_response = input("/nReady to play? Y/N: ")
         while play_response.upper() not in ("Y", "N"):
             print("Invalid response. Please enter Y or N.")
             play_response = input("Ready to play? Y/N: ")
