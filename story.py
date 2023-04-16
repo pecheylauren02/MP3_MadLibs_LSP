@@ -11,7 +11,7 @@ STORIES = [
                 'a feeling', 'another noun', 'another noun',
                 'another feeling', 'a number', 'another adjective',
                 'another feeling', 'a verb in the present tense'],
-      'text': f"""One {0} day, I woke up feeling {1} and decided to go
+      'text': f"""One {inputs[0]} day, I woke up feeling {[1]} and decided to go
               on a crazy adventure. I grabbed my trusty {2} and set off
               into the {3} wilderness. As I walked, I came across a {4} {5}
               who asked me for help. 'I've lost my {6}!' they exclaimed.\n
@@ -275,105 +275,6 @@ STORIES = [
                     definitely a night I'll never forget!"""
           }
 ]
-
-
-
-# Welcome message
-
-def typewriter_print(text):
-    for character in text:
-        sys.stdout.write(character)
-        sys.stdout.flush()
-        time.sleep(0.05)
-
-def start_game():
-
-    typewriter_print(
-    """Welcome to the Maddest Game
-    of Mad Libs you will ever play!\n""")
-    typewriter_print(
-    """If you are looking for a night
-    of laughter and fun with your friends
-    and family, then look no further!\n""")
-    typewriter_print(
-    """Mad Libs is one of the world's greatest
-    word games.\n""")
-    typewriter_print(
-    """It can make anyone the funniest person
-    in the room, without even trying!\n""")
-
-    # Instructions
-    response = input("Want to learn how to play? Y/N: ")
-    while response.upper() not in ("Y", "N"):
-        print("Invalid response. Please enter Y or N.")
-        response = input("Want to learn how to play? Y/N: ")
-    if response.upper() == "Y":
-        print("\nWhat are Mad Libs?\n")
-        print("""Mad Libs are stories with words
-              removed and replaced by blank spaces.\n""")
-        print("\nHere's how to play:")
-        print("""1. Choose a story title from the list given,
-              by entering the number of the title.""")
-        print("""2. You will be given a total of 20 prompts, 
-              asking you to enter a word, without seeing the
-              story beforehand. E.g. 'Enter a noun: '\n""")
-        print("""3. When you see a prompt, enter your answer.
-              The prompts will ask you for a mix of adjectives,
-              nouns, exclamations, colours, adverbs, and more!\n""")
-        print("""4. When you finish entering all of the prompts
-              correctly, these words will be inserted into the
-              blanks of the story title you chose.\n""")
-        print("""5. Your story will then be displayed for you
-              to read aloud with hilarious results.\n""")
-        print("""6. There are no winners or losers in this
-              game, only laughter!\n""")
-
-        play_response = input("Ready to play? Y/N: ")
-        while play_response.upper() not in ("Y", "N"):
-            print("Invalid response. Please enter Y or N.")
-            play_response = input("Ready to play? Y/N: ")
-        if play_response.upper() == "N":
-            print("Okay, maybe next time!")
-        else:
-            print("Let's get started!")
-            play_madlibs()
-    else:
-        print("Okay, maybe next time!")
-
-# Story Title Selection 
-
-# Define the list of story titles
-
-def play_madlibs():
-    story_titles = ["A Peculiar Adventure", 
-                    "A Strange Fairytale", 
-                    "A Day at the Office", 
-                    "One Interesting Vacation", 
-                    "A Scary Encounter",
-                    "A Day at the Beach", 
-                    "My First Day at School", 
-                    "A Wild Party"]
-
-    # Print the list of story titles for the user to see
-    print("""Please select a story by
-          entering the corresponding number:""")
-    for i, title in enumerate(story_titles):
-        print(f"{i+1}. {title}")
-
-    # Ask the user to select a story
-    selected_story_index = int(input("""Enter the number 
-                                    of the story you'd
-                                    like to read: """)) - 1
-
-    # Retrieve the selected story title
-    selected_story_title = story_titles[selected_story_index]
-
-    # Print the selected story title for the user to see
-    print(f"You have selected the story: {selected_story_title}")
-
-    # Mad Libs One of Eight
-
-    # User inputs One of Eight: Status: DONE ALL 20
 
 index = 1
 

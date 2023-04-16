@@ -2,6 +2,7 @@
 #from story.py import STORIES
 import sys
 import time
+import textwrap
 
 # Welcome message
 
@@ -12,20 +13,19 @@ def typewriter_print(text):
         time.sleep(0.05)
 
 def start_game():
-
-    typewriter_print(
-    """Welcome to the Maddest Game
-    of Mad Libs you will ever play!\n""")
-    typewriter_print(
-    """If you are looking for a night
-    of laughter and fun with your friends
-    and family, then look no further!\n""")
-    typewriter_print(
-    """Mad Libs is one of the world's greatest
-    word games.\n""")
-    typewriter_print(
-    """It can make anyone the funniest person
-    in the room, without even trying!\n""")
+    typewriter_print(textwrap.dedent("""\
+        Welcome to the Maddest Game
+        of Mad Libs you will ever play!\n"""))
+    typewriter_print(textwrap.dedent("""\
+        If you are looking for a night
+        of laughter and fun with your friends
+        and family, then look no further!\n"""))
+    typewriter_print(textwrap.dedent("""\
+        Mad Libs is one of the world's greatest
+        word games.\n"""))
+    typewriter_print(textwrap.dedent("""\
+        It can make anyone the funniest person
+        in the room, without even trying!\n"""))
 
     # Instructions
     response = input("Want to learn how to play? Y/N: ")
