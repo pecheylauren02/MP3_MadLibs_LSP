@@ -252,9 +252,13 @@ def play_madlibs():
 
     elif selected_story_title == "A Day at the Office":
 
-        words = ['a feeling', 'a city', 'a noun', 'another noun', 'an adjective', 'another feeling', 'a verb ending in -ing', 
-        'another noun', 'another verb', 'a random number', 'another adjective', 'another city', 'an adverb', 'another adjective', 
-        'another noun', 'another adjective', 'a plural noun', 'another feeling', 'another noun', 'an item of clothing (plural)']
+        words = ['a feeling', 'a city', 'a noun', 'another noun',
+                'an adjective', 'another feeling', 'a verb ending in -ing',
+                'another noun', 'another verb', 'a random number',
+                'another adjective', 'another city', 'an adverb',
+                'another adjective', 'another noun', 'another adjective',
+                'a plural noun', 'another feeling', 'another noun',
+                'an item of clothing (plural)']
 
         inputs = []
         for word in words:
@@ -269,23 +273,33 @@ def play_madlibs():
     # Story Template Three of Eight
 
         story_three = f"""
-        It was just another {inputs[0]} day in the office in {inputs[1]} when I arrived at my 
-        large {inputs[2]}. I sat down at my {inputs[2]} and opened up my {inputs[3]} to start my {inputs[4]} work. 
-        But before I could even begin, my {inputs[5]} coworker walked in and started {inputs[6]} loudly 
-        about their {inputs[7]} problems. I tried to tune them out, but their voice was so annoying that I couldn't {inputs[8]}.
-                
-        After what felt like {inputs[9]} hours of their constant {inputs[6]}, I decided to take a {inputs[10]} 
-        break and visit the office in {inputs[11]}.As I walked {inputs[12]} down the hallway, I noticed a {inputs[13]} 
-        smell coming from the break room. I cautiously peeked inside, and to my horror, I saw that someone had left their {inputs[14]} 
-        in the microwave for way too long.
-        
-        The {inputs[14]} was now a {inputs[15]} mess, and the entire room smelled like burnt {inputs[16]}.
-        Feeling {inputs[17]}, I quickly made my way back to my {inputs[2]}, only to find that my {inputs[3]} had 
-        mysteriously disappeared! After a few minutes of searching {inputs[12]}, I finally found it hiding under a pile of 
-        dirty {inputs[18]}.
-                
-        So if you're ever feeling bored at work, just remember to keep your eyes and ears open for any weird moments that might 
-        come your way. You never know what kind of {inputs[19]} might be waiting just around the corner in {inputs[1]}!
+        It was just another {inputs[0]} day in the office
+        in {inputs[1]} when I arrived at my
+        large {inputs[2]}. I sat down at my {inputs[2]}
+        and opened up my {inputs[3]} to start my {inputs[4]} work.
+        But before I could even begin, my {inputs[5]} coworker
+        walked in and started {inputs[6]} loudly about their
+        {inputs[7]} problems. I tried to tune them out, but their
+        voice was so annoying that I couldn't {inputs[8]}.\n
+        After what felt like {inputs[9]} hours of their constant
+        {inputs[6]}, I decided to take a {inputs[10]}
+        break and visit the office in {inputs[11]}.As I walked
+        {inputs[12]} down the hallway, I noticed a {inputs[13]}
+        smell coming from the break room. I cautiously peeked
+        inside, and to my horror, I saw that someone had left
+        their {inputs[14]} in the microwave for way too long.\n
+        The {inputs[14]} was now a {inputs[15]} mess, and the
+        entire room smelled like burnt {inputs[16]}.
+        Feeling {inputs[17]}, I quickly made my way back to
+        my {inputs[2]}, only to find that my {inputs[3]} had
+        mysteriously disappeared! After a few minutes of
+        searching {inputs[12]}, I finally found it hiding under
+        a pile of dirty {inputs[18]}.\n
+        So if you're ever feeling bored at work, just remember
+        to keep your eyes and ears open for any weird moments
+        that might come your way. You never know what kind of
+        {inputs[19]} might be waiting just around the corner in
+        {inputs[1]}!
         """
 
         print(story_three)
