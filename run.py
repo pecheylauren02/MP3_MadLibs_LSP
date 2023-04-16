@@ -65,7 +65,7 @@ def start_game():
             
             2. You will be given a total of 20 prompts  
                 asking you to enter a word (without seeing the
-                story beforehand). E.g. 'Enter a noun: '
+                story beforehand). E.g. 'Enter a noun, e.g. "dog" or "table": '
                 
                 """))
         typewriter_print(textwrap.dedent("""\
@@ -141,13 +141,13 @@ def play_madlibs():
 
     if selected_story_title == "A Peculiar Adventure": 
 
-        words = ['an adjective', 'a feeling', 'a noun', 'a place',
-                 'another adjective', 'an animal', 'a noun',
-                 'another adjective', 'a verb ending in -ed',
+        words = ['an adjective, e.g. "pretty", e.g. "pretty", e.g. "pretty", e.g. "pretty", e.g. "pretty"', 'a feeling', 'a noun, e.g. "dog" or "table"', 'a place',
+                 'another adjective', 'an animal', 'a noun, e.g. "dog" or "table"',
+                 'another adjective', 'a verb, e.g. "run" ending in -ed',
                  'a plural noun', 'another adjective', 'an adverb',
                  'a feeling', 'another noun', 'another noun',
                  'another feeling', 'a number', 'another adjective',
-                 'another feeling', 'a verb in the present tense']
+                 'another feeling', 'a verb, e.g. "run" in the present tense']
 
         #inputs = [input(f"Enter {word}: ") for word in words]
 
@@ -194,11 +194,11 @@ def play_madlibs():
 
     elif selected_story_title == "A Strange Fairytale": 
 
-        words = ['an adjective', 'a noun', 'a verb ending in -ing',
+        words = ['an adjective, e.g. "pretty"', 'a noun, e.g. "dog" or "table"', 'a verb, e.g. "run" ending in -ing',
                  'another verb', 'a place', 'another adjective',
                  'another noun', 'another verb', 'another adjective',
                  'another noun', 'an exclamation', 'another adjective',
-                 'a verb in the past tense', 'another verb ending in -ing',
+                 'a verb, e.g. "run" in the past tense', 'another verb ending in -ing',
                  'an adverb', 'another noun', 'another verb in the past tense',
                  'a random date', 'a random number']
 
@@ -245,8 +245,8 @@ def play_madlibs():
 
     elif selected_story_title == "A Day at the Office":
 
-        words = ['a feeling', 'a city', 'a noun', 'another noun',
-                 'an adjective', 'another feeling', 'a verb ending in -ing',
+        words = ['a feeling', 'a city', 'a noun, e.g. "dog" or "table"', 'another noun',
+                 'an adjective, e.g. "pretty"', 'another feeling', 'a verb, e.g. "run" ending in -ing',
                  'another noun', 'another verb', 'a random number',
                  'another adjective', 'another city', 'an adverb',
                  'another adjective', 'another noun', 'another adjective',
@@ -299,11 +299,11 @@ def play_madlibs():
 
     elif selected_story_title == "One Interesting Vacation":
 
-        words = ['a season', 'an adjective', 'a country', 'another adjective',
+        words = ['a season', 'an adjective, e.g. "pretty"', 'a country', 'another adjective',
                  'a feeling', 'an item of clothing', 'another adjective',
-                 'an adverb', 'a noun', 'a plural noun', 'another adjective',
+                 'an adverb', 'a noun, e.g. "dog" or "table"', 'a plural noun', 'another adjective',
                  'an adverb', 'another noun', 'another feeling', 'a place',
-                 'an exclamation', 'another adjective', 'a verb ending in -ing',
+                 'an exclamation', 'another adjective', 'a verb, e.g. "run" ending in -ing',
                  'another verb ending in -ing', 'another noun']
 
         inputs = []
@@ -351,7 +351,7 @@ def play_madlibs():
 
     elif selected_story_title == "A Scary Encounter":
 
-        words = ['an adjective', 'a noun', 'a verb ending in -ing',
+        words = ['an adjective, e.g. "pretty"', 'a noun, e.g. "dog" or "table"', 'a verb, e.g. "run" ending in -ing',
                  'a feeling', 'another adjective', 'another adjective',
                  'an adverb', 'another adverb', 'an item of clothing',
                  'another noun', 'another adjective',
@@ -407,9 +407,9 @@ def play_madlibs():
 
     elif selected_story_title == "A Day at the Beach":
 
-        words = ['an adjective', 'a type of holiday', 'another adjective',
-                 'a plural noun', 'a noun', 'a plural noun', 'an adjective',
-                 'a verb', 'another adjective', 'a verb ending in -ing',
+        words = ['an adjective, e.g. "pretty"', 'a type of holiday', 'another adjective',
+                 'a plural noun', 'a noun, e.g. "dog" or "table"', 'a plural noun', 'an adjective, e.g. "pretty"',
+                 'a verb, e.g. "run"', 'another adjective', 'a verb, e.g. "run" ending in -ing',
                  'a body part', 'another noun', 'a place', 'another adjective',
                  'another noun', 'an adverb', 'another adjective',
                  'another noun', 'a type of animal', 'another verb',
@@ -454,7 +454,7 @@ def play_madlibs():
 
     elif selected_story_title == "My First Day at School":
 
-        words = ['a feeling', 'an adjective', 'an adverb', 'a noun', 'another adjective', 'a plural noun', 'a verb ending in -ing',
+        words = ['a feeling', 'an adjective, e.g. "pretty"', 'an adverb', 'a noun, e.g. "dog" or "table"', 'another adjective', 'a plural noun', 'a verb, e.g. "run" ending in -ing',
           'another verb ending in -ing', 'another verb ending in -ing', 'another noun', 'another adjective', 'a place',
           'another plural noun', 'another plural noun', 'another verb ending in -ing', 'the name of someone you know',
           'your favourite superhero', 'another plural noun', 'another plural noun', 'another adjective']
@@ -493,8 +493,8 @@ def play_madlibs():
 
     elif selected_story_title == "A Wild Party":
 
-        words = ['an adjective', 'a body part', 'another adjective', 'another adjective', 'a plural noun', 'a verb ending in -ing',
-                'another verb ending in -ing', 'another adjective', 'a noun', 'an adverb', 'another verb ending in -ing', 'another adjective',
+        words = ['an adjective, e.g. "pretty"', 'a body part', 'another adjective', 'another adjective', 'a plural noun', 'a verb, e.g. "run" ending in -ing',
+                'another verb ending in -ing', 'another adjective', 'a noun, e.g. "dog" or "table"', 'an adverb', 'another verb ending in -ing', 'another adjective',
                 'a colour', 'an item of clothing (plural)', 'a random number', 'a plural noun', 'an adverb',
                 'another verb ending in -ing', 'another adjective', 'another plural noun', 'another verb ending in -ing']
 
