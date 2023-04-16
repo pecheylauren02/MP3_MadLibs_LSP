@@ -3,11 +3,6 @@
 import sys
 import time
 import textwrap
-import os 
-import pygame
-
-# Initialize pygame mixer
-pygame.mixer.init()
 
 # Welcome message
 
@@ -15,7 +10,9 @@ def typewriter_print(text):
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
-        winsound.PlaySound('sounds/typing-with-mechanical-fingers-107214.wav', winsound.SND_FILENAME)
+        if character != '\n':
+            sound_effect = pygame.mixer.Sound(sound_path)
+            sound_effect.play()
         time.sleep(0.05)
 
 def start_game():
