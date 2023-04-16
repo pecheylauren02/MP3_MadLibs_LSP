@@ -168,7 +168,8 @@ def play_madlibs():
                    inputs.append(user_input)
                    break
 
-        story_one = f"""One {inputs[0]} day, I woke up feeling {inputs[1]}
+        story_one = f"""
+        One {inputs[0]} day, I woke up feeling {inputs[1]}
         and decided to go on a crazy adventure. I grabbed my trusty
         {inputs[2]} and set off into the {inputs[3]} wilderness. As I walked,
         I came across a {inputs[4]} {inputs[5]} who asked me for help.
@@ -219,7 +220,8 @@ def play_madlibs():
                    inputs.append(user_input)
                    break
 
-        story_two = f"""Once upon a time, in a land far,
+        story_two = f"""
+        Once upon a time, in a land far,
         far away, there was a {inputs[0]} {inputs[1]} who
         loved to {inputs[2]}. One day, while {inputs[3]} in
         the {inputs[4]}, the {inputs[0]} {inputs[1]}
@@ -379,7 +381,8 @@ def play_madlibs():
                    inputs.append(user_input)
                    break
 
-        story_five = f"""One {inputs[0]} night, I was
+        story_five = f"""
+        One {inputs[0]} night, I was
         walking home from a {inputs[1]} party when I
         suddenly felt like someone was {inputs[2]} me.
         I turned around, but there was no one there.
@@ -435,7 +438,8 @@ def play_madlibs():
 
     # Story Template Six of Eight
     
-        story_six = f"""One {inputs[0]} {inputs[1]}, I headed to the beach with my {inputs[2]} 
+        story_six = f"""
+        One {inputs[0]} {inputs[1]}, I headed to the beach with my {inputs[2]} 
         {inputs[3]}. We packed a {inputs[4]} full of snacks, sunscreen, and {inputs[5]} and 
         set off on our adventure. As soon as we arrived, we could feel the {inputs[6]} sun 
         beating down on us. We quickly unpacked and set up our {inputs[4]} and got ready to 
@@ -518,7 +522,8 @@ def play_madlibs():
 
     # Story Template One of Eight
 
-        story_eight = f"""Last night I went to the craziest party ever. It was so {inputs[0]} that my {inputs[1]}
+        story_eight = f"""
+        Last night I went to the craziest party ever. It was so {inputs[0]} that my {inputs[1]}
         is still recovering from it. When I arrived, the music was {inputs[2]} and the dance floor was packed with 
         {inputs[3]} people and wild {inputs[4]}. I started {inputs[5]} to the beat and before I knew 
         it, I was {inputs[6]} with a group of {inputs[7]} strangers.
