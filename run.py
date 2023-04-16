@@ -121,27 +121,28 @@ def play_madlibs():
                     "A Wild Party"]
 
     # Print the list of story titles for the user to see
-    print("""\nPlease select a story by
-          entering the corresponding number:""")
+    print(textwrap.dedent("""\
+        Please select a story by
+        entering the corresponding number: """))
     for i, title in enumerate(story_titles):
         print(f"{i+1}. {title}")
 
     # Ask the user to select a story
-    selected_story_index = int(input("""Enter the number 
-                                    of the story you'd
-                                    like to read: """)) - 1
+    selected_story_index = int(input(textwrap.dedent("""\
+        \nEnter the number of the story you'd like to read: 
+        """))) - 1
 
     # Retrieve the selected story title
     selected_story_title = story_titles[selected_story_index]
 
     # Print the selected story title for the user to see
-    print(f"You have selected the story: {selected_story_title}")
+    print(f"\nYou have selected the story: {selected_story_title}")
 
     # Story One
 
     if selected_story_title == "A Peculiar Adventure": 
 
-        words = ['an adjective, e.g. "pretty", e.g. "pretty", e.g. "pretty", e.g. "pretty", e.g. "pretty"', 'a feeling', 'a noun, e.g. "dog" or "table"', 'a place, e.g. "park"',
+        words = ['an adjective, e.g. "pretty"', 'a feeling', 'a noun, e.g. "dog" or "table"', 'a place, e.g. "park"',
                  'another adjective', 'an animal', 'a noun, e.g. "dog" or "table"',
                  'another adjective', 'a verb ending in -ed, e.g. "run"',
                  'a plural noun', 'another adjective', 'an adverb, e.g. quickly',
@@ -154,7 +155,7 @@ def play_madlibs():
         inputs = []
         for word in words:
             while True:
-                user_input = input(f"Enter {word}: ")
+                user_input = input(f"\nEnter {word}: ")
                 if user_input.isdigit() or user_input.strip() == "":
                     print(f"Invalid input. Please enter {word}.")
                 else:
@@ -351,7 +352,8 @@ def play_madlibs():
 
     elif selected_story_title == "A Scary Encounter":
 
-        words = ['an adjective, e.g. "pretty"', 'a noun, e.g. "dog" or "table"', 'a verb ending in -ing, e.g. "running"',
+        words = ['an adjective, e.g. "pretty"', 'a noun, e.g. "dog" or "table"', 
+                 'a verb ending in -ing, e.g. "running"',
                  'a feeling', 'another adjective', 'another adjective',
                  'an adverb, e.g. quickly', 'another adverb', 'an item of clothing',
                  'another noun', 'another adjective',
