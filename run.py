@@ -143,12 +143,12 @@ def play_madlibs():
     if selected_story_title == "A Peculiar Adventure": 
 
         words = ['an adjective', 'a feeling', 'a noun', 'a place',
-                'another adjective', 'an animal', 'a noun',
-                'another adjective', 'a verb ending in -ed',
-                'a plural noun', 'another adjective', 'an adverb',
-                'a feeling', 'another noun', 'another noun',
-                'another feeling', 'a number', 'another adjective',
-                'another feeling', 'a verb in the present tense'],
+                 'another adjective', 'an animal', 'a noun',
+                 'another adjective', 'a verb ending in -ed',
+                 'a plural noun', 'another adjective', 'an adverb',
+                 'a feeling', 'another noun', 'another noun',
+                 'another feeling', 'a number', 'another adjective',
+                 'another feeling', 'a verb in the present tense'],
 
         #inputs = [input(f"Enter {word}: ") for word in words]
 
@@ -200,12 +200,12 @@ def play_madlibs():
     elif selected_story_title == "A Strange Fairytale": 
 
         words = ['an adjective', 'a noun', 'a verb ending in -ing',
-        'another verb', 'a place', 'another adjective',
-        'another noun', 'another verb', 'another adjective',
-        'another noun', 'an exclamation', 'another adjective',
-        'a verb in the past tense', 'another verb ending in -ing',
-        'an adverb', 'another noun', 'another verb in the past tense',
-        'a random date', 'a random number'],
+                 'another verb', 'a place', 'another adjective',
+                 'another noun', 'another verb', 'another adjective',
+                 'another noun', 'an exclamation', 'another adjective',
+                 'a verb in the past tense', 'another verb ending in -ing',
+                 'an adverb', 'another noun', 'another verb in the past tense',
+                 'a random date', 'a random number'],
 
         inputs = []
         for word in words:
@@ -253,12 +253,12 @@ def play_madlibs():
     elif selected_story_title == "A Day at the Office":
 
         words = ['a feeling', 'a city', 'a noun', 'another noun',
-                'an adjective', 'another feeling', 'a verb ending in -ing',
-                'another noun', 'another verb', 'a random number',
-                'another adjective', 'another city', 'an adverb',
-                'another adjective', 'another noun', 'another adjective',
-                'a plural noun', 'another feeling', 'another noun',
-                'an item of clothing (plural)']
+                 'an adjective', 'another feeling', 'a verb ending in -ing',
+                 'another noun', 'another verb', 'a random number',
+                 'another adjective', 'another city', 'an adverb',
+                 'another adjective', 'another noun', 'another adjective',
+                 'a plural noun', 'another feeling', 'another noun',
+                 'an item of clothing (plural)']
 
         inputs = []
         for word in words:
@@ -308,9 +308,12 @@ def play_madlibs():
 
     elif selected_story_title == "One Interesting Vacation":
 
-        words = ['a season', 'an adjective', 'a country', 'another adjective', 'a feeling', 'an item of clothing', 'another adjective',
-              'an adverb', 'a noun', 'a plural noun', 'another adjective', 'an adverb', 'another noun', 'another feeling', 'a place', 'an exclamation',
-              'another adjective', 'a verb ending in -ing', 'another verb ending in -ing', 'another noun']
+        words = ['a season', 'an adjective', 'a country', 'another adjective',
+                 'a feeling', 'an item of clothing', 'another adjective',
+                 'an adverb', 'a noun', 'a plural noun', 'another adjective',
+                 'an adverb', 'another noun', 'another feeling', 'a place',
+                 'an exclamation', 'another adjective', 'a verb ending in -ing',
+                 'another verb ending in -ing', 'another noun']
 
         inputs = []
         for word in words:
@@ -324,21 +327,33 @@ def play_madlibs():
 
     # Story Template Four of Eight
 
-        story_four = f"""Last {inputs[0]}, I decided to take a {inputs[1]} vacation to {inputs[2]}, and boy was it 
-        {inputs[3]}! On the first day of my trip, I woke up feeling {inputs[4]} and ready for adventure. I threw 
-        on my {inputs[5]} and headed out into the {inputs[6]} unknown.
-        
-        As I walked {inputs[7]} through the streets, I came across a handsome {inputs[8]} who was juggling {inputs[9]}. 
-        I couldn't help but stop and watch in amazement as they threw the {inputs[9]} higher and higher into the air.
-        After the {inputs[8]} finished their act, I decided to continue my {inputs[6]} journey. But before I could make 
-        it very far, a {inputs[10]} bird flew {inputs[11]} right into my {inputs[12]}! I was so startled that I nearly 
-        fell over, but luckily the bird flew away unharmed.
-
-        Feeling a bit shaken and {inputs[13]}, I decided to take a break at a nearby {inputs[14]}. I ordered a {inputs[10]} 
-        drink and sat down to people-watch. That's when I heard a loud {inputs[15]} coming from outside. I opened my 
-        window and saw that a {inputs[16]} parade was going by! I quickly got dressed and joined the parade, 
-        {inputs[17]} and {inputs[18]} along to the music. It was so much fun that I almost forgot about my 
-        {inputs[19]}! I can't wait to see where my next crazy adventure takes me!"""
+        story_four = f"""
+        Last {inputs[0]}, I decided to take a {inputs[1]} 
+        vacation to {inputs[2]}, and boy was it {inputs[3]}!
+        On the first day of my trip, I woke up feeling
+        {inputs[4]} and ready for adventure. I threw
+        on my {inputs[5]} and headed out into the {inputs[6]}
+        unknown.\n
+        As I walked {inputs[7]} through the streets, I came
+        across a handsome {inputs[8]} who was juggling {inputs[9]}.
+        I couldn't help but stop and watch in amazement as
+        they threw the {inputs[9]} higher and higher into
+        the air.\n
+        After the {inputs[8]} finished their act, I decided
+        to continue my {inputs[6]} journey. But before I could
+        make it very far, a {inputs[10]} bird flew {inputs[11]}
+        right into my {inputs[12]}! I was so startled that I nearly 
+        fell over, but luckily the bird flew away unharmed.\n
+        Feeling a bit shaken and {inputs[13]}, I decided to take
+        a break at a nearby {inputs[14]}. I ordered a {inputs[10]} 
+        drink and sat down to people-watch. That's when I heard
+        a loud {inputs[15]} coming from outside. I opened my 
+        window and saw that a {inputs[16]} parade was going by!
+        I quickly got dressed and joined the parade,
+        {inputs[17]} and {inputs[18]} along to the music.\n
+        It was so much fun that I almost forgot about my
+        {inputs[19]}! I can't wait to see where my next crazy
+        adventure takes me!"""
 
         print(story_four)
 
