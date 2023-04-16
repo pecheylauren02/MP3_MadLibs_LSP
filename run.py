@@ -142,9 +142,13 @@ def play_madlibs():
 
     if selected_story_title == "A Peculiar Adventure": 
 
-        words = ['an adjective', 'a feeling', 'a noun', 'a place', 'another adjective', 'an animal', 'a noun', 
-        'another adjective', 'a verb ending in -ed', 'a plural noun', 'another adjective', 'an adverb', 'a feeling', 
-        'another noun', 'another noun', 'another feeling', 'a number in words, e.g. twenty two', 'another adjective', 'another feeling', 'a verb in the present tense']
+        words = ['an adjective', 'a feeling', 'a noun', 'a place',
+                'another adjective', 'an animal', 'a noun',
+                'another adjective', 'a verb ending in -ed',
+                'a plural noun', 'another adjective', 'an adverb',
+                'a feeling', 'another noun', 'another noun',
+                'another feeling', 'a number', 'another adjective',
+                'another feeling', 'a verb in the present tense'],
 
         #inputs = [input(f"Enter {word}: ") for word in words]
 
@@ -192,7 +196,15 @@ def play_madlibs():
         'a verb in the past tense', 'another verb ending in -ing', 'an adverb', 'another noun', 'another verb in the past tense', 
         'a random date', 'a random number']
 
-        inputs = [input(f"Enter {word}: ") for word in words]
+        inputs = []
+        for word in words:
+            while True:
+                user_input = input(f"Enter {word}: ")
+                if user_input.isdigit() or user_input.strip() == "":
+                    print(f"Invalid input. Please enter {word}.")
+                else:
+                   inputs.append(user_input)
+                   break
 
     # Story Template Two of Eight
 
@@ -224,7 +236,15 @@ def play_madlibs():
         'another noun', 'another verb', 'a random number', 'another adjective', 'another city', 'an adverb', 'another adjective', 
         'another noun', 'another adjective', 'a plural noun', 'another feeling', 'another noun', 'an item of clothing (plural)']
 
-        inputs = [input(f"Enter {word}: ") for word in words]
+        inputs = []
+        for word in words:
+            while True:
+                user_input = input(f"Enter {word}: ")
+                if user_input.isdigit() or user_input.strip() == "":
+                    print(f"Invalid input. Please enter {word}.")
+                else:
+                   inputs.append(user_input)
+                   break
 
     # Story Template Three of Eight
 
@@ -258,7 +278,15 @@ def play_madlibs():
               'an adverb', 'a noun', 'a plural noun', 'another adjective', 'an adverb', 'another noun', 'another feeling', 'a place', 'an exclamation',
               'another adjective', 'a verb ending in -ing', 'another verb ending in -ing', 'another noun']
 
-        inputs = [input(f"Enter {word}: ") for word in words]
+        inputs = []
+        for word in words:
+            while True:
+                user_input = input(f"Enter {word}: ")
+                if user_input.isdigit() or user_input.strip() == "":
+                    print(f"Invalid input. Please enter {word}.")
+                else:
+                   inputs.append(user_input)
+                   break
 
     # Story Template Four of Eight
 
@@ -290,7 +318,15 @@ def play_madlibs():
                 'another verb ending in -ing', 'body part', 'another feeling', 'another noun',
                 'another noun', 'another verb ending in -ing', 'another feeling']
 
-        inputs = [input(f"Enter {word}: ") for word in words]
+        inputs = []
+        for word in words:
+            while True:
+                user_input = input(f"Enter {word}: ")
+                if user_input.isdigit() or user_input.strip() == "":
+                    print(f"Invalid input. Please enter {word}.")
+                else:
+                   inputs.append(user_input)
+                   break
 
     # Story Template One of Eight
 
@@ -323,7 +359,15 @@ def play_madlibs():
         'a body part', 'another noun', 'a place', 'another adjective', 'another noun', 'an adverb', 'another adjective', 
         'another noun', 'a type of animal', 'another verb', 'another adverb', 'a random number']
 
-        inputs = [input(f"Enter {word}: ") for word in words]
+        inputs = []
+        for word in words:
+            while True:
+                user_input = input(f"Enter {word}: ")
+                if user_input.isdigit() or user_input.strip() == "":
+                    print(f"Invalid input. Please enter {word}.")
+                else:
+                   inputs.append(user_input)
+                   break
 
     # Story Template Six of Eight
     
@@ -359,7 +403,15 @@ def play_madlibs():
           'another plural noun', 'another plural noun', 'another verb ending in -ing', 'the name of someone you know',
           'your favourite superhero', 'another plural noun', 'another plural noun', 'another adjective']
 
-        inputs = [input(f"Enter {word}: ") for word in words]
+        inputs = []
+        for word in words:
+            while True:
+                user_input = input(f"Enter {word}: ")
+                if user_input.isdigit() or user_input.strip() == "":
+                    print(f"Invalid input. Please enter {word}.")
+                else:
+                   inputs.append(user_input)
+                   break
 
         story_seven = f"""
         On my first day of school, I felt {inputs[0]} as I walked into the classroom. My {inputs[1]} teacher greeted 
@@ -390,7 +442,15 @@ def play_madlibs():
                 'a colour', 'an item of clothing (plural)', 'a random number', 'a plural noun', 'an adverb',
                 'another verb ending in -ing', 'another adjective', 'another plural noun', 'another verb ending in -ing']
 
-        inputs = [input(f"Enter {word}: ") for word in words]
+        inputs = []
+        for word in words:
+            while True:
+                user_input = input(f"Enter {word}: ")
+                if user_input.isdigit() or user_input.strip() == "":
+                    print(f"Invalid input. Please enter {word}.")
+                else:
+                   inputs.append(user_input)
+                   break
 
     # Story Template One of Eight
 
