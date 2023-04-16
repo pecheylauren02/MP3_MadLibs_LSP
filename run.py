@@ -176,18 +176,19 @@ def play_madlibs():
         resist taking a selfie {inputs[11]} with it. Feeling 
         {inputs[12]}, I said goodbye to my new friend, {inputs[5]}, 
         and continued on my wild adventure.\n
-        Soon, I stumbled upon a giant {13} who challenged me to
-        a {14} contest. I was feeling {15}, so I accepted. We
-        went back and forth, with each of us throwing {16}
+        Soon, I stumbled upon a giant {inputs[13]} who challenged me to
+        a {inputs[14]} contest. I was feeling {inputs[15]}, so I accepted. We
+        went back and forth, with each of us throwing {inputs[16]}
         punches at each other. In the end, I emerged victorious,
-        much to the {17} disappointment of my opponent.
-        Exhausted but {18}, I returned home and went straight
+        much to the {inputs[17]} disappointment of my opponent.
+        Exhausted but {inputs[18]}, I returned home and went straight
         to bed.\n
-        As I drifted off to {19}, I couldn't help but think
+        As I drifted off to {inputs[19]}, I couldn't help but think
         that it had been a truly remarkable day. So if you're
-        feeling {1} and in need of an adventure, grab your {2}
-        and set off into the {10} unknown. Who knows
-        what kind of {7} and {4} things you might find
+        feeling {inputs[1]} and in need of an adventure, 
+        grab your {inputs[2]} and set off into the 
+        {inputs[10]} unknown. Who knows
+        what kind of {inputs[7]} and {inputs[4]} things you might find
         along the way!"""
 
         print(story_one)
@@ -198,10 +199,13 @@ def play_madlibs():
 
     elif selected_story_title == "A Strange Fairytale": 
 
-        words = ['an adjective', 'a noun', 'a verb ending in -ing', 'another verb', 'a place', 'another adjective', 
-        'another noun', 'another verb', 'another adjective', 'another noun', 'an exclamation', 'another adjective', 
-        'a verb in the past tense', 'another verb ending in -ing', 'an adverb', 'another noun', 'another verb in the past tense', 
-        'a random date', 'a random number']
+        words = ['an adjective', 'a noun', 'a verb ending in -ing',
+        'another verb', 'a place', 'another adjective',
+        'another noun', 'another verb', 'another adjective',
+        'another noun', 'an exclamation', 'another adjective',
+        'a verb in the past tense', 'another verb ending in -ing',
+        'an adverb', 'another noun', 'another verb in the past tense',
+        'a random date', 'a random number'],
 
         inputs = []
         for word in words:
