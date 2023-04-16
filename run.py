@@ -361,11 +361,15 @@ def play_madlibs():
 
     elif selected_story_title == "A Scary Encounter":
 
-        words = ['adjective', 'noun', 'verb ending in -ing', 'feeling',
-                'adjective', 'another adjective', 'adverb', 'another adverb',
-                'item of clothing', 'another noun', 'another adjective', 'another item of clothing',
-                'another verb ending in -ing', 'body part', 'another feeling', 'another noun',
-                'another noun', 'another verb ending in -ing', 'another feeling']
+        words = ['an adjective', 'a noun', 'a verb ending in -ing',
+                 'a feeling', 'another adjective', 'another adjective',
+                 'an adverb', 'another adverb', 'an item of clothing',
+                 'another noun', 'another adjective',
+                 'another item of clothing',
+                 'another verb ending in -ing',
+                 'a body part', 'another feeling', 'another noun',
+                 'another noun', 'another verb ending in -ing',
+                 'another feeling']
 
         inputs = []
         for word in words:
@@ -379,23 +383,35 @@ def play_madlibs():
 
     # Story Template One of Eight
 
-        story_five = f"""One {inputs[0]} night, I was walking home from a {inputs[1]} party when I suddenly felt like someone 
-        was {inputs[2]} me. I turned around, but there was no one there. Feeling a bit {inputs[3]}, I quickened my pace 
-        and started walking faster. But then, I heard a {inputs[4]} noise coming from behind me. I turned around again, and 
-        this time I saw a {inputs[5]} figure lurking {inputs[6]} in the shadows.
-        
-        I tried to run {inputs[7]}, but my {inputs[8]} got caught on a {inputs[1]}, and I fell to the ground. The 
-        {inputs[5]} figure approached me slowly, and I realized that it was actually a {inputs[9]} wearing a {inputs[10]} 
-        {inputs[11]}. I screamed for help, but no one seemed to hear me. The {inputs[9]} just stood there, {inputs[12]} at 
-        me with its tiny {inputs[13]}.
-
-        Feeling {inputs[3]}, I tried to think of a way to escape. That's when I remembered the {inputs[1]} that I had in my {inputs[14]}. 
-        I pulled it out and aimed it at the {inputs[9]}, hoping that it would scare it away. To my surprise, the {inputs[9]} started 
-        {inputs[15]} and ran away as fast as it could. I got up and ran home as quickly as possible, feeling {inputs[16]} 
-        the entire time.
-
-        As I lay in bed that night, I couldn't help but wonder what other {inputs[0]} encounters I might have in the future. 
-        But for now, I was just grateful to be safe and sound in bed."""
+        story_five = f"""One {inputs[0]} night, I was
+        walking home from a {inputs[1]} party when I
+        suddenly felt like someone was {inputs[2]} me.
+        I turned around, but there was no one there.
+        Feeling a bit {inputs[3]}, I quickened my pace
+        and started walking faster. But then, I heard a
+        {inputs[4]} noise coming from behind me. I turned
+        around again, and this time I saw a {inputs[5]}
+        figure lurking {inputs[6]} in the shadows.\n
+        I tried to run {inputs[7]}, but my {inputs[8]}
+        got caught on a {inputs[1]}, and I fell to the
+        ground. The {inputs[5]} figure approached me slowly,
+        and I realized that it was actually a {inputs[9]}
+        wearing a {inputs[10]} {inputs[11]}. I screamed for
+        help, but no one seemed to hear me. The {inputs[9]}
+        just stood there, {inputs[12]} at me with its tiny
+        {inputs[13]}.\n
+        Feeling {inputs[3]}, I tried to think of a way to
+        escape. That's when I remembered the {inputs[1]}
+        that I had in my {inputs[14]}. I pulled it out and
+        aimed it at the {inputs[9]}, hoping that it would
+        scare it away. To my surprise, the {inputs[9]} started 
+        {inputs[15]} and ran away as fast as it could. I got
+        up and ran home as quickly as possible, feeling
+        {inputs[16]} the entire time.\n
+        As I lay in bed that night, I couldn't help but
+        wonder what other {inputs[0]} encounters I might
+        have in the future. But for now, I was just
+        grateful to be safe and sound in bed."""
 
         print(story_five)
 
