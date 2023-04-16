@@ -37,11 +37,11 @@ def start_game():
         print("""Mad Libs are stories with words
               removed and replaced by blank spaces.\n""")
         print("\nHere's how to play:")
-        print("""1. Choose a story title from the list given,
-              by entering the number of the title.""")
-        print("""2. You will be given a total of 20 prompts, 
-              asking you to enter a word, without seeing the
-              story beforehand. E.g. 'Enter a noun: '\n""")
+        print("""\n1. Choose a story title from the list given,
+              by entering the number of the title.\n""")
+        print("""2. You will be given a total of 20 prompts  
+              asking you to enter a word (without seeing the
+              story beforehand). E.g. 'Enter a noun: '\n""")
         print("""3. When you see a prompt, enter your answer.
               The prompts will ask you for a mix of adjectives,
               nouns, exclamations, colours, adverbs, and more!\n""")
@@ -60,7 +60,7 @@ def start_game():
         if play_response.upper() == "N":
             print("Okay, maybe next time!")
         else:
-            print("Let's get started!")
+            print("\nLet's get started!")
             play_madlibs()
     else:
         print("Okay, maybe next time!")
@@ -80,7 +80,7 @@ def play_madlibs():
                     "A Wild Party"]
 
     # Print the list of story titles for the user to see
-    print("""Please select a story by
+    print("""\nPlease select a story by
           entering the corresponding number:""")
     for i, title in enumerate(story_titles):
         print(f"{i+1}. {title}")
@@ -104,7 +104,7 @@ def play_madlibs():
 
         words = ['an adjective', 'a feeling', 'a noun', 'a place', 'another adjective', 'an animal', 'a noun', 
         'another adjective', 'a verb ending in -ed', 'a plural noun', 'another adjective', 'an adverb', 'a feeling', 
-        'another noun', 'another noun', 'another feeling', 'a number', 'another adjective', 'another feeling', 'a verb in the present tense']
+        'another noun', 'another noun', 'another feeling', 'a number in words, e.g. twenty two', 'another adjective', 'another feeling', 'a verb in the present tense']
 
         #inputs = [input(f"Enter {word}: ") for word in words]
 
@@ -114,14 +114,9 @@ def play_madlibs():
                 user_input = input(f"Enter {word}: ")
                 if user_input.isdigit() or user_input.strip() == "":
                     print(f"Invalid input. Please enter {word}.")
-                    print("Fails string check")
-                elif word == 'a number' and (not user_input.isdigit()):
-                    print(f"Invalid input. Please enter {word}.")
-                    print("Fails digit check")
                 else:
-                    inputs.append(user_input)
-                    break
-
+                   inputs.append(user_input)
+                   break
 
     # Story Template One of Eight
 
