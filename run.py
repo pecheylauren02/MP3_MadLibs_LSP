@@ -33,32 +33,32 @@ def start_game():
         print("Invalid response. Please enter Y or N.")
         response = input("Want to learn how to play? Y/N: ")
     if response.upper() == "Y":
-        print("\nWhat are Mad Libs?\n")
-        print(textwrap.dedent("""\
+        typewriter_print("\nWhat are Mad Libs?\n")
+        typewriter_print(textwrap.dedent("""\
             Mad Libs are stories with words
             removed and replaced by blank spaces.\n"""))
-        print("\nHere's how to play:")
-        print(textwrap.dedent("""\
+        typewriter_print("\nHere's how to play: \n")
+        typewriter_print(textwrap.dedent("""\
             1. Choose a story title from the list given,
                 by entering the number of the title.\n"""))
-        print(textwrap.dedent("""\
+        typewriter_print(textwrap.dedent("""\
             2. You will be given a total of 20 prompts  
-              asking you to enter a word (without seeing the
-              story beforehand). E.g. 'Enter a noun: '\n"""))
-        print(textwrap.dedent("""\
+                asking you to enter a word (without seeing the
+                story beforehand). E.g. 'Enter a noun: '\n"""))
+        typewriter_print(textwrap.dedent("""\
             3. When you see a prompt, enter your answer.
-            The prompts will ask you for a mix of adjectives,
-            nouns, exclamations, colours, adverbs, and more!\n"""))
-        print(textwrap.dedent("""\
+                The prompts will ask you for a mix of adjectives,
+                nouns, exclamations, colours, adverbs, and more!\n"""))
+        typewriter_print(textwrap.dedent("""\
             4. When you finish entering all of the prompts
-            correctly, these words will be inserted into the
-            blanks of the story title you chose.\n"""))
-        print(textwrap.dedent("""\
+                correctly, these words will be inserted into the
+                blanks of the story title you chose.\n"""))
+        typewriter_print(textwrap.dedent("""\
             5. Your story will then be displayed for you
-            to read aloud with hilarious results.\n"""))
-        print(textwrap.dedent("""\
+                to read aloud with hilarious results.\n"""))
+        typewriter_print(textwrap.dedent("""\
             6. There are no winners or losers in this
-            game, only laughter!\n"""))
+                game, only laughter!\n"""))
 
         play_response = input("Ready to play? Y/N: ")
         while play_response.upper() not in ("Y", "N"):
