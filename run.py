@@ -1,17 +1,17 @@
 # imported modules
-#from story.py import STORIES
+
 import sys
 import time
 import textwrap
 
 # Welcome message
-
 def typewriter_print(text):
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
         time.sleep(0.05)
-    time.sleep(1) # add a 1-second delay after printing each sentence
+    time.sleep(1)
+    # add a 1-second delay after printing each sentence
 
 def start_game():
     #Welcome message
@@ -149,7 +149,7 @@ def play_madlibs():
                  'a plural noun', 'another adjective', 'an adverb',
                  'a feeling', 'another noun', 'another noun',
                  'another feeling', 'a number', 'another adjective',
-                 'another feeling', 'a verb in the present tense'],
+                 'another feeling', 'a verb in the present tense']
 
         #inputs = [input(f"Enter {word}: ") for word in words]
 
@@ -194,8 +194,6 @@ def play_madlibs():
 
         print(story_one)
 
-        print(story_one)
-
     # User inputs Two of Eight
 
     elif selected_story_title == "A Strange Fairytale": 
@@ -206,7 +204,7 @@ def play_madlibs():
                  'another noun', 'an exclamation', 'another adjective',
                  'a verb in the past tense', 'another verb ending in -ing',
                  'an adverb', 'another noun', 'another verb in the past tense',
-                 'a random date', 'a random number'],
+                 'a random date', 'a random number']
 
         inputs = []
         for word in words:
