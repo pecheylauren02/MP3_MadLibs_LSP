@@ -137,9 +137,7 @@ def play_madlibs():
     # Print the selected story title for the user to see
     print(f"You have selected the story: {selected_story_title}")
 
-    # Mad Libs One of Eight
-
-    # User inputs One of Eight: Status: DONE ALL 20
+    # Story One
 
     if selected_story_title == "A Peculiar Adventure": 
 
@@ -162,8 +160,6 @@ def play_madlibs():
                 else:
                    inputs.append(user_input)
                    break
-
-    # Story Template One of Eight
 
         story_one = f"""One {inputs[0]} day, I woke up feeling {inputs[1]}
         and decided to go on a crazy adventure. I grabbed my trusty
@@ -194,7 +190,7 @@ def play_madlibs():
 
         print(story_one)
 
-    # User inputs Two of Eight
+    # Story Two
 
     elif selected_story_title == "A Strange Fairytale": 
 
@@ -215,8 +211,6 @@ def play_madlibs():
                 else:
                    inputs.append(user_input)
                    break
-
-    # Story Template Two of Eight
 
         story_two = f"""Once upon a time, in a land far,
         far away, there was a {inputs[0]} {inputs[1]} who
@@ -247,7 +241,7 @@ def play_madlibs():
 
         print(story_two)
 
-    # User inputs Three of Eight
+    # Story Three
 
     elif selected_story_title == "A Day at the Office":
 
@@ -268,8 +262,6 @@ def play_madlibs():
                 else:
                    inputs.append(user_input)
                    break
-
-    # Story Template Three of Eight
 
         story_three = f"""
         It was just another {inputs[0]} day in the office
@@ -303,7 +295,7 @@ def play_madlibs():
 
         print(story_three)
 
-    # User inputs Four of Eight
+    # Story Four
 
     elif selected_story_title == "One Interesting Vacation":
 
@@ -324,7 +316,6 @@ def play_madlibs():
                    inputs.append(user_input)
                    break
 
-    # Story Template Four of Eight
 
         story_four = f"""
         Last {inputs[0]}, I decided to take a {inputs[1]} 
@@ -356,7 +347,7 @@ def play_madlibs():
 
         print(story_four)
 
-    # User inputs Five of Eight
+    # Story Five
 
     elif selected_story_title == "A Scary Encounter":
 
@@ -379,8 +370,6 @@ def play_madlibs():
                 else:
                    inputs.append(user_input)
                    break
-
-    # Story Template One of Eight
 
         story_five = f"""One {inputs[0]} night, I was
         walking home from a {inputs[1]} party when I
@@ -418,10 +407,13 @@ def play_madlibs():
 
     elif selected_story_title == "A Day at the Beach":
 
-        words = ['an adjective', 'a type of holiday', 'another adjective', 'a plural noun', 'a noun', 
-        'a plural noun', 'an adjective', 'a verb', 'another adjective', 'a verb ending in -ing', 
-        'a body part', 'another noun', 'a place', 'another adjective', 'another noun', 'an adverb', 'another adjective', 
-        'another noun', 'a type of animal', 'another verb', 'another adverb', 'a random number']
+        words = ['an adjective', 'a type of holiday', 'another adjective',
+                 'a plural noun', 'a noun', 'a plural noun', 'an adjective',
+                 'a verb', 'another adjective', 'a verb ending in -ing',
+                 'a body part', 'another noun', 'a place', 'another adjective',
+                 'another noun', 'an adverb', 'another adjective',
+                 'another noun', 'a type of animal', 'another verb',
+                 'another adverb', 'a random number']
 
         inputs = []
         for word in words:
