@@ -164,26 +164,33 @@ def play_madlibs():
 
     # Story Template One of Eight
 
-        story_one = f"""One {inputs[0]} day, I woke up feeling {inputs[1]}
-        and decided to go on a crazy adventure. I grabbed my trusty {inputs[2]} and
-        set off into the {inputs[3]} wilderness. As I walked, I came across a {inputs[4]}
-        {inputs[5]} who asked me for help. 'I've lost my {inputs[6]}!' they exclaimed. Being
-        the {inputs[7]} person I am, I offered to help. We {inputs[8]} high and
-        low, through dense forests and mysterious {inputs[9]}, until finally we found the
-        missing {inputs[6]}. The {inputs[6]} was so {inputs[10]} that we couldn't resist taking
-        a selfie {inputs[11]} with it. Feeling {inputs[12]}, I said goodbye to my new friend, {inputs[5]},
-        and continued on my wild adventure.
+        story_one = f"""One {inputs[0]} day, I woke up feeling {inputs[1]} 
+        and decided to go on a crazy adventure. I grabbed my trusty 
+        {inputs[2]} and set off into the {inputs[3]} wilderness. As I walked, 
+        I came across a {inputs[4]} {inputs[5]} who asked me for help. 
+        'I've lost my {inputs[6]}!' they exclaimed.\n
+        Being the {inputs[7]} person I am, I offered to help. 
+        We {inputs[8]} high and low, through dense forests and mysterious 
+        {inputs[9]}, until finally we found the missing {inputs[6]}. 
+        The {inputs[6]} was so {inputs[10]} that we couldn't
+        resist taking a selfie {inputs[11]} with it. Feeling 
+        {inputs[12]}, I said goodbye to my new friend, {inputs[5]}, 
+        and continued on my wild adventure.\n
+        Soon, I stumbled upon a giant {13} who challenged me to
+        a {14} contest. I was feeling {15}, so I accepted. We
+        went back and forth, with each of us throwing {16}
+        punches at each other. In the end, I emerged victorious,
+        much to the {17} disappointment of my opponent.
+        Exhausted but {18}, I returned home and went straight
+        to bed.\n
+        As I drifted off to {19}, I couldn't help but think
+        that it had been a truly remarkable day. So if you're
+        feeling {1} and in need of an adventure, grab your {2}
+        and set off into the {10} unknown. Who knows
+        what kind of {7} and {4} things you might find
+        along the way!"""
 
-        Soon, I stumbled upon a giant {inputs[13]} who challenged me
-        to a {inputs[14]} contest. I was feeling {inputs[15]}, so I accepted. We went back and forth,
-        with each of us throwing {inputs[16]} punches at each other back and forth. In the end, I emerged
-        victorious, much to the {inputs[17]} disappointment of my opponent. Exhausted but {inputs[18]},
-        I returned home and went straight to bed.
-
-        As I drifted off to {inputs[19]}, I couldn't help but think
-        that it had been a truly remarkable day. So if you're feeling {inputs[1]} and in need of an adventure,
-        grab your {inputs[2]} and set off into the {inputs[10]} unknown. Who knows what kind of
-        {inputs[7]} and {inputs[4]} things you might find along the way!"""
+        print(story_one)
 
         print(story_one)
 
