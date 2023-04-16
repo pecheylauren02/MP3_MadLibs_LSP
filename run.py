@@ -164,17 +164,17 @@ def play_madlibs():
 
     # Story Template One of Eight
 
-        story_one = f"""One {inputs[0]} day, I woke up feeling {inputs[1]} 
-        and decided to go on a crazy adventure. I grabbed my trusty 
-        {inputs[2]} and set off into the {inputs[3]} wilderness. As I walked, 
-        I came across a {inputs[4]} {inputs[5]} who asked me for help. 
+        story_one = f"""One {inputs[0]} day, I woke up feeling {inputs[1]}
+        and decided to go on a crazy adventure. I grabbed my trusty
+        {inputs[2]} and set off into the {inputs[3]} wilderness. As I walked,
+        I came across a {inputs[4]} {inputs[5]} who asked me for help.
         'I've lost my {inputs[6]}!' they exclaimed.\n
-        Being the {inputs[7]} person I am, I offered to help. 
-        We {inputs[8]} high and low, through dense forests and mysterious 
-        {inputs[9]}, until finally we found the missing {inputs[6]}. 
+        Being the {inputs[7]} person I am, I offered to help.
+        We {inputs[8]} high and low, through dense forests and mysterious
+        {inputs[9]}, until finally we found the missing {inputs[6]}.
         The {inputs[6]} was so {inputs[10]} that we couldn't
-        resist taking a selfie {inputs[11]} with it. Feeling 
-        {inputs[12]}, I said goodbye to my new friend, {inputs[5]}, 
+        resist taking a selfie {inputs[11]} with it. Feeling
+        {inputs[12]}, I said goodbye to my new friend, {inputs[5]},
         and continued on my wild adventure.\n
         Soon, I stumbled upon a giant {inputs[13]} who challenged me to
         a {inputs[14]} contest. I was feeling {inputs[15]}, so I accepted. We
@@ -185,8 +185,8 @@ def play_madlibs():
         to bed.\n
         As I drifted off to {inputs[19]}, I couldn't help but think
         that it had been a truly remarkable day. So if you're
-        feeling {inputs[1]} and in need of an adventure, 
-        grab your {inputs[2]} and set off into the 
+        feeling {inputs[1]} and in need of an adventure,
+        grab your {inputs[2]} and set off into the
         {inputs[10]} unknown. Who knows
         what kind of {inputs[7]} and {inputs[4]} things you might find
         along the way!"""
@@ -219,21 +219,30 @@ def play_madlibs():
 
     # Story Template Two of Eight
 
-        story_two = f"""Once upon a time, in a land far, far away, there was a {inputs[0]} {inputs[1]} who 
-        loved to {inputs[2]}. One day, while {inputs[3]} in the {inputs[4]}, the {inputs[0]} {inputs[1]} 
-        stumbled upon a {inputs[5]} {inputs[6]} who was {inputs[7]} with a {inputs[8]} {inputs[9]}.
-        "Hey there, {inputs[10]}!" exclaimed the {inputs[0]} {inputs[1]}. "Would you like to join us in our 
-        {inputs[11]} {inputs[2]}?"
-
-        Without hesitation, the {inputs[5]} {inputs[6]} agreed and soon found themselves {inputs[2]} 
-        with the {inputs[5]} {inputs[6]} and their {inputs[8]} {inputs[9]}. They {inputs[12]} and {inputs[12]}, 
-        and even did a little {inputs[13]} together.
-
-        But then, out of nowhere, a {inputs[11]} {inputs[15]} appeared and started throwing things {inputs[14]} at them! 
-        The {inputs[0]} {inputs[1]} and the {inputs[5]} {inputs[6]} were afraid, but to their surprise, the 
-        {inputs[8]} {inputs[9]} stood tall and {inputs[16]} the {inputs[11]} {inputs[15]}.
-        From {inputs[17]}, the {inputs[0]} {inputs[1]} made a promise to themselves to always be open to new experiences 
-        and never to be afraid of a little {inputs[2]}. And who knows? Maybe they'll even meet another {inputs[18]} 
+        story_two = f"""Once upon a time, in a land far,
+        far away, there was a {inputs[0]} {inputs[1]} who
+        loved to {inputs[2]}. One day, while {inputs[3]} in
+        the {inputs[4]}, the {inputs[0]} {inputs[1]}
+        stumbled upon a {inputs[5]} {inputs[6]} who was {inputs[7]}
+        with a {inputs[8]} {inputs[9]}.\n
+        "Hey there, {inputs[10]}!" exclaimed the {inputs[0]}
+        {inputs[1]}. "Would you like to join us in our
+        {inputs[11]} {inputs[2]}?"\n
+        Without hesitation, the {inputs[5]} {inputs[6]} agreed
+        and soon found themselves {inputs[2]} with the
+        {inputs[5]} {inputs[6]} and their {inputs[8]} {inputs[9]}.
+        They {inputs[12]} and {inputs[12]},
+        and even did a little {inputs[13]} together.\n
+        But then, out of nowhere, a {inputs[11]} {inputs[15]}
+        appeared and started throwing things {inputs[14]} at them!
+        The {inputs[0]} {inputs[1]} and the {inputs[5]} {inputs[6]}
+        were afraid, but to their surprise, the {inputs[8]}
+        {inputs[9]} stood tall and {inputs[16]} the {inputs[11]}
+        {inputs[15]}.\n
+        From {inputs[17]}, the {inputs[0]} {inputs[1]} made a
+        promise to themselves to always be open to new experiences
+        and never to be afraid of a little {inputs[2]}. And who
+        knows? Maybe they'll even meet another {inputs[18]}
         {inputs[11]} {inputs[15]} along the way.
         The end"""
 
