@@ -5,10 +5,13 @@ import time
 import textwrap
 from os import system, name
 import colorama
-from colorama import Fore, Style
+from colorama import init, Fore, Back, Style
 
 # Welcome messagep
 def typewriter_print(text, color=None):
+    if color: 
+        # use specified color
+        text = getattr(Fore, color.upper()) + text + Style.RESET_ALL
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
@@ -34,9 +37,8 @@ def start_game():
         
         """))
 
-    typewriter_print("\nWhat are Mad Libs?")
+    typewriter_print("\nWhat are Mad Libs?\n", color='yellow')
     typewriter_print(textwrap.dedent("""\
-            
         Mad Libs are stories with words
         removed and replaced by blank spaces.
             
@@ -57,13 +59,13 @@ def start_game():
         """))
 
     # Instructions
-    response = input("Want to learn how to play? Y/N: ")
+    response = input("Want to learn how to play? Y/N: ", color='yellow')
     while response.upper() not in ("Y", "N"):
         print(Fore.RED + "\nInvalid response. Please enter Y or N.")
         response = input(Fore.WHITE + "\nWant to learn how to play? Y/N: ")
     if response.upper() == "Y":
         clear_terminal()
-        typewriter_print("\nHere's how to play: \n")
+        typewriter_print("\nHere's how to play: \n", color='yellow')
         typewriter_print(textwrap.dedent("""\
             1. Choose a story title from the list given,
                 by entering the number of the title.
@@ -99,7 +101,7 @@ def start_game():
 
         play_response = input("\nReady to play? Y/N: ")
         while play_response.upper() not in ("Y", "N"):
-            print("Invalid response. Please enter Y or N.")
+            print(Fore.RED + "Invalid response. Please enter Y or N.")
             play_response = input("Ready to play? Y/N: ")
         if play_response.upper() == "N":
             print("Okay, maybe next time!")
@@ -148,7 +150,7 @@ def play_madlibs():
         if user_input.isnumeric():
             selected_story_index = int(user_input) - 1
         else: 
-            print("Invalid input. Please enter a number")
+            print(Fore.RED + "Invalid input. Please enter a number")
 
     # Retrieve the selected story title
     selected_story_title = story_titles[selected_story_index]
@@ -175,7 +177,7 @@ def play_madlibs():
             while True:
                 user_input = input(f"\nEnter {word}: ")
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(f"Invalid input. Please enter {word}.")
+                    print(Fore.RED + f"Invalid input. Please enter {word}.")
                 else:
                    inputs.append(user_input)
                    break
@@ -227,7 +229,7 @@ def play_madlibs():
             while True:
                 user_input = input(f"\nEnter {word}: ")
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(f"Invalid input. Please enter {word}.")
+                    print(Fore.RED + f"Invalid input. Please enter {word}.")
                 else:
                    inputs.append(user_input)
                    break
@@ -279,7 +281,7 @@ def play_madlibs():
             while True:
                 user_input = input(f"\nEnter {word}: ")
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(f"Invalid input. Please enter {word}.")
+                    print(Fore.RED + f"Invalid input. Please enter {word}.")
                 else:
                    inputs.append(user_input)
                    break
@@ -332,7 +334,7 @@ def play_madlibs():
             while True:
                 user_input = input(f"\nEnter {word}: ")
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(f"Invalid input. Please enter {word}.")
+                    print(Fore.RED + f"Invalid input. Please enter {word}.")
                 else:
                    inputs.append(user_input)
                    break
@@ -388,7 +390,7 @@ def play_madlibs():
             while True:
                 user_input = input(f"\nEnter {word}: ")
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(f"Invalid input. Please enter {word}.")
+                    print(Fore.RED + f"Invalid input. Please enter {word}.")
                 else:
                    inputs.append(user_input)
                    break
@@ -443,7 +445,7 @@ def play_madlibs():
             while True:
                 user_input = input(f"\nEnter {word}: ")
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(f"Invalid input. Please enter {word}.")
+                    print(Fore.RED + f"Invalid input. Please enter {word}.")
                 else:
                    inputs.append(user_input)
                    break
@@ -488,7 +490,7 @@ def play_madlibs():
             while True:
                 user_input = input(f"\nEnter {word}: ")
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(f"Invalid input. Please enter {word}.")
+                    print(Fore.RED + f"Invalid input. Please enter {word}.")
                 else:
                    inputs.append(user_input)
                    break
@@ -527,7 +529,7 @@ def play_madlibs():
             while True:
                 user_input = input(f"\nEnter {word}: ")
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(f"Invalid input. Please enter {word}.")
+                    print(Fore.RED + f"Invalid input. Please enter {word}.")
                 else:
                    inputs.append(user_input)
                    break
@@ -564,7 +566,7 @@ def play_madlibs():
 def restart_game():
     response = input("\n Do you want to play again? Y/N: ")
     while response.upper() not in ("Y", "N"):
-        print("Invalid response. Please enter Y or N.")
+        print(Fore.RED + "Invalid response. Please enter Y or N.")
         response = input("Do you want to play again? Y/N: ")
     if response.upper() == "Y":
         start_game()        

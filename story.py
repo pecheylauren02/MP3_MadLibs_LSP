@@ -11,7 +11,7 @@ STORIES = [
                 'a feeling', 'another noun', 'another noun',
                 'another feeling', 'a number', 'another adjective',
                 'another feeling', 'a verb in the present tense'],
-      'text': f"""One {inputs[0]} day, I woke up feeling {[1]} and decided to go
+      'text': f"""One {0} day, I woke up feeling {1} and decided to go
               on a crazy adventure. I grabbed my trusty {2} and set off
               into the {3} wilderness. As I walked, I came across a {4} {5}
               who asked me for help. 'I've lost my {6}!' they exclaimed.\n
@@ -292,6 +292,3 @@ inputs = [input(f"Enter {word}: ") for word in selected_story['words']]
 
 story_text= selected_story['text'].format(*inputs)
 print(story_text)
-
-if __name__ == "__main__":
-  start_game()
