@@ -152,7 +152,7 @@ def play_madlibs():
 
         words = ['an adjective, e.g. "pretty"', 'a feeling', 'a noun, e.g. "dog" or "table"', 'a place, e.g. "park"',
                  'another adjective', 'an animal', 'a noun, e.g. "dog" or "table"',
-                 'another adjective', 'a verb ending in -ed, e.g. "run"',
+                 'another adjective', 'a verb ending in -ed, e.g. "jumped"',
                  'a plural noun, e.g. "dogs"', 'another adjective', 'an adverb, e.g. quickly',
                  'a feeling', 'another noun', 'another noun',
                  'another feeling', 'a number, e.g. "fifty seven"', 'another adjective',
@@ -550,8 +550,19 @@ def play_madlibs():
         never forget!"""
 
         print(story_eight)
+
+def restart_game():
+    response = input("\n Do you want to play again? Y/N: ")
+    while response.upper() not in ("Y", "N"):
+        print("Invalid response. Please enter Y or N.")
+        response = input("Do you want to play again? Y/N: ")
+    if response.upper() == "Y":
+        start_game()        
+    else:
+        print("Thanks for playing!")
+        sys.exit(0)
+
         
 if __name__ == "__main__":
     start_game()
-
-
+    restart_game()
