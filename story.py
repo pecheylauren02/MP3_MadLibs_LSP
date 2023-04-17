@@ -286,9 +286,12 @@ selected_story_input = 1
 selected_story_index = selected_story_input -1
 
 selected_story = STORIES[selected_story_index]
-#inputs = [input(f"Enter {word}: ") for word in selected_story['words']]
+#inputs = [input(f"Enter {word}: ") for word in words]
 
 inputs = [input(f"Enter {word}: ") for word in selected_story['words']]
+print(inputs)
 
-story_text= selected_story['text'].format(*inputs)
+s_text = f"""One {0} day, I woke up feeling {1} and decided to go"""
+
+story_text = s_text.format(*inputs)
 print(story_text)
