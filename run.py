@@ -155,7 +155,7 @@ def play_madlibs():
                  'another adjective', 'a verb ending in -ed, e.g. "run"',
                  'a plural noun', 'another adjective', 'an adverb, e.g. quickly',
                  'a feeling', 'another noun', 'another noun',
-                 'another feeling', 'a number', 'another adjective',
+                 'another feeling', 'a number, e.g. "fifty seven"', 'another adjective',
                  'another feeling', 'a verb, e.g. "run"']
 
         #inputs = [input(f"Enter {word}: ") for word in words]
@@ -210,7 +210,7 @@ def play_madlibs():
                  'another noun', 'an exclamation', 'another adjective',
                  'a verb ending in -ed, e.g. jumped', 'another verb ending in -ing',
                  'an adverb, e.g. quickly', 'another noun', 'another verb ending in -ed',
-                 'a random date', 'a random number']
+                 'a random date', 'a number, e.g. "fifty seven"']
 
         inputs = []
         for word in words:
@@ -258,7 +258,7 @@ def play_madlibs():
 
         words = ['a feeling', 'a city', 'a noun, e.g. "dog" or "table"', 'another noun',
                  'an adjective, e.g. "pretty"', 'another feeling', 'a verb ending in -ing, e.g. "running"',
-                 'another noun', 'another verb', 'a random number',
+                 'another noun', 'another verb', 'a number, e.g. "fifty seven"',
                  'another adjective', 'another city', 'an adverb, e.g. quickly',
                  'another adjective', 'another noun', 'another adjective',
                  'a plural noun', 'another feeling', 'another noun',
@@ -426,7 +426,7 @@ def play_madlibs():
                  'a body part', 'another noun', 'a place, e.g. "park"', 'another adjective',
                  'another noun', 'an adverb, e.g. quickly', 'another adjective',
                  'another noun', 'a type of animal', 'another verb',
-                 'another adverb', 'a random number']
+                 'another adverb', 'a number, e.g. "fifty seven"']
 
         inputs = []
         for word in words:
@@ -509,7 +509,7 @@ def play_madlibs():
 
         words = ['an adjective, e.g. "pretty"', 'a body part', 'another adjective', 'another adjective', 'a plural noun', 'a verb ending in -ing, e.g. "running"',
                 'another verb ending in -ing', 'another adjective', 'a noun, e.g. "dog" or "table"', 'an adverb, e.g. quickly', 'another verb ending in -ing', 'another adjective',
-                'a colour', 'an item of clothing (plural)', 'a random number', 'a plural noun', 'an adverb, e.g. quickly',
+                'a colour', 'an item of clothing (plural)', 'a number, e.g. "fifty seven"', 'a plural noun', 'an adverb, e.g. quickly',
                 'another verb ending in -ing', 'another adjective', 'another plural noun', 'another verb ending in -ing']
 
         inputs = []
