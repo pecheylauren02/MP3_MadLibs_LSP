@@ -3,6 +3,7 @@
 import sys
 import time
 import textwrap
+from os import system, name
 
 # Welcome message
 def typewriter_print(text):
@@ -13,8 +14,17 @@ def typewriter_print(text):
     #time.sleep(1)
     # add a 1-second delay after printing each sentence
 
+def clear_terminal():
+    '''
+    Clears terminal for better user experience
+    '''
+    system('cls' if name == 'nt' else 'clear')
+
 def start_game():
-    #Welcome message
+    '''
+    Displays welcome message and instructions
+    Starts the game after user enters "Y"
+    '''
     typewriter_print(textwrap.dedent("""\
         
         Welcome to the Maddest Game
@@ -44,9 +54,10 @@ def start_game():
     # Instructions
     response = input("\nWant to learn how to play? Y/N: ")
     while response.upper() not in ("Y", "N"):
-        print("Invalid response. Please enter Y or N.")
+        print("\nInvalid response. Please enter Y or N.")
         response = input("Want to learn how to play? Y/N: ")
     if response.upper() == "Y":
+        clear_terminal()
         typewriter_print("\nWhat are Mad Libs?")
         typewriter_print(textwrap.dedent("""\
             
@@ -95,6 +106,7 @@ def start_game():
         if play_response.upper() == "N":
             print("Okay, maybe next time!")
         else:
+            clear_terminal()
             print(textwrap.dedent("""\
                 Let's get started!
 
@@ -149,7 +161,7 @@ def play_madlibs():
     # Story One
 
     if selected_story_title == "A Peculiar Adventure": 
-
+        clear_terminal()
         words = ['an adjective, e.g. "pretty"', 'a feeling', 'a noun, e.g. "dog" or "table"', 'a place, e.g. "park"',
                  'another adjective', 'an animal', 'a noun, e.g. "dog" or "table"',
                  'another adjective', 'a verb ending in -ed, e.g. "jumped"',
