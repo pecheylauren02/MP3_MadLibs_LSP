@@ -4,6 +4,7 @@ import sys
 import time
 import textwrap
 from os import system, name
+from colorama import init, Fore, Back, Style
 
 # Welcome message
 def typewriter_print(text):
