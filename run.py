@@ -59,7 +59,7 @@ def start_game():
         """))
 
     # Instructions
-    response = input("Want to learn how to play? Y/N: ", color='yellow')
+    response = input("Want to learn how to play? Y/N: ")
     while response.upper() not in ("Y", "N"):
         print(Fore.RED + "\nInvalid response. Please enter Y or N.")
         response = input(Fore.WHITE + "\nWant to learn how to play? Y/N: ")
@@ -105,6 +105,7 @@ def start_game():
             play_response = input("Ready to play? Y/N: ")
         if play_response.upper() == "N":
             print("Okay, maybe next time!")
+            sys.exit(0)
         else:
             clear_terminal()
             print(textwrap.dedent("""\
@@ -114,6 +115,7 @@ def start_game():
             play_madlibs()
     else:
         print("Okay, maybe next time!")
+        sys.exit(0)
     
 # Story Title Selection 
 
@@ -131,7 +133,6 @@ def play_madlibs():
 
     # Print the list of story titles for the user to see
     print(textwrap.dedent("""\
-        
         Below is a list of story titles
         for you to choose from: 
         """))
@@ -161,7 +162,6 @@ def play_madlibs():
     # Story One
 
     if selected_story_title == "A Peculiar Adventure": 
-        clear_terminal()
         words = ['an adjective, e.g. "pretty"', 'a feeling', 'a noun, e.g. "dog" or "table"', 'a place, e.g. "park"',
                  'another adjective', 'an animal', 'a noun, e.g. "dog" or "table"',
                  'another adjective', 'a verb ending in -ed, e.g. "jumped"',
@@ -181,6 +181,7 @@ def play_madlibs():
                 else:
                    inputs.append(user_input)
                    break
+            clear_terminal()
 
         story_one = f"""
         One {inputs[0]} day, I woke up feeling {inputs[1]}
