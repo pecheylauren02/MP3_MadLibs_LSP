@@ -153,7 +153,7 @@ def play_madlibs():
         words = ['an adjective, e.g. "pretty"', 'a feeling', 'a noun, e.g. "dog" or "table"', 'a place, e.g. "park"',
                  'another adjective', 'an animal', 'a noun, e.g. "dog" or "table"',
                  'another adjective', 'a verb ending in -ed, e.g. "run"',
-                 'a plural noun', 'another adjective', 'an adverb, e.g. quickly',
+                 'a plural noun, e.g. "dogs"', 'another adjective', 'an adverb, e.g. quickly',
                  'a feeling', 'another noun', 'another noun',
                  'another feeling', 'a number, e.g. "fifty seven"', 'another adjective',
                  'another feeling', 'a verb, e.g. "run"']
@@ -207,10 +207,10 @@ def play_madlibs():
         words = ['an adjective, e.g. "pretty"', 'a noun, e.g. "dog" or "table"', 'a verb ending in -ing, e.g. "running"',
                  'another verb', 'a place, e.g. "park"', 'another adjective',
                  'another noun', 'another verb', 'another adjective',
-                 'another noun', 'an exclamation', 'another adjective',
+                 'another noun', 'an exclamation, e.g. "Wow!"', 'another adjective',
                  'a verb ending in -ed, e.g. jumped', 'another verb ending in -ing',
                  'an adverb, e.g. quickly', 'another noun', 'another verb ending in -ed',
-                 'a random date', 'a number, e.g. "fifty seven"']
+                 'a holiday, e.g. "Christmas"', 'a number, e.g. "fifty seven"']
 
         inputs = []
         for word in words:
@@ -261,7 +261,7 @@ def play_madlibs():
                  'another noun', 'another verb', 'a number, e.g. "fifty seven"',
                  'another adjective', 'another city', 'an adverb, e.g. quickly',
                  'another adjective', 'another noun', 'another adjective',
-                 'a plural noun', 'another feeling', 'another noun',
+                 'a plural noun, e.g. "dogs"', 'another feeling', 'another noun',
                  'an item of clothing (plural)']
 
         inputs = []
@@ -312,9 +312,9 @@ def play_madlibs():
 
         words = ['a season', 'an adjective, e.g. "pretty"', 'a country', 'another adjective',
                  'a feeling', 'an item of clothing', 'another adjective',
-                 'an adverb, e.g. quickly', 'a noun, e.g. "dog" or "table"', 'a plural noun', 'another adjective',
+                 'an adverb, e.g. quickly', 'a noun, e.g. "dog" or "table"', 'a plural noun, e.g. "dogs"', 'another adjective',
                  'an adverb, e.g. quickly', 'another noun', 'another feeling', 'a place, e.g. "park"',
-                 'an exclamation', 'another adjective', 'a verb ending in -ing, e.g. "running"',
+                 'an exclamation, e.g. "Wow!"', 'another adjective', 'a verb ending in -ing, e.g. "running"',
                  'another verb ending in -ing', 'another noun']
 
         inputs = []
@@ -421,7 +421,7 @@ def play_madlibs():
     elif selected_story_title == "A Day at the Beach":
 
         words = ['an adjective, e.g. "pretty"', 'a type of holiday', 'another adjective',
-                 'a plural noun', 'a noun, e.g. "dog" or "table"', 'a plural noun', 'an adjective, e.g. "pretty"',
+                 'a plural noun, e.g. "dogs"', 'a noun, e.g. "dog" or "table"', 'another plural noun', 'an adjective, e.g. "pretty"',
                  'a verb, e.g. "run"', 'another adjective', 'a verb ending in -ing, e.g. "running"',
                  'a body part', 'another noun', 'a place, e.g. "park"', 'another adjective',
                  'another noun', 'an adverb, e.g. quickly', 'another adjective',
@@ -468,7 +468,7 @@ def play_madlibs():
 
     elif selected_story_title == "My First Day at School":
 
-        words = ['a feeling', 'an adjective, e.g. "pretty"', 'an adverb, e.g. quickly', 'a noun, e.g. "dog" or "table"', 'another adjective', 'a plural noun', 'a verb ending in -ing, e.g. "running"',
+        words = ['a feeling', 'an adjective, e.g. "pretty"', 'an adverb, e.g. quickly', 'a noun, e.g. "dog" or "table"', 'another adjective', 'a plural noun, e.g. "dogs"', 'a verb ending in -ing, e.g. "running"',
           'another verb ending in -ing', 'another verb ending in -ing', 'another noun', 'another adjective', 'a place, e.g. "park"',
           'another plural noun', 'another plural noun', 'another verb ending in -ing', 'the name of someone you know',
           'your favourite superhero', 'another plural noun', 'another plural noun', 'another adjective']
@@ -507,9 +507,9 @@ def play_madlibs():
 
     elif selected_story_title == "A Wild Party":
 
-        words = ['an adjective, e.g. "pretty"', 'a body part', 'another adjective', 'another adjective', 'a plural noun', 'a verb ending in -ing, e.g. "running"',
+        words = ['an adjective, e.g. "pretty"', 'a body part', 'another adjective', 'another adjective', 'a plural noun, e.g. "dogs"', 'a verb ending in -ing, e.g. "running"',
                 'another verb ending in -ing', 'another adjective', 'a noun, e.g. "dog" or "table"', 'an adverb, e.g. quickly', 'another verb ending in -ing', 'another adjective',
-                'a colour', 'an item of clothing (plural)', 'a number, e.g. "fifty seven"', 'a plural noun', 'an adverb, e.g. quickly',
+                'a colour', 'an item of clothing (plural)', 'a number, e.g. "fifty seven"', 'another plural noun', 'an adverb, e.g. quickly',
                 'another verb ending in -ing', 'another adjective', 'another plural noun', 'another verb ending in -ing']
 
         inputs = []
