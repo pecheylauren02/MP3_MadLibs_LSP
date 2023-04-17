@@ -4,10 +4,11 @@ import sys
 import time
 import textwrap
 from os import system, name
-from colorama import init, Fore, Back, Style
+import colorama
+from colorama import Fore, Style
 
-# Welcome message
-def typewriter_print(text):
+# Welcome messagep
+def typewriter_print(text, color=None):
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
@@ -32,40 +33,36 @@ def start_game():
         of Mad Libs you will ever play!
         
         """))
+
+    typewriter_print("\nWhat are Mad Libs?")
+    typewriter_print(textwrap.dedent("""\
+            
+        Mad Libs are stories with words
+        removed and replaced by blank spaces.
+            
+            """))
     typewriter_print(textwrap.dedent("""\
         
-        If you are looking for a night
+        It is also one of the world's greatest
+        word games and can turn anyone into the
+        funniest person in the room!
+        
+        """))
+    typewriter_print(textwrap.dedent("""\
+        
+        So if you are looking for a night
         of laughter and fun with your friends
         and family, then look no further!
-        
-        """))
-    typewriter_print(textwrap.dedent("""\
-        
-        Mad Libs is one of the world's greatest
-        word games.
-        
-        """))
-    typewriter_print(textwrap.dedent("""\
-        
-        It can make anyone the funniest person
-        in the room, without even trying!
-        
+    
         """))
 
     # Instructions
-    response = input("\nWant to learn how to play? Y/N: ")
+    response = input("Want to learn how to play? Y/N: ")
     while response.upper() not in ("Y", "N"):
-        print("\nInvalid response. Please enter Y or N.")
-        response = input("Want to learn how to play? Y/N: ")
+        print(Fore.RED + "\nInvalid response. Please enter Y or N.")
+        response = input(Fore.WHITE + "\nWant to learn how to play? Y/N: ")
     if response.upper() == "Y":
         clear_terminal()
-        typewriter_print("\nWhat are Mad Libs?")
-        typewriter_print(textwrap.dedent("""\
-            
-            Mad Libs are stories with words
-            removed and replaced by blank spaces.
-            
-            """))
         typewriter_print("\nHere's how to play: \n")
         typewriter_print(textwrap.dedent("""\
             1. Choose a story title from the list given,
