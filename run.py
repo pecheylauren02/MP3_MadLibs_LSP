@@ -3,6 +3,7 @@
 import sys
 import time
 import textwrap
+import os
 from os import system, name
 import colorama
 from colorama import init, Fore, Back, Style
@@ -25,12 +26,25 @@ def clear_terminal():
     '''
     system('cls' if name == 'nt' else 'clear')
 
+#Stack Overflow https://stackoverflow.com/questions/8924173/how-can-i-print-bold-text-in-python
+class color_style:
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+    PURPLE = '\033[95m'
+    CYAN = '\033[96m'
+    DARKCYAN = '\033[36m'
+    BLUE = '\033[94m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    RED = '\033[91m'
+    END = '\033[0m'
+
 def start_game():
     '''
     Displays welcome message and instructions
     Starts the game after user enters "Y"
     '''
-    typewriter_print(textwrap.dedent("""\
+    typewriter_print(textwrap.dedent('\033[1m' + """\
         
         Welcome to the Maddest Game
         of Mad Libs you will ever play!
@@ -62,59 +76,58 @@ def start_game():
     response = input("Want to learn how to play? Y/N: \n")
     while response.upper() not in ("Y", "N"):
         print(Fore.RED + "\nInvalid response. Please enter Y or N.")
-        response = input(Fore.WHITE + "\nWant to learn how to play? Y/N: ")
+        response = input(Fore.YELLOW + "\nWant to learn how to play? Y/N: ")
     if response.upper() == "Y":
         clear_terminal()
         typewriter_print("\nHere's how to play: \n", color='yellow')
-        typewriter_print(textwrap.dedent("""\
+        typewriter_print(textwrap.dedent(Fore.WHITE + """\
             1. Choose a story title from the list given,
                 by entering the number of the title.
                 
                 """))
-        typewriter_print(textwrap.dedent("""\
+        typewriter_print(textwrap.dedent(Fore.WHITE +"""\
             2. You will be given a total of 20 prompts  
                 asking you to enter a word (without seeing the
                 story beforehand). E.g. 'Enter a noun, e.g. "dog" or "table": '
                 
                 """))
-        typewriter_print(textwrap.dedent("""\
+        typewriter_print(textwrap.dedent(Fore.WHITE +"""\
             3. When you see a prompt, enter your answer.
                 The prompts will ask you for a mix of adjectives,
                 nouns, exclamations, colours, adverbs, and more!
                 
                 """))
-        typewriter_print(textwrap.dedent("""\
+        typewriter_print(textwrap.dedent(Fore.WHITE +"""\
             4. When you finish entering all of the prompts
                 correctly, these words will be inserted into the
                 blanks of the story title you chose.
                 
                 """))
-        typewriter_print(textwrap.dedent("""\
+        typewriter_print(textwrap.dedent(Fore.WHITE +"""\
             5. Your story will then be displayed for you
                 to read aloud with hilarious results.
                 
                 """))
-        typewriter_print(textwrap.dedent("""\
+        typewriter_print(textwrap.dedent(Fore.WHITE +"""\
             6. There are no winners or losers in this
                 game, only laughter!
                 """))
 
-        play_response = input("\nReady to play? Y/N: \n")
+        play_response = input(Fore.GREEN + "\nReady to play? Y/N: \n")
         while play_response.upper() not in ("Y", "N"):
             print(Fore.RED + "Invalid response. Please enter Y or N.")
-            play_response = input("Ready to play? Y/N: \n")
+            play_response = input(Fore.GREEN + "Ready to play? Y/N: \n")
         if play_response.upper() == "N":
-            print("Okay, maybe next time!")
+            print(Fore.WHITE + "Okay, maybe next time!")
             sys.exit(0)
         else:
             clear_terminal()
-            print(textwrap.dedent("""\
+            print(textwrap.dedent(Fore.GREEN + """\
                 Let's get started!
-
                 """))
             play_madlibs()
     else:
-        print("Okay, maybe next time!")
+        print(Fore.WHITE + "Okay, maybe next time!")
         sys.exit(0)
     
 # Story Title Selection 
@@ -132,7 +145,7 @@ def play_madlibs():
                     "A Wild Party"]
 
     # Print the list of story titles for the user to see
-    print(textwrap.dedent("""\
+    print(textwrap.dedent(Fore.CYAN + """\
         Below is a list of story titles
         for you to choose from: 
         """))
@@ -145,8 +158,10 @@ def play_madlibs():
     selected_story_index = None
     while selected_story_index is None:
         user_input = input(textwrap.dedent(
-            
-            """Enter the number of the story you'd like to read: \n
+            Fore.GREEN + """\
+
+            Enter the number of the story
+            you'd like to read: \n
             """))
         if user_input.isnumeric():
             selected_story_index = int(user_input) - 1
@@ -157,7 +172,7 @@ def play_madlibs():
     selected_story_title = story_titles[selected_story_index]
 
     # Print the selected story title for the user to see
-    print(f"\nYou have selected the story: {selected_story_title}")
+    print(Fore.CYAN + f"\nYou have selected the story: {selected_story_title}")
 
     # Story One
 
@@ -175,7 +190,7 @@ def play_madlibs():
         inputs = []
         for word in words:
             while True:
-                user_input = input(f"\nEnter {word}: \n")
+                user_input = input(Fore.WHITE + f"\nEnter {word}: \n")
                 if user_input.isdigit() or user_input.strip() == "":
                     print(Fore.RED + f"Invalid input. Please enter {word}.")
                 else:
