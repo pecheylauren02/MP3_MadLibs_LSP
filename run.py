@@ -27,7 +27,7 @@ def clear_terminal():
     system('cls' if name == 'nt' else 'clear')
 
 #Stack Overflow https://stackoverflow.com/questions/8924173/how-can-i-print-bold-text-in-python
-class color_style:
+class color:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
     PURPLE = '\033[95m'
@@ -44,15 +44,16 @@ def start_game():
     Displays welcome message and instructions
     Starts the game after user enters "Y"
     '''
-    typewriter_print(textwrap.dedent('\033[1m' + """\
+    typewriter_print(textwrap.dedent("""\
         
         Welcome to the Maddest Game
         of Mad Libs you will ever play!
         
-        """))
+    """))
 
-    typewriter_print("\nWhat are Mad Libs?\n", color='yellow')
+    typewriter_print(color.BOLD + color.YELLOW + "\nWhat are Mad Libs?\n" + color.END)
     typewriter_print(textwrap.dedent("""\
+        
         Mad Libs are stories with words
         removed and replaced by blank spaces.
             
@@ -73,61 +74,62 @@ def start_game():
         """))
 
     # Instructions
-    response = input("Want to learn how to play? Y/N: \n")
+    response = input(color.BOLD + color.GREEN + "Want to learn how to play? Y/N: \n" + color.END)
     while response.upper() not in ("Y", "N"):
-        print(Fore.RED + "\nInvalid response. Please enter Y or N.")
-        response = input(Fore.YELLOW + "\nWant to learn how to play? Y/N: ")
+        print(color.BOLD + color.RED + "\nInvalid response. Please enter Y or N." + color.END)
+        response = input(color.BOLD + color.GREEN + "\nWant to learn how to play? Y/N: " + color.END)
     if response.upper() == "Y":
         clear_terminal()
-        typewriter_print("\nHere's how to play: \n", color='yellow')
-        typewriter_print(textwrap.dedent(Fore.WHITE + """\
+        typewriter_print(color.BOLD + color.YELLOW + "\nHere's how to play: \n" + color.END)
+        typewriter_print(textwrap.dedent("""\
+            
             1. Choose a story title from the list given,
                 by entering the number of the title.
                 
                 """))
-        typewriter_print(textwrap.dedent(Fore.WHITE +"""\
+        typewriter_print(textwrap.dedent("""\
             2. You will be given a total of 20 prompts  
                 asking you to enter a word (without seeing the
                 story beforehand). E.g. 'Enter a noun, e.g. "dog" or "table": '
                 
                 """))
-        typewriter_print(textwrap.dedent(Fore.WHITE +"""\
+        typewriter_print(textwrap.dedent("""\
             3. When you see a prompt, enter your answer.
                 The prompts will ask you for a mix of adjectives,
                 nouns, exclamations, colours, adverbs, and more!
                 
                 """))
-        typewriter_print(textwrap.dedent(Fore.WHITE +"""\
+        typewriter_print(textwrap.dedent("""\
             4. When you finish entering all of the prompts
                 correctly, these words will be inserted into the
                 blanks of the story title you chose.
                 
                 """))
-        typewriter_print(textwrap.dedent(Fore.WHITE +"""\
+        typewriter_print(textwrap.dedent("""\
             5. Your story will then be displayed for you
                 to read aloud with hilarious results.
                 
                 """))
-        typewriter_print(textwrap.dedent(Fore.WHITE +"""\
+        typewriter_print(textwrap.dedent("""\
             6. There are no winners or losers in this
                 game, only laughter!
                 """))
 
-        play_response = input(Fore.GREEN + "\nReady to play? Y/N: \n")
+        play_response = input(color.BOLD + color.GREEN + "\nReady to play? Y/N: \n" + color.END)
         while play_response.upper() not in ("Y", "N"):
-            print(Fore.RED + "Invalid response. Please enter Y or N.")
-            play_response = input(Fore.GREEN + "Ready to play? Y/N: \n")
+            print(color.BOLD + color.RED + "Invalid response. Please enter Y or N." + color.END) 
+            play_response = input(color.BOLD + color.GREEN + "\nReady to play? Y/N: \n" + color.END)
         if play_response.upper() == "N":
-            print(Fore.WHITE + "Okay, maybe next time!")
+            print("Okay, maybe next time!")
             sys.exit(0)
         else:
             clear_terminal()
-            print(textwrap.dedent(Fore.GREEN + """\
+            print(textwrap.dedent("""\
                 Let's get started!
                 """))
             play_madlibs()
     else:
-        print(Fore.WHITE + "Okay, maybe next time!")
+        print("Okay, maybe next time!")
         sys.exit(0)
     
 # Story Title Selection 
