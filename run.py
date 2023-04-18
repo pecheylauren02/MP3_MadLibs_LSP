@@ -214,8 +214,9 @@ def play_madlibs():
                 else:
                     inputs.append(user_input)
                     break
-
-        print("Here is your final story. Have a good laugh!")
+                    clear_terminal()
+                    
+        print(color.BOLD + color.YELLOW + "Here is your final story. Have a good laugh!" + color.END)
 
         story_one = f"""
         One {inputs[0]} day, I woke up feeling {inputs[1]}
