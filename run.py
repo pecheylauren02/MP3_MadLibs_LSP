@@ -196,7 +196,7 @@ def play_madlibs():
         inputs = []
         for word in words:
             while True:
-                user_input = input(Fore.WHITE + f"\nEnter {word}: \n")
+                user_input = input(color.BOLD + color.BLUE + f"\nEnter {word}: \n" + color.END)
                 if user_input.isdigit() or user_input.strip() == "":
                     print(color.BOLD + color.RED + f"Invalid input. Please enter {word}." + color.END)
                 else:
