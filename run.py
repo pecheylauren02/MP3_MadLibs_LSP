@@ -281,7 +281,7 @@ def play_madlibs():
         {inputs[11]} {inputs[15]} along the way.
         The end"""
 
-        print(story_two)
+        print(textwrap.dedent(story_two))
 
     # Story Three
 
@@ -335,7 +335,7 @@ def play_madlibs():
         {inputs[1]}!
         """
 
-        print(story_three)
+        print(textwrap.dedent(story_three))
 
     # Story Four
 
@@ -387,7 +387,7 @@ def play_madlibs():
         {inputs[19]}! I can't wait to see where my next crazy
         adventure takes me!"""
 
-        print(story_four)
+        print(textwrap.dedent(story_four))
 
     # Story Five
 
@@ -445,7 +445,7 @@ def play_madlibs():
         have in the future. But for now, I was just
         grateful to be safe and sound in bed."""
 
-        print(story_five)
+        print(textwrap.dedent(story_five))
 
     # User inputs Six of Eight
 
@@ -493,7 +493,7 @@ def play_madlibs():
         After that crazy encounter, we decided to pack up and head home. As we drove away, we 
         couldn't help but laugh at the absurdity of our day at the beach."""
 
-        print(story_six)
+        print(textwrap.dedent(story_six))
 
     # User inputs Seven of Eight
 
@@ -532,7 +532,7 @@ def play_madlibs():
         As the day came to an end, I felt happy and {inputs[19]}. So if you're feeling {inputs[19]} about your first day 
         of school, just remember that it's a new adventure full of surprises and {inputs[1]} moments."""
         
-        print(story_seven)
+        print(textwrap.dedent(story_seven))
 
     # User inputs Eight of Eight
 
@@ -580,7 +580,7 @@ def play_madlibs():
         The party didn't really start to wind down until the early hours of the morning. It was definitely a night I'll 
         never forget!"""
 
-        print(story_eight)
+        print(textwrap.dedent(story_eight))
 
 def restart_game():
     response = input(color.BOLD + color.GREEN + textwrap.dedent(
