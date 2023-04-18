@@ -622,8 +622,14 @@ def restart_game():
         clear_terminal()
         start_game()        
     else:
+        clear_terminal()
         print(color.BOLD + "I hope you got some laughs!" + color.END)
-        sys.exit(0)
+        reply = input("Would you like to return to the main page? Y/N: \n")
+        if reply.upper() == "Y":
+            start_game()
+        else: 
+            print(color.BOLD + "Alrighty then! If you change your mind, just click the 'Run Program' button to start again" + color.END)
+            sys.exit(0)
 
         
 if __name__ == "__main__":
