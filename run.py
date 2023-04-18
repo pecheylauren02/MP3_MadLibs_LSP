@@ -59,7 +59,7 @@ def start_game():
         """))
 
     # Instructions
-    response = input("Want to learn how to play? Y/N: ")
+    response = input("Want to learn how to play? Y/N: \n")
     while response.upper() not in ("Y", "N"):
         print(Fore.RED + "\nInvalid response. Please enter Y or N.")
         response = input(Fore.WHITE + "\nWant to learn how to play? Y/N: ")
@@ -99,10 +99,10 @@ def start_game():
                 game, only laughter!
                 """))
 
-        play_response = input("\nReady to play? Y/N: ")
+        play_response = input("\nReady to play? Y/N: \n")
         while play_response.upper() not in ("Y", "N"):
             print(Fore.RED + "Invalid response. Please enter Y or N.")
-            play_response = input("Ready to play? Y/N: ")
+            play_response = input("Ready to play? Y/N: \n")
         if play_response.upper() == "N":
             print("Okay, maybe next time!")
             sys.exit(0)
@@ -146,7 +146,7 @@ def play_madlibs():
     while selected_story_index is None:
         user_input = input(textwrap.dedent(
             
-            """Enter the number of the story you'd like to read: 
+            """Enter the number of the story you'd like to read: \n
             """))
         if user_input.isnumeric():
             selected_story_index = int(user_input) - 1
@@ -175,7 +175,7 @@ def play_madlibs():
         inputs = []
         for word in words:
             while True:
-                user_input = input(f"\nEnter {word}: ")
+                user_input = input(f"\nEnter {word}: \n")
                 if user_input.isdigit() or user_input.strip() == "":
                     print(Fore.RED + f"Invalid input. Please enter {word}.")
                 else:
@@ -228,7 +228,7 @@ def play_madlibs():
         inputs = []
         for word in words:
             while True:
-                user_input = input(f"\nEnter {word}: ")
+                user_input = input(f"\nEnter {word}: \n")
                 if user_input.isdigit() or user_input.strip() == "":
                     print(Fore.RED + f"Invalid input. Please enter {word}.")
                 else:
@@ -280,7 +280,7 @@ def play_madlibs():
         inputs = []
         for word in words:
             while True:
-                user_input = input(f"\nEnter {word}: ")
+                user_input = input(f"\nEnter {word}: \n")
                 if user_input.isdigit() or user_input.strip() == "":
                     print(Fore.RED + f"Invalid input. Please enter {word}.")
                 else:
@@ -333,7 +333,7 @@ def play_madlibs():
         inputs = []
         for word in words:
             while True:
-                user_input = input(f"\nEnter {word}: ")
+                user_input = input(f"\nEnter {word}: \n")
                 if user_input.isdigit() or user_input.strip() == "":
                     print(Fore.RED + f"Invalid input. Please enter {word}.")
                 else:
@@ -389,7 +389,7 @@ def play_madlibs():
         inputs = []
         for word in words:
             while True:
-                user_input = input(f"\nEnter {word}: ")
+                user_input = input(f"\nEnter {word}: \n")
                 if user_input.isdigit() or user_input.strip() == "":
                     print(Fore.RED + f"Invalid input. Please enter {word}.")
                 else:
@@ -444,7 +444,7 @@ def play_madlibs():
         inputs = []
         for word in words:
             while True:
-                user_input = input(f"\nEnter {word}: ")
+                user_input = input(f"\nEnter {word}: \n")
                 if user_input.isdigit() or user_input.strip() == "":
                     print(Fore.RED + f"Invalid input. Please enter {word}.")
                 else:
@@ -489,7 +489,7 @@ def play_madlibs():
         inputs = []
         for word in words:
             while True:
-                user_input = input(f"\nEnter {word}: ")
+                user_input = input(f"\nEnter {word}: \n")
                 if user_input.isdigit() or user_input.strip() == "":
                     print(Fore.RED + f"Invalid input. Please enter {word}.")
                 else:
@@ -528,7 +528,7 @@ def play_madlibs():
         inputs = []
         for word in words:
             while True:
-                user_input = input(f"\nEnter {word}: ")
+                user_input = input(f"\nEnter {word}: \n")
                 if user_input.isdigit() or user_input.strip() == "":
                     print(Fore.RED + f"Invalid input. Please enter {word}.")
                 else:
@@ -565,10 +565,10 @@ def play_madlibs():
         print(story_eight)
 
 def restart_game():
-    response = input("\n Do you want to play again? Y/N: ")
+    response = input("\n Do you want to play again? Y/N: \n")
     while response.upper() not in ("Y", "N"):
         print(Fore.RED + "Invalid response. Please enter Y or N.")
-        response = input("Do you want to play again? Y/N: ")
+        response = input("Do you want to play again? Y/N: \n")
     if response.upper() == "Y":
         start_game()        
     else:
