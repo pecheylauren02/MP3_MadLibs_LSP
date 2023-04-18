@@ -79,7 +79,7 @@ def start_game():
     # Instructions Section
     response = input(color.BOLD + color.GREEN + "Want to learn how to play? Y/N: \n" + color.END)
     while response.upper() not in ("Y", "N"):
-        print(color.BOLD + color.RED + "\nInvalid response. Please enter Y or N." + color.END)
+        typewriter_print(color.BOLD + color.RED + "\nInvalid response. Please enter Y or N." + color.END)
         response = input(color.BOLD + color.GREEN + "\nWant to learn how to play? Y/N: " + color.END)
     if response.upper() == "Y":
         clear_terminal()
@@ -120,19 +120,19 @@ def start_game():
 
         play_response = input(color.BOLD + color.GREEN + "\nReady to play? Y/N: \n" + color.END)
         while play_response.upper() not in ("Y", "N"):
-            print(color.BOLD + color.RED + "Invalid response. Please enter Y or N." + color.END) 
+            typewriter_print(color.BOLD + color.RED + "Invalid response. Please enter Y or N." + color.END) 
             play_response = input(color.BOLD + color.GREEN + "\nReady to play? Y/N: \n" + color.END)
         if play_response.upper() == "N":
-            print(color.BOLD + color.CYAN + "Okay, maybe next time!" + color.END)
+            typewriter_print(color.BOLD + color.CYAN + "Okay, maybe next time!" + color.END)
             sys.exit(0)
         else:
             clear_terminal()
-            print(color.BOLD + color.GREEN + textwrap.dedent("""\
+            typewriter_print(color.BOLD + color.GREEN + textwrap.dedent("""\
                 Let's get started!
                 """) + color.END)
             play_madlibs()
     else:
-        print(color.BOLD + color.CYAN + "Okay, maybe next time!" + color.END)
+        typewriter_print(color.BOLD + color.CYAN + "Okay, maybe next time!" + color.END)
         sys.exit(0)
     
 # Story Title Selection 
@@ -154,12 +154,12 @@ def play_madlibs():
                     "My First Day at School", 
                     "A Wild Party"]
 
-    print(color.BOLD + color.YELLOW + textwrap.dedent("""\
+    typewriter_print(color.BOLD + color.YELLOW + textwrap.dedent("""\
         Below is a list of story titles
         for you to choose from: 
         """) + color.END)
     for i, title in enumerate(story_titles):
-        print(color.BOLD + f"{i+1}. {title}" + color.END)
+        typewriter_print(color.BOLD + f"{i+1}. {title}" + color.END)
 
     selected_story_index = None
     while selected_story_index is None:
@@ -173,11 +173,11 @@ def play_madlibs():
             selected_story_index = int(user_input) - 1
             clear_terminal()
         else: 
-            print(color.BOLD + color.RED + "Invalid input. Please enter a number" + color.END)
+            typewriter_print(color.BOLD + color.RED + "Invalid input. Please enter a number" + color.END)
 
     selected_story_title = story_titles[selected_story_index]
 
-    print(color.BOLD + color.YELLOW + textwrap.dedent(f"""\
+    typewriter_print(color.BOLD + color.YELLOW + textwrap.dedent(f"""\
             You have selected the story: {selected_story_title}""" + color.END))
     
 
@@ -196,7 +196,7 @@ def play_madlibs():
         inputs = []
         for word in words:
             while True:
-                user_input = input(color.BOLD + color.BLUE + f"\nEnter {word}: \n" + color.END)
+                user_input = input(color.BOLD + f"\nEnter {word}: \n" + color.END)
                 if user_input.isdigit() or user_input.strip() == "":
                     print(color.BOLD + color.RED + f"Invalid input. Please enter {word}." + color.END)
                 else:
@@ -231,7 +231,7 @@ def play_madlibs():
         what kind of {inputs[7]} and {inputs[4]} things you might find
         along the way!"""
 
-        print(textwrap.dedent(story_one))
+        typewriter_print(textwrap.dedent(story_one))
 
     # Story Two
 
@@ -250,7 +250,7 @@ def play_madlibs():
             while True:
                 user_input = input(f"\nEnter {word}: \n")
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(color.BOLD + color.RED + f"Invalid input. Please enter {word}." + color.END)
+                    typewriter_print(color.BOLD + color.RED + f"Invalid input. Please enter {word}." + color.END)
                 else:
                    inputs.append(user_input)
                    break
@@ -283,7 +283,7 @@ def play_madlibs():
         {inputs[11]} {inputs[15]} along the way.
         The end"""
 
-        print(textwrap.dedent(story_two))
+        typewriter_print(textwrap.dedent(story_two))
 
     # Story Three
 
@@ -302,7 +302,7 @@ def play_madlibs():
             while True:
                 user_input = input(f"\nEnter {word}: \n")
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(color.BOLD + color.RED + f"Invalid input. Please enter {word}." + color.END)
+                    typewriter_print(color.BOLD + color.RED + f"Invalid input. Please enter {word}." + color.END)
                 else:
                    inputs.append(user_input)
                    break
@@ -355,7 +355,7 @@ def play_madlibs():
             while True:
                 user_input = input(f"\nEnter {word}: \n")
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(color.BOLD + color.RED + f"Invalid input. Please enter {word}." + color.END)
+                    typewriter_print(color.BOLD + color.RED + f"Invalid input. Please enter {word}." + color.END)
                 else:
                    inputs.append(user_input)
                    break
@@ -389,7 +389,7 @@ def play_madlibs():
         {inputs[19]}! I can't wait to see where my next crazy
         adventure takes me!"""
 
-        print(textwrap.dedent(story_four))
+        typewriter_print(textwrap.dedent(story_four))
 
     # Story Five
 
@@ -447,7 +447,7 @@ def play_madlibs():
         have in the future. But for now, I was just
         grateful to be safe and sound in bed."""
 
-        print(textwrap.dedent(story_five))
+        typewriter_print(textwrap.dedent(story_five))
 
     # Story Six
 
@@ -466,7 +466,7 @@ def play_madlibs():
             while True:
                 user_input = input(f"\nEnter {word}: \n")
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(color.BOLD + color.RED + f"Invalid input. Please enter {word}." + color.END)
+                    typewriter_print(color.BOLD + color.RED + f"Invalid input. Please enter {word}." + color.END)
                 else:
                    inputs.append(user_input)
                    break
@@ -509,7 +509,7 @@ def play_madlibs():
             while True:
                 user_input = input(f"\nEnter {word}: \n")
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(color.BOLD + color.RED + f"Invalid input. Please enter {word}." + color.END)
+                    typewriter_print(color.BOLD + color.RED + f"Invalid input. Please enter {word}." + color.END)
                 else:
                    inputs.append(user_input)
                    break
@@ -548,7 +548,7 @@ def play_madlibs():
             while True:
                 user_input = input(f"\nEnter {word}: \n")
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(color.BOLD + color.RED + f"Invalid input. Please enter {word}." + color.END)
+                    typewriter_print(color.BOLD + color.RED + f"Invalid input. Please enter {word}." + color.END)
                 else:
                    inputs.append(user_input)
                    break
@@ -587,7 +587,7 @@ def restart_game():
     """ + color.END))
 
     while response.upper() not in ("Y", "N"):
-        print(color.BOLD + color.RED + "Invalid response. Please enter Y or N." + color.END)
+        typewriter_print(color.BOLD + color.RED + "Invalid response. Please enter Y or N." + color.END)
         response = input(color.BOLD + color.GREEN + textwrap.dedent(
         """\
         
@@ -596,7 +596,7 @@ def restart_game():
         clear_terminal()
         start_game()        
     else:
-        print(color.BOLD + "I hope you got some laughs!" + color.END)
+        typewriter_print("I hope you got some laughs!")
         sys.exit(0)
 
         
