@@ -196,6 +196,8 @@ def play_madlibs():
                  'another feeling', 'a verb, e.g. "run"']
 
         inputs = []
+        counter = 0
+
         for word in words:
             while True:
                 user_input = input(color.BOLD + f"\nEnter {word}: \n" + color.END)
@@ -213,9 +215,16 @@ def play_madlibs():
                         """) + color.END)
                 else:
                     inputs.append(user_input)
+                    counter += 1 
+                    if counter == 5:
+                        clear_terminal()
+                        counter = 0
+                    #elif counter == 11:
+                     #   print(color.BOLD + color.GREEN + textwrap.dedent("""\
+                      #      Keep going... You're halfway to becoming a comedian!
+                       #     """))
                     break
-                    clear_terminal()
-                    
+
         print(color.BOLD + color.YELLOW + "Here is your final story. Have a good laugh!" + color.END)
 
         story_one = f"""
