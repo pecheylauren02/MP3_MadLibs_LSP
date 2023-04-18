@@ -1,5 +1,6 @@
-# imported modules
-
+'''
+Imports modules and libraries for the game
+'''
 import sys
 import time
 import textwrap
@@ -10,15 +11,17 @@ from colorama import init, Fore, Back, Style
 
 # Welcome messagep
 def typewriter_print(text, color=None):
+    '''
+    Creates color and style condition
+    Creates typewriter timer effect for text
+    '''
     if color: 
-        # use specified color
         text = getattr(Fore, color.upper()) + text + Style.RESET_ALL
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
         time.sleep(0.00001)
     time.sleep(0.00002)
-    # add a 1-second delay after printing each sentence
 
 def clear_terminal():
     '''
@@ -28,6 +31,9 @@ def clear_terminal():
 
 #Stack Overflow https://stackoverflow.com/questions/8924173/how-can-i-print-bold-text-in-python
 class color:
+    '''
+    Declares all color and style variables
+    '''
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
     PURPLE = '\033[95m'
@@ -43,7 +49,7 @@ def start_game():
     '''
     Displays welcome message and instructions
     Starts the game after user enters "Y"
-    '''""
+    '''
     typewriter_print(color.BOLD + color.GREEN + textwrap.dedent("""\
         
         WELCOME to the maddest game
@@ -70,7 +76,7 @@ def start_game():
 
         """) + color.END)
 
-    # Instructions
+    # Instructions Section
     response = input(color.BOLD + color.GREEN + "Want to learn how to play? Y/N: \n" + color.END)
     while response.upper() not in ("Y", "N"):
         print(color.BOLD + color.RED + "\nInvalid response. Please enter Y or N." + color.END)
@@ -134,6 +140,11 @@ def start_game():
 # Define the list of story titles
 
 def play_madlibs():
+    '''
+    Prints story titles for user to choose from
+    Asks the user to select a story title
+    Launches the game once the user enters inputs
+    '''
     story_titles = ["A Peculiar Adventure", 
                     "A Strange Fairytale", 
                     "A Day at the Office", 
@@ -143,16 +154,12 @@ def play_madlibs():
                     "My First Day at School", 
                     "A Wild Party"]
 
-    # Print the list of story titles for the user to see
     print(color.BOLD + color.YELLOW + textwrap.dedent("""\
         Below is a list of story titles
         for you to choose from: 
         """) + color.END)
     for i, title in enumerate(story_titles):
         print(color.BOLD + f"{i+1}. {title}" + color.END)
-
-    # Ask the user to select a story
-    #selected_story_index = int(input(textwrap.dedent("""\
 
     selected_story_index = None
     while selected_story_index is None:
@@ -164,19 +171,20 @@ def play_madlibs():
             """) + color.END)
         if user_input.isnumeric():
             selected_story_index = int(user_input) - 1
+            clear_terminal()
         else: 
-            print(Fore.RED + "Invalid input. Please enter a number")
+            print(color.BOLD + color.RED + "Invalid input. Please enter a number" + color.END)
 
-    # Retrieve the selected story title
     selected_story_title = story_titles[selected_story_index]
 
-    # Print the selected story title for the user to see
     print(color.BOLD + color.YELLOW + textwrap.dedent(f"""\
-        You have selected the story: {selected_story_title}""" + color.END))
+            You have selected the story: {selected_story_title}""" + color.END))
+    
 
     # Story One
 
     if selected_story_title == "A Peculiar Adventure": 
+
         words = ['an adjective, e.g. "pretty"', 'a feeling', 'a noun, e.g. "dog" or "table"', 'a place, e.g. "park"',
                  'another adjective', 'an animal', 'a noun, e.g. "dog" or "table"',
                  'another adjective', 'a verb ending in -ed, e.g. "jumped"',
@@ -184,8 +192,6 @@ def play_madlibs():
                  'a feeling', 'another noun', 'another noun',
                  'another feeling', 'a number, e.g. "fifty seven"', 'another adjective',
                  'another feeling', 'a verb, e.g. "run"']
-
-        #inputs = [input(f"Enter {word}: ") for word in words]
 
         inputs = []
         for word in words:
@@ -196,7 +202,6 @@ def play_madlibs():
                 else:
                    inputs.append(user_input)
                    break
-            clear_terminal()
 
         story_one = f"""
         One {inputs[0]} day, I woke up feeling {inputs[1]}
@@ -444,7 +449,7 @@ def play_madlibs():
 
         print(textwrap.dedent(story_five))
 
-    # User inputs Six of Eight
+    # Story Six
 
     elif selected_story_title == "A Day at the Beach":
 
@@ -465,8 +470,6 @@ def play_madlibs():
                 else:
                    inputs.append(user_input)
                    break
-
-    # Story Template Six of Eight
     
         story_six = f"""
         One {inputs[0]} {inputs[1]}, I headed to the beach with my {inputs[2]} 
@@ -492,7 +495,7 @@ def play_madlibs():
 
         print(textwrap.dedent(story_six))
 
-    # User inputs Seven of Eight
+    # Story Seven
 
     elif selected_story_title == "My First Day at School":
 
@@ -531,7 +534,7 @@ def play_madlibs():
         
         print(textwrap.dedent(story_seven))
 
-    # User inputs Eight of Eight
+    # Story Eight
 
     elif selected_story_title == "A Wild Party":
 
@@ -549,8 +552,6 @@ def play_madlibs():
                 else:
                    inputs.append(user_input)
                    break
-
-    # Story Template One of Eight
 
         story_eight = f"""
         Last night I went to the craziest party ever. It was so {inputs[0]} that my {inputs[1]}
@@ -592,9 +593,10 @@ def restart_game():
         
         Do you want to play again? Y/N: \n""" + color.END))
     if response.upper() == "Y":
+        clear_terminal()
         start_game()        
     else:
-        print(color.BOLD + "Thanks for playing!" + color.END)
+        print(color.BOLD + "I hope you got some laughs!" + color.END)
         sys.exit(0)
 
         
