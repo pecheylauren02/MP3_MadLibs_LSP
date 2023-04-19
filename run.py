@@ -562,35 +562,41 @@ def play_madlibs():
 
     elif selected_story_title == "A Day at the Beach":
 
-        words = ['an adjective, e.g. "pretty"', 'a type of holiday', 'another adjective',
-                 'a plural noun, e.g. "dogs"', 'a noun, e.g. "dog" or "table"', 'another plural noun', 'an adjective, e.g. "pretty"',
-                 'a verb, e.g. "run"', 'another adjective', 'a verb ending in -ing, e.g. "running"',
-                 'a body part', 'another noun', 'a place, e.g. "park"', 'another adjective',
-                 'another noun', 'an adverb, e.g. quickly', 'another adjective',
+        words = ['an adjective, e.g. "pretty"', 'a type of holiday',
+                 'another adjective', 'a plural noun, e.g. "dogs"',
+                 'a noun, e.g. "dog" or "table"', 'another plural noun',
+                 'an adjective, e.g. "pretty"', 'a verb, e.g. "run"',
+                 'another adjective', 'a verb ending in -ing, e.g. "running"',
+                 'a body part', 'another noun', 'a place, e.g. "park"',
+                 'another adjective', 'another noun',
+                 'an adverb, e.g. quickly', 'another adjective',
                  'another noun', 'a type of animal', 'another verb',
                  'another adverb', 'a number, e.g. "fifty seven"']
 
         inputs = []
         counter = 0
-
+        
         for word in words:
             while True:
-                user_input = input(color.BOLD + f"\nEnter {word}: \n" + color.END)
+                user_input = input(color.BOLD +
+                                   f"\nEnter {word}: \n" + color.END)
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(color.BOLD + color.RED + f"Invalid input. Please enter {word}.\n" + color.END)
+                    print(color.BOLD + color.RED +
+                          f"Invalid input. Please enter {word}.\n"
+                          + color.END)
                 elif len(user_input) <= 2:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
-                        Your input is too short. 
-                        Please try again. 
-                        """) + color.END)
+                          Your input is too short.
+                          Please try again.
+                          """) + color.END)
                 elif len(user_input) >= 20:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
-                        Your input is too long. 
-                        Please try again. 
-                        """) + color.END)
+                          Your input is too long.
+                          Please try again.
+                          """) + color.END)
                 else:
                     inputs.append(user_input)
-                    counter += 1 
+                    counter += 1
                     if counter == 5:
                         clear_terminal()
                         counter = 0
