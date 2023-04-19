@@ -287,6 +287,8 @@ The project will now be cloned locally for you to use.
 
 ### Code
 
+- [StackOverFlow](https://stackoverflow.com/questions/8924173/how-can-i-print-bold-text-in-python) for the built-in colour codes
+
 ### Acknowledgements
 
 - My mentor, Rohit Sharma, for all of his help and advice throughout the project.

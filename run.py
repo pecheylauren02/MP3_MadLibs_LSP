@@ -9,19 +9,20 @@ from os import system, name
 import colorama
 from colorama import init, Fore, Back, Style
 
-# Welcome messagep
+
 def typewriter_print(text, color=None):
     '''
     Creates color and style condition
     Creates typewriter timer effect for text
     '''
-    if color: 
+    if color:
         text = getattr(Fore, color.upper()) + text + Style.RESET_ALL
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
         time.sleep(0.00001)
     time.sleep(0.00002)
+
 
 def clear_terminal():
     '''
@@ -55,8 +56,8 @@ def start_game():
         WELCOME to the maddest game
         of Mad Libs you will ever play!
         """ + color.END))
-
-    typewriter_print(color.BOLD + color.YELLOW + "\nWhat are Mad Libs?\n" + color.END)
+    typewriter_print(color.BOLD + color.YELLOW + 
+    "\nWhat are Mad Libs?\n" + color.END)
     typewriter_print(color.BOLD + textwrap.dedent("""\
         
         Mad Libs are stories with words
@@ -81,8 +82,10 @@ def start_game():
     + textwrap.dedent("""\
         Want to learn how to play? Y/N: \n""" 
     + color.END))
+
     while response.upper() not in ("Y", "N"):
-        typewriter_print(color.BOLD + color.RED + "\nInvalid response. Please enter Y or N.\n" + color.END)
+        typewriter_print(color.BOLD + color.RED + 
+        "\nInvalid response. Please enter Y or N.\n" + color.END)
         response = input(color.BOLD + color.GREEN + textwrap.dedent("""\
             
             Want to learn how to play? Y/N: \n""" + color.END))
