@@ -77,13 +77,14 @@ def start_game():
         """) + color.END)
 
     # Instructions Section
-    response = input(color.BOLD + color.GREEN + "Want to learn how to play? Y/N: \n" + color.END)
+    response = input(color.BOLD + color.GREEN + textwrap.dedent("""\
+    Want to learn how to play? Y/N: \n""" + color.END))
     while response.upper() not in ("Y", "N"):
         typewriter_print(color.BOLD + color.RED + "\nInvalid response. Please enter Y or N.\n" + color.END)
         response = input(color.BOLD + color.GREEN + "\nWant to learn how to play? Y/N: " + color.END)
     if response.upper() == "Y":
         clear_terminal()
-        typewriter_print(color.BOLD + color.YELLOW + "\nHere's how to play: \n" + color.END)
+        print(color.BOLD + color.YELLOW + "\nHere's how to play: \n" + color.END)
         typewriter_print(textwrap.dedent("""\
             
             1. Choose a story title from the list given,
@@ -117,6 +118,10 @@ def start_game():
             6. Remember: There are no winners or losers 
                 in this game, only laughter!
                 """) + color.END)
+    elif response.upper() == "N":
+        clear_terminal()
+        print(color.BOLD + color.GREEN + "We love to see an experienced Mad Lib-er!" + color.END)
+        play_madlibs()
 
         play_response = input(color.BOLD + color.GREEN + "\nReady to play? Y/N: \n" + color.END)
         while play_response.upper() not in ("Y", "N"):
@@ -609,7 +614,7 @@ def restart_game():
         
     Do you want to play again? Y/N: \n
     """ + color.END))
-
+    #Checks if user enters Y or N correctly
     while response.upper() not in ("Y", "N"):
         print(color.BOLD + color.RED + "Invalid response. Please enter Y or N.\n" + color.END)
         response = input(color.BOLD + color.GREEN + textwrap.dedent(
@@ -618,14 +623,17 @@ def restart_game():
     Do you want to play again? Y/N: \n
         
         """ + color.END))
+    #Clears terminal and starts game again
     if response.upper() == "Y":
         clear_terminal()
-        start_game()        
+        start_game()  
+        restart_game()      
     else:
-        clear_terminal()
+        #clear_terminal()
         print(color.BOLD + "I hope you got some laughs!" + color.END)
         reply = input("Would you like to return to the main page? Y/N: \n")
         if reply.upper() == "Y":
+            clear_terminal()
             start_game()
         else: 
             print(color.BOLD + "Alrighty then! If you change your mind, just click the 'Run Program' button to start again" + color.END)

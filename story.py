@@ -1,6 +1,3 @@
-import sys
-import time
-
 STORIES = [
    {
       'title': "A Peculiar Adventure",
@@ -275,6 +272,8 @@ STORIES = [
                     definitely a night I'll never forget!"""
           }
 ]
+
+
 
 index = 1
 
