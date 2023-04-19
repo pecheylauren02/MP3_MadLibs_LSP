@@ -77,11 +77,15 @@ def start_game():
         """) + color.END)
 
     # Instructions Section
-    response = input(color.BOLD + color.GREEN + textwrap.dedent("""\
-    Want to learn how to play? Y/N: \n""" + color.END))
+    response = input(color.BOLD + color.GREEN 
+    + textwrap.dedent("""\
+        Want to learn how to play? Y/N: \n""" 
+    + color.END))
     while response.upper() not in ("Y", "N"):
         typewriter_print(color.BOLD + color.RED + "\nInvalid response. Please enter Y or N.\n" + color.END)
-        response = input(color.BOLD + color.GREEN + "\nWant to learn how to play? Y/N: " + color.END)
+        response = input(color.BOLD + color.GREEN + textwrap.dedent("""\
+            
+            Want to learn how to play? Y/N: \n""" + color.END))
     if response.upper() == "Y":
         clear_terminal()
         print(color.BOLD + color.YELLOW + "\nHere's how to play: \n" + color.END)
@@ -94,7 +98,7 @@ def start_game():
         typewriter_print(textwrap.dedent("""\
             2. You will be given a total of 20 prompts  
                 asking you to enter a word (without seeing the
-                story beforehand). E.g. 'Enter a noun, e.g. "dog" or "table": '
+                story beforehand). E.g. 'Enter a noun, e.g. "dog" or "table".
                 
                 """))
         typewriter_print(textwrap.dedent("""\
@@ -114,14 +118,10 @@ def start_game():
                 to read aloud with hilarious results.
                 
                 """) + color.END)
-        typewriter_print(color.BOLD + color.CYAN + textwrap.dedent("""\
-            6. Remember: There are no winners or losers 
+        typewriter_print(color.BOLD + color.RED + textwrap.dedent("""\
+            Remember: There are no winners or losers 
                 in this game, only laughter!
                 """) + color.END)
-    elif response.upper() == "N":
-        clear_terminal()
-        print(color.BOLD + color.GREEN + "We love to see an experienced Mad Lib-er!" + color.END)
-        play_madlibs()
 
         play_response = input(color.BOLD + color.GREEN + "\nReady to play? Y/N: \n" + color.END)
         while play_response.upper() not in ("Y", "N"):
@@ -136,6 +136,12 @@ def start_game():
                 Let's get started!
                 """) + color.END)
             play_madlibs()
+
+    #allows user to skip instructions
+    elif response.upper() == "N":
+        clear_terminal()
+        print(color.BOLD + color.GREEN + "We love to see an experienced Mad Lib-er!" + color.END)
+        play_madlibs()
     else:
         print(color.BOLD + color.CYAN + "Okay, maybe next time!" + color.END)
         sys.exit(0)
@@ -163,9 +169,10 @@ def play_madlibs():
         
         Below is a list of story titles
         for you to choose from: 
+
         """) + color.END)
     for i, title in enumerate(story_titles):
-        print(color.BOLD + f"{i+1}. {title}" + color.END)
+        print(color.BOLD + f"{i+1}. {title}\n" + color.END)
 
     selected_story_index = None
     while selected_story_index is None:
@@ -224,10 +231,6 @@ def play_madlibs():
                     if counter == 5:
                         clear_terminal()
                         counter = 0
-                    #elif counter == 11:
-                     #   print(color.BOLD + color.GREEN + textwrap.dedent("""\
-                      #      Keep going... You're halfway to becoming a comedian!
-                       #     """))
                     break
 
         print(color.BOLD + color.YELLOW + "Here is your final story. Have a good laugh!" + color.END)
@@ -275,14 +278,30 @@ def play_madlibs():
                  'a holiday, e.g. "Christmas"', 'a number, e.g. "fifty seven"']
 
         inputs = []
+        counter = 0
+
         for word in words:
             while True:
-                user_input = input(f"\nEnter {word}: \n")
+                user_input = input(color.BOLD + f"\nEnter {word}: \n" + color.END)
                 if user_input.isdigit() or user_input.strip() == "":
                     print(color.BOLD + color.RED + f"Invalid input. Please enter {word}.\n" + color.END)
+                elif len(user_input) <= 2:
+                    print(color.BOLD + color.RED + textwrap.dedent("""\
+                        Your input is too short. 
+                        Please try again. 
+                        """) + color.END)
+                elif len(user_input) >= 20:
+                    print(color.BOLD + color.RED + textwrap.dedent("""\
+                        Your input is too long. 
+                        Please try again. 
+                        """) + color.END)
                 else:
-                   inputs.append(user_input)
-                   break
+                    inputs.append(user_input)
+                    counter += 1 
+                    if counter == 5:
+                        clear_terminal()
+                        counter = 0
+                    break
 
         story_two = f"""
         Once upon a time, in a land far,
@@ -327,14 +346,30 @@ def play_madlibs():
                  'an item of clothing (plural)']
 
         inputs = []
+        counter = 0
+
         for word in words:
             while True:
-                user_input = input(f"\nEnter {word}: \n")
+                user_input = input(color.BOLD + f"\nEnter {word}: \n" + color.END)
                 if user_input.isdigit() or user_input.strip() == "":
                     print(color.BOLD + color.RED + f"Invalid input. Please enter {word}.\n" + color.END)
+                elif len(user_input) <= 2:
+                    print(color.BOLD + color.RED + textwrap.dedent("""\
+                        Your input is too short. 
+                        Please try again. 
+                        """) + color.END)
+                elif len(user_input) >= 20:
+                    print(color.BOLD + color.RED + textwrap.dedent("""\
+                        Your input is too long. 
+                        Please try again. 
+                        """) + color.END)
                 else:
-                   inputs.append(user_input)
-                   break
+                    inputs.append(user_input)
+                    counter += 1 
+                    if counter == 5:
+                        clear_terminal()
+                        counter = 0
+                    break
 
         story_three = f"""
         It was just another {inputs[0]} day in the office
@@ -380,14 +415,30 @@ def play_madlibs():
                  'another verb ending in -ing', 'another noun']
 
         inputs = []
+        counter = 0
+
         for word in words:
             while True:
-                user_input = input(f"\nEnter {word}: \n")
+                user_input = input(color.BOLD + f"\nEnter {word}: \n" + color.END)
                 if user_input.isdigit() or user_input.strip() == "":
                     print(color.BOLD + color.RED + f"Invalid input. Please enter {word}.\n" + color.END)
+                elif len(user_input) <= 2:
+                    print(color.BOLD + color.RED + textwrap.dedent("""\
+                        Your input is too short. 
+                        Please try again. 
+                        """) + color.END)
+                elif len(user_input) >= 20:
+                    print(color.BOLD + color.RED + textwrap.dedent("""\
+                        Your input is too long. 
+                        Please try again. 
+                        """) + color.END)
                 else:
-                   inputs.append(user_input)
-                   break
+                    inputs.append(user_input)
+                    counter += 1 
+                    if counter == 5:
+                        clear_terminal()
+                        counter = 0
+                    break
 
 
         story_four = f"""
@@ -436,14 +487,30 @@ def play_madlibs():
                  'another feeling']
 
         inputs = []
+        counter = 0
+
         for word in words:
             while True:
-                user_input = input(f"\nEnter {word}: \n")
+                user_input = input(color.BOLD + f"\nEnter {word}: \n" + color.END)
                 if user_input.isdigit() or user_input.strip() == "":
                     print(color.BOLD + color.RED + f"Invalid input. Please enter {word}.\n" + color.END)
+                elif len(user_input) <= 2:
+                    print(color.BOLD + color.RED + textwrap.dedent("""\
+                        Your input is too short. 
+                        Please try again. 
+                        """) + color.END)
+                elif len(user_input) >= 20:
+                    print(color.BOLD + color.RED + textwrap.dedent("""\
+                        Your input is too long. 
+                        Please try again. 
+                        """) + color.END)
                 else:
-                   inputs.append(user_input)
-                   break
+                    inputs.append(user_input)
+                    counter += 1 
+                    if counter == 5:
+                        clear_terminal()
+                        counter = 0
+                    break
 
         story_five = f"""
         One {inputs[0]} night, I was
@@ -491,14 +558,30 @@ def play_madlibs():
                  'another adverb', 'a number, e.g. "fifty seven"']
 
         inputs = []
+        counter = 0
+
         for word in words:
             while True:
-                user_input = input(f"\nEnter {word}: \n")
+                user_input = input(color.BOLD + f"\nEnter {word}: \n" + color.END)
                 if user_input.isdigit() or user_input.strip() == "":
                     print(color.BOLD + color.RED + f"Invalid input. Please enter {word}.\n" + color.END)
+                elif len(user_input) <= 2:
+                    print(color.BOLD + color.RED + textwrap.dedent("""\
+                        Your input is too short. 
+                        Please try again. 
+                        """) + color.END)
+                elif len(user_input) >= 20:
+                    print(color.BOLD + color.RED + textwrap.dedent("""\
+                        Your input is too long. 
+                        Please try again. 
+                        """) + color.END)
                 else:
-                   inputs.append(user_input)
-                   break
+                    inputs.append(user_input)
+                    counter += 1 
+                    if counter == 5:
+                        clear_terminal()
+                        counter = 0
+                    break
     
         story_six = f"""
         One {inputs[0]} {inputs[1]}, I headed to the beach with my {inputs[2]} 
@@ -534,14 +617,30 @@ def play_madlibs():
           'your favourite superhero', 'another plural noun', 'another plural noun', 'another adjective']
 
         inputs = []
+        counter = 0
+
         for word in words:
             while True:
-                user_input = input(f"\nEnter {word}: \n")
+                user_input = input(color.BOLD + f"\nEnter {word}: \n" + color.END)
                 if user_input.isdigit() or user_input.strip() == "":
                     print(color.BOLD + color.RED + f"Invalid input. Please enter {word}.\n" + color.END)
+                elif len(user_input) <= 2:
+                    print(color.BOLD + color.RED + textwrap.dedent("""\
+                        Your input is too short. 
+                        Please try again. 
+                        """) + color.END)
+                elif len(user_input) >= 20:
+                    print(color.BOLD + color.RED + textwrap.dedent("""\
+                        Your input is too long. 
+                        Please try again. 
+                        """) + color.END)
                 else:
-                   inputs.append(user_input)
-                   break
+                    inputs.append(user_input)
+                    counter += 1 
+                    if counter == 5:
+                        clear_terminal()
+                        counter = 0
+                    break
 
         story_seven = f"""
         On my first day of school, I felt {inputs[0]} as I walked into the classroom. My {inputs[1]} teacher greeted 
@@ -573,14 +672,30 @@ def play_madlibs():
                 'another verb ending in -ing', 'another adjective', 'another plural noun', 'another verb ending in -ing']
 
         inputs = []
+        counter = 0
+
         for word in words:
             while True:
-                user_input = input(f"\nEnter {word}: \n")
+                user_input = input(color.BOLD + f"\nEnter {word}: \n" + color.END)
                 if user_input.isdigit() or user_input.strip() == "":
                     print(color.BOLD + color.RED + f"Invalid input. Please enter {word}.\n" + color.END)
+                elif len(user_input) <= 2:
+                    print(color.BOLD + color.RED + textwrap.dedent("""\
+                        Your input is too short. 
+                        Please try again. 
+                        """) + color.END)
+                elif len(user_input) >= 20:
+                    print(color.BOLD + color.RED + textwrap.dedent("""\
+                        Your input is too long. 
+                        Please try again. 
+                        """) + color.END)
                 else:
-                   inputs.append(user_input)
-                   break
+                    inputs.append(user_input)
+                    counter += 1 
+                    if counter == 5:
+                        clear_terminal()
+                        counter = 0
+                    break
 
         story_eight = f"""
         Last night I went to the craziest party ever. It was so {inputs[0]} that my {inputs[1]}
