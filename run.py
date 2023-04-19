@@ -57,7 +57,7 @@ def start_game():
                      of Mad Libs you will ever play!\n
                      """ + color.END))
     typewriter_print(color.BOLD + color.YELLOW +
-                     "\nWhat are Mad Libs?\n" + color.END)
+                     "What are Mad Libs?\n" + color.END)
     typewriter_print(color.BOLD + textwrap.dedent("""\
                      Mad Libs are stories with words
                      removed and replaced by blank spaces.\n
@@ -94,10 +94,10 @@ def start_game():
                             by entering the number of the title.\n
                             """))
         typewriter_print(textwrap.dedent("""\
-                         2. You must answer 20 prompts, asking you
-                            to enter a word (without seeing the
-                            story beforehand). E.g.
-                            'Enter a noun, e.g. "dog" or "table".\n
+                         2. You must answer 20 prompts which will
+                            ask you to enter words (E.g. "Enter a noun")
+                            for your story, but you will not be allowed
+                            to read the story beforehand.\n
                             """))
         typewriter_print(textwrap.dedent("""\
                          3. The prompts will ask you for a mix of adjectives,
@@ -109,7 +109,7 @@ def start_game():
                             displayed for you to read aloud with
                             hilarious results.\n
                             """))
-        typewriter_print(color.BOLD + color.PURPLE + textwrap.dedent("""\
+        typewriter_print(color.BOLD + color.CYAN + textwrap.dedent("""\
                          5. Remember: There are no winners or losers
                             in this game, only laughter!
                             """) + color.END)
@@ -134,8 +134,9 @@ def start_game():
     # allows user to skip instructions
     elif response.upper() == "N":
         clear_terminal()
-        print(color.BOLD + color.PURPLE +
-              "We love to see an experienced Mad Libber!" + color.END)
+        print(color.BOLD + color.CYAN +
+              "\nWe love to see an experienced Mad Libber!\n"
+              + color.END)
         play_madlibs()
     else:
         print(color.BOLD + "Okay, maybe next time!" + color.END)
@@ -781,8 +782,8 @@ def play_madlibs():
 
 def restart_game():
     response = input(color.BOLD + color.GREEN + textwrap.dedent("""\
-    Do you want to play again? Y/N: \n
-    """ + color.END))
+                     Do you want to play again? Y/N: \n
+                     """ + color.END))
     # Checks if user enters Y or N correctly
     while response.upper() not in ("Y", "N"):
         print(color.BOLD + color.RED +
