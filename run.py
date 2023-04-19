@@ -336,35 +336,40 @@ def play_madlibs():
 
     elif selected_story_title == "A Day at the Office":
 
-        words = ['a feeling', 'a city', 'a noun, e.g. "dog" or "table"', 'another noun',
-                 'an adjective, e.g. "pretty"', 'another feeling', 'a verb ending in -ing, e.g. "running"',
-                 'another noun', 'another verb', 'a number, e.g. "fifty seven"',
-                 'another adjective', 'another city', 'an adverb, e.g. quickly',
+        words = ['a feeling', 'a city', 'a noun, e.g. "dog" or "table"',
+                 'another noun', 'an adjective, e.g. "pretty"',
+                 'another feeling', 'a verb ending in -ing, e.g. "running"',
+                 'another noun', 'another verb',
+                 'a number, e.g. "fifty seven"', 'another adjective'
+                 'another city', 'an adverb, e.g. quickly',
                  'another adjective', 'another noun', 'another adjective',
-                 'a plural noun, e.g. "dogs"', 'another feeling', 'another noun',
-                 'an item of clothing (plural)']
+                 'a plural noun, e.g. "dogs"', 'another feeling',
+                 'another noun', 'an item of clothing (plural)']
 
         inputs = []
         counter = 0
 
         for word in words:
             while True:
-                user_input = input(color.BOLD + f"\nEnter {word}: \n" + color.END)
+                user_input = input(color.BOLD +
+                                   f"\nEnter {word}: \n" + color.END)
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(color.BOLD + color.RED + f"Invalid input. Please enter {word}.\n" + color.END)
+                    print(color.BOLD + color.RED +
+                          f"Invalid input. Please enter {word}.\n"
+                          + color.END)
                 elif len(user_input) <= 2:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
-                        Your input is too short. 
-                        Please try again. 
-                        """) + color.END)
+                          Your input is too short.
+                          Please try again.
+                          """) + color.END)
                 elif len(user_input) >= 20:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
-                        Your input is too long. 
-                        Please try again. 
-                        """) + color.END)
+                          Your input is too long.
+                          Please try again.
+                          """) + color.END)
                 else:
                     inputs.append(user_input)
-                    counter += 1 
+                    counter += 1
                     if counter == 5:
                         clear_terminal()
                         counter = 0
@@ -406,11 +411,14 @@ def play_madlibs():
 
     elif selected_story_title == "One Interesting Vacation":
 
-        words = ['a season', 'an adjective, e.g. "pretty"', 'a country', 'another adjective',
-                 'a feeling', 'an item of clothing', 'another adjective',
-                 'an adverb, e.g. quickly', 'a noun, e.g. "dog" or "table"', 'a plural noun, e.g. "dogs"', 'another adjective',
-                 'an adverb, e.g. quickly', 'another noun', 'another feeling', 'a place, e.g. "park"',
-                 'an exclamation, e.g. "Wow!"', 'another adjective', 'a verb ending in -ing, e.g. "running"',
+        words = ['a season', 'an adjective, e.g. "pretty"', 'a country',
+                 'another adjective', 'a feeling', 'an item of clothing',
+                 'another adjective', 'an adverb, e.g. quickly',
+                 'a noun, e.g. "dog" or "table"', 'a plural noun, e.g. "dogs"',
+                 'another adjective', 'an adverb, e.g. quickly',
+                 'another noun', 'another feeling', 'a place, e.g. "park"',
+                 'an exclamation, e.g. "Wow!"', 'another adjective',
+                 'a verb ending in -ing, e.g. "running"',
                  'another verb ending in -ing', 'another noun']
 
         inputs = []
@@ -418,30 +426,32 @@ def play_madlibs():
 
         for word in words:
             while True:
-                user_input = input(color.BOLD + f"\nEnter {word}: \n" + color.END)
+                user_input = input(color.BOLD +
+                                   f"\nEnter {word}: \n" + color.END)
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(color.BOLD + color.RED + f"Invalid input. Please enter {word}.\n" + color.END)
+                    print(color.BOLD + color.RED +
+                          f"Invalid input. Please enter {word}.\n"
+                          + color.END)
                 elif len(user_input) <= 2:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
-                        Your input is too short. 
-                        Please try again. 
-                        """) + color.END)
+                          Your input is too short.
+                          Please try again.
+                          """) + color.END)
                 elif len(user_input) >= 20:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
-                        Your input is too long. 
-                        Please try again. 
-                        """) + color.END)
+                          Your input is too long.
+                          Please try again.
+                          """) + color.END)
                 else:
                     inputs.append(user_input)
-                    counter += 1 
+                    counter += 1
                     if counter == 5:
                         clear_terminal()
                         counter = 0
                     break
 
-
         story_four = f"""
-        Last {inputs[0]}, I decided to take a {inputs[1]} 
+        Last {inputs[0]}, I decided to take a {inputs[1]}
         vacation to {inputs[2]}, and boy was it {inputs[3]}!
         On the first day of my trip, I woke up feeling
         {inputs[4]} and ready for adventure. I threw
@@ -455,12 +465,12 @@ def play_madlibs():
         After the {inputs[8]} finished their act, I decided
         to continue my {inputs[6]} journey. But before I could
         make it very far, a {inputs[10]} bird flew {inputs[11]}
-        right into my {inputs[12]}! I was so startled that I nearly 
+        right into my {inputs[12]}! I was so startled that I nearly
         fell over, but luckily the bird flew away unharmed.\n
         Feeling a bit shaken and {inputs[13]}, I decided to take
-        a break at a nearby {inputs[14]}. I ordered a {inputs[10]} 
+        a break at a nearby {inputs[14]}. I ordered a {inputs[10]}
         drink and sat down to people-watch. That's when I heard
-        a loud {inputs[15]} coming from outside. I opened my 
+        a loud {inputs[15]} coming from outside. I opened my
         window and saw that a {inputs[16]} parade was going by!
         I quickly got dressed and joined the parade,
         {inputs[17]} and {inputs[18]} along to the music.\n
@@ -474,10 +484,11 @@ def play_madlibs():
 
     elif selected_story_title == "A Scary Encounter":
 
-        words = ['an adjective, e.g. "pretty"', 'a noun, e.g. "dog" or "table"', 
+        words = ['an adjective, e.g. "pretty"', 'a noun, e.g. "dog" or "cup"', 
                  'a verb ending in -ing, e.g. "running"',
                  'a feeling', 'another adjective', 'another adjective',
-                 'an adverb, e.g. quickly', 'another adverb', 'an item of clothing',
+                 'an adverb, e.g. quickly', 'another adverb',
+                 'an item of clothing',
                  'another noun', 'another adjective',
                  'another item of clothing',
                  'another verb ending in -ing',
@@ -490,22 +501,25 @@ def play_madlibs():
 
         for word in words:
             while True:
-                user_input = input(color.BOLD + f"\nEnter {word}: \n" + color.END)
+                user_input = input(color.BOLD +
+                                   f"\nEnter {word}: \n" + color.END)
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(color.BOLD + color.RED + f"Invalid input. Please enter {word}.\n" + color.END)
+                    print(color.BOLD + color.RED +
+                          f"Invalid input. Please enter {word}.\n"
+                          + color.END)
                 elif len(user_input) <= 2:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
-                        Your input is too short. 
-                        Please try again. 
-                        """) + color.END)
+                          Your input is too short.
+                          Please try again.
+                          """) + color.END)
                 elif len(user_input) >= 20:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
-                        Your input is too long. 
-                        Please try again. 
-                        """) + color.END)
+                          Your input is too long.
+                          Please try again.
+                          """) + color.END)
                 else:
                     inputs.append(user_input)
-                    counter += 1 
+                    counter += 1
                     if counter == 5:
                         clear_terminal()
                         counter = 0
