@@ -199,7 +199,6 @@ def play_madlibs():
 
         inputs = []
         counter = 0
-
         for word in words:
             while True:
                 user_input = input(color.BOLD +
@@ -275,7 +274,6 @@ def play_madlibs():
 
         inputs = []
         counter = 0
-
         for word in words:
             while True:
                 user_input = input(color.BOLD +
@@ -348,7 +346,6 @@ def play_madlibs():
 
         inputs = []
         counter = 0
-
         for word in words:
             while True:
                 user_input = input(color.BOLD +
@@ -423,7 +420,6 @@ def play_madlibs():
 
         inputs = []
         counter = 0
-
         for word in words:
             while True:
                 user_input = input(color.BOLD +
@@ -484,7 +480,7 @@ def play_madlibs():
 
     elif selected_story_title == "A Scary Encounter":
 
-        words = ['an adjective, e.g. "pretty"', 'a noun, e.g. "dog" or "cup"', 
+        words = ['an adjective, e.g. "pretty"', 'a noun, e.g. "dog" or "cup"',
                  'a verb ending in -ing, e.g. "running"',
                  'a feeling', 'another adjective', 'another adjective',
                  'an adverb, e.g. quickly', 'another adverb',
@@ -498,7 +494,6 @@ def play_madlibs():
 
         inputs = []
         counter = 0
-
         for word in words:
             while True:
                 user_input = input(color.BOLD +
@@ -547,7 +542,7 @@ def play_madlibs():
         escape. That's when I remembered the {inputs[1]}
         that I had in my {inputs[14]}. I pulled it out and
         aimed it at the {inputs[9]}, hoping that it would
-        scare it away. To my surprise, the {inputs[9]} started 
+        scare it away. To my surprise, the {inputs[9]} started
         {inputs[15]} and ran away as fast as it could. I got
         up and ran home as quickly as possible, feeling
         {inputs[16]} the entire time.\n
@@ -575,7 +570,6 @@ def play_madlibs():
 
         inputs = []
         counter = 0
-        
         for word in words:
             while True:
                 user_input = input(color.BOLD +
@@ -601,28 +595,33 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-    
+
         story_six = f"""
-        One {inputs[0]} {inputs[1]}, I headed to the beach with my {inputs[2]} 
-        {inputs[3]}. We packed a {inputs[4]} full of snacks, sunscreen, and {inputs[5]} and 
-        set off on our adventure. As soon as we arrived, we could feel the {inputs[6]} sun 
-        beating down on us. We quickly unpacked and set up our {inputs[4]} and got ready to 
-        hit the waves and {inputs[7]}.
-
-        But as soon as I jumped in, I realized that the water was freezing {inputs[8]}! I 
-        swam out to my friends, who were {inputs[9]} and having a great time. I decided to 
-        join in, even though I could barely feel my {inputs[10]}. As we played in the water, 
-        we suddenly heard a loud {inputs[11]} coming from the {inputs[12]}. We swam back to 
-        find a {inputs[13]} crowd of people gathered around a {inputs[14]} that had washed up 
-        {inputs[15]} on the beach.
-
-        Feeling curious, we pushed our way through the crowd to get a closer look. As we approached, 
-        we could smell the {inputs[16]} stench of the dead {inputs[17]}. Suddenly, a massive 
-        {inputs[18]} swooped down and started {inputs[19]} on the {inputs[17]}. We all screamed 
-        and ran away {inputs[20]}, narrowly avoiding being hit {inputs[21]} by the {inputs[18]}.
-
-        After that crazy encounter, we decided to pack up and head home. As we drove away, we 
-        couldn't help but laugh at the absurdity of our day at the beach."""
+        One {inputs[0]} {inputs[1]}, I headed to the beach with my
+        {inputs[2]} {inputs[3]}. We packed a {inputs[4]} full of
+        snacks, sunscreen, and {inputs[5]} and set off on our adventure.
+        As soon as we arrived, we could feel the {inputs[6]} sun
+        beating down on us. We quickly unpacked and set up our
+        {inputs[4]} and got ready to hit the waves and {inputs[7]}.\n
+        But as soon as I jumped in, I realized that the water was
+        freezing {inputs[8]}! I swam out to my friends, who were
+        {inputs[9]} and having a great time. I decided to
+        join in, even though I could barely feel my {inputs[10]}.\n
+        As we played in the water, we suddenly heard a loud
+        {inputs[11]} coming from the {inputs[12]}. We swam back to
+        find a {inputs[13]} crowd of people gathered around a
+        {inputs[14]} that had washed up {inputs[15]} on the beach.\n
+        Feeling curious, we pushed our way through the crowd to get
+        a closer look. As we approached, we could smell the
+        {inputs[16]} stench of the dead {inputs[17]}.\n
+        Suddenly, a massive {inputs[18]} swooped down and
+        started {inputs[19]} on the {inputs[17]}. We all screamed
+        and ran away {inputs[20]}, narrowly avoiding being
+        hit {inputs[21]} by the {inputs[18]}.\n
+        After that crazy encounter, we decided to pack up
+        and head home. As we drove away, we
+        couldn't help but laugh at the absurdity of
+        our day at the beach."""
 
         print(color.BOLD + textwrap.dedent(story_six))
 
@@ -630,55 +629,69 @@ def play_madlibs():
 
     elif selected_story_title == "My First Day at School":
 
-        words = ['a feeling', 'an adjective, e.g. "pretty"', 'an adverb, e.g. quickly', 'a noun, e.g. "dog" or "table"', 'another adjective', 'a plural noun, e.g. "dogs"', 'a verb ending in -ing, e.g. "running"',
-          'another verb ending in -ing', 'another verb ending in -ing', 'another noun', 'another adjective', 'a place, e.g. "park"',
-          'another plural noun', 'another plural noun', 'another verb ending in -ing', 'the name of someone you know',
-          'your favourite superhero', 'another plural noun', 'another plural noun', 'another adjective']
+        words = ['a feeling', 'an adjective, e.g. "pretty"',
+                 'an adverb, e.g. quickly', 'a noun, e.g. "dog" or "cup"',
+                 'another adjective', 'a plural noun, e.g. "dogs"',
+                 'a verb ending in -ing, e.g. "running"',
+                 'another verb ending in -ing',
+                 'another verb ending in -ing', 'another noun',
+                 'another adjective', 'a place, e.g. "park"',
+                 'another plural noun', 'another plural noun',
+                 'another verb ending in -ing', 'the name of someone you know',
+                 'your favourite superhero', 'another plural noun',
+                 'another plural noun', 'another adjective']
 
         inputs = []
         counter = 0
-
         for word in words:
             while True:
-                user_input = input(color.BOLD + f"\nEnter {word}: \n" + color.END)
+                user_input = input(color.BOLD +
+                                   f"\nEnter {word}: \n" + color.END)
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(color.BOLD + color.RED + f"Invalid input. Please enter {word}.\n" + color.END)
+                    print(color.BOLD + color.RED +
+                          f"Invalid input. Please enter {word}.\n"
+                          + color.END)
                 elif len(user_input) <= 2:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
-                        Your input is too short. 
-                        Please try again. 
-                        """) + color.END)
+                          Your input is too short.
+                          Please try again.
+                          """) + color.END)
                 elif len(user_input) >= 20:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
-                        Your input is too long. 
-                        Please try again. 
-                        """) + color.END)
+                          Your input is too long.
+                          Please try again.
+                          """) + color.END)
                 else:
                     inputs.append(user_input)
-                    counter += 1 
+                    counter += 1
                     if counter == 5:
                         clear_terminal()
                         counter = 0
                     break
 
         story_seven = f"""
-        On my first day of school, I felt {inputs[0]} as I walked into the classroom. My {inputs[1]} teacher greeted 
-        me with a big smile and {inputs[2]} showed me to my {inputs[3]}. As I sat down, I couldn't help but notice the 
-        {inputs[4]} students and {inputs[5]} around me. Some were {inputs[6]}, while others were {inputs[7]} and {inputs[8]} 
-        all over the classroom.
-        
-        Just as the teacher was about to start the lesson, an enormous {inputs[9]} burst into the room. It was a 
-        {inputs[10]} {inputs[9]} who had lost their way to the {inputs[11]}. The teacher quickly helped them find their way, 
-        and we all had a good laugh about it.
-        
-        As the day went on, we learned about {inputs[12]} and {inputs[13]}. No matter what we were learning, we were always 
-        {inputs[14]} and having a good time. During recess, I made some new friends called {inputs[15]} and {inputs[16]} who 
-        showed me their cool {inputs[17]} and {inputs[18]}. We played games and laughed so hard that we almost forgot we were 
-        at school.
-        
-        As the day came to an end, I felt happy and {inputs[19]}. So if you're feeling {inputs[19]} about your first day 
-        of school, just remember that it's a new adventure full of surprises and {inputs[1]} moments."""
-        
+        On my first day of school, I felt {inputs[0]} as I walked
+        into the classroom. My {inputs[1]} teacher greeted
+        me with a big smile and {inputs[2]} showed me to my
+        {inputs[3]}. As I sat down, I couldn't help but notice the
+        {inputs[4]} students and {inputs[5]} around me. Some were
+        {inputs[6]}, while others were {inputs[7]} and {inputs[8]}
+        all over the classroom.\n
+        Just as the teacher was about to start the lesson, an enormous
+        {inputs[9]} burst into the room. It was a {inputs[10]} {inputs[9]}
+        who had lost their way to the {inputs[11]}. The teacher quickly
+        helped them find their way, and we all had a good laugh about it.\n
+        As the day went on, we learned about {inputs[12]} and {inputs[13]}.
+        No matter what we were learning, we were always {inputs[14]} and
+        having a good time. During recess, I made some new friends called
+        {inputs[15]} and {inputs[16]} who showed me their cool {inputs[17]}
+        and {inputs[18]}. We played games and laughed so hard that we almost
+        forgot we were at school.\n
+        As the day came to an end, I felt happy and {inputs[19]}. So if
+        you're feeling {inputs[19]} about your first day of school,
+        just remember that it's a new adventure full of surprises and
+        {inputs[1]} moments."""
+          
         print(color.BOLD + textwrap.dedent(story_seven))
 
     # Story Eight
