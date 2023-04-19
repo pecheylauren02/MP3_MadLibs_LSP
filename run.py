@@ -226,7 +226,8 @@ def play_madlibs():
                         counter = 0
                     break
 
-        print(color.BOLD + color.YELLOW + "Here is your final story. Have a good laugh!" + color.END)
+        print(color.BOLD + color.YELLOW +
+              "Here is your creation" + color.END)
 
         story_one = f"""
         One {inputs[0]} day, I woke up feeling {inputs[1]}
@@ -260,14 +261,16 @@ def play_madlibs():
 
     # Story Two
 
-    elif selected_story_title == "A Strange Fairytale": 
+    elif selected_story_title == "A Strange Fairytale":
 
-        words = ['an adjective, e.g. "pretty"', 'a noun, e.g. "dog" or "table"', 'a verb ending in -ing, e.g. "running"',
+        words = ['an adjective, e.g. "pretty"', 'a noun, e.g. "dog" or "mat"',
+                 'a verb ending in -ing, e.g. "running"',
                  'another verb', 'a place, e.g. "park"', 'another adjective',
                  'another noun', 'another verb', 'another adjective',
-                 'another noun', 'an exclamation, e.g. "Wow!"', 'another adjective',
-                 'a verb ending in -ed, e.g. jumped', 'another verb ending in -ing',
-                 'an adverb, e.g. quickly', 'another noun', 'another verb ending in -ed',
+                 'another noun', 'an exclamation, e.g. "Wow!"',
+                 'another adjective', 'a verb ending in -ed, e.g. jumped',
+                 'another verb ending in -ing', 'an adverb, e.g. quickly',
+                 'another noun', 'another verb ending in -ed',
                  'a holiday, e.g. "Christmas"', 'a number, e.g. "fifty seven"']
 
         inputs = []
@@ -275,22 +278,25 @@ def play_madlibs():
 
         for word in words:
             while True:
-                user_input = input(color.BOLD + f"\nEnter {word}: \n" + color.END)
+                user_input = input(color.BOLD +
+                                   f"\nEnter {word}: \n" + color.END)
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(color.BOLD + color.RED + f"Invalid input. Please enter {word}.\n" + color.END)
+                    print(color.BOLD + color.RED +
+                          f"Invalid input. Please enter {word}.\n"
+                          + color.END)
                 elif len(user_input) <= 2:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
-                        Your input is too short. 
-                        Please try again. 
-                        """) + color.END)
+                          Your input is too short.
+                          Please try again.
+                          """) + color.END)
                 elif len(user_input) >= 20:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
-                        Your input is too long. 
-                        Please try again. 
-                        """) + color.END)
+                          Your input is too long.
+                          Please try again.
+                          """) + color.END)
                 else:
                     inputs.append(user_input)
-                    counter += 1 
+                    counter += 1
                     if counter == 5:
                         clear_terminal()
                         counter = 0
