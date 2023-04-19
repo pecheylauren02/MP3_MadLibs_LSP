@@ -691,108 +691,131 @@ def play_madlibs():
         you're feeling {inputs[19]} about your first day of school,
         just remember that it's a new adventure full of surprises and
         {inputs[1]} moments."""
-          
+
         print(color.BOLD + textwrap.dedent(story_seven))
 
     # Story Eight
 
     elif selected_story_title == "A Wild Party":
 
-        words = ['an adjective, e.g. "pretty"', 'a body part', 'another adjective', 'another adjective', 'a plural noun, e.g. "dogs"', 'a verb ending in -ing, e.g. "running"',
-                'another verb ending in -ing', 'another adjective', 'a noun, e.g. "dog" or "table"', 'an adverb, e.g. quickly', 'another verb ending in -ing', 'another adjective',
-                'a colour', 'an item of clothing (plural)', 'a number, e.g. "fifty seven"', 'another plural noun', 'an adverb, e.g. quickly',
-                'another verb ending in -ing', 'another adjective', 'another plural noun', 'another verb ending in -ing']
+        words = ['an adjective, e.g. "pretty"', 'a body part',
+                 'another adjective', 'another adjective',
+                 'a plural noun, e.g. "dogs"',
+                 'a verb ending in -ing, e.g. "running"',
+                 'another verb ending in -ing', 'another adjective',
+                 'a noun, e.g. "dog" or "table"', 'an adverb, e.g. quickly',
+                 'another verb ending in -ing', 'another adjective',
+                 'a colour', 'an item of clothing (plural)',
+                 'a number, e.g. "fifty seven"', 'another plural noun',
+                 'an adverb, e.g. quickly', 'another verb ending in -ing',
+                 'another adjective', 'another plural noun',
+                 'another verb ending in -ing']
 
         inputs = []
         counter = 0
-
         for word in words:
             while True:
-                user_input = input(color.BOLD + f"\nEnter {word}: \n" + color.END)
+                user_input = input(color.BOLD +
+                                   f"\nEnter {word}: \n" + color.END)
                 if user_input.isdigit() or user_input.strip() == "":
-                    print(color.BOLD + color.RED + f"Invalid input. Please enter {word}.\n" + color.END)
+                    print(color.BOLD + color.RED +
+                          f"Invalid input. Please enter {word}.\n"
+                          + color.END)
                 elif len(user_input) <= 2:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
-                        Your input is too short. 
-                        Please try again. 
-                        """) + color.END)
+                          Your input is too short.
+                          Please try again.
+                          """) + color.END)
                 elif len(user_input) >= 20:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
-                        Your input is too long. 
-                        Please try again. 
-                        """) + color.END)
+                          Your input is too long.
+                          Please try again.
+                          """) + color.END)
                 else:
                     inputs.append(user_input)
-                    counter += 1 
+                    counter += 1
                     if counter == 5:
                         clear_terminal()
                         counter = 0
                     break
 
         story_eight = f"""
-        Last night I went to the craziest party ever. It was so {inputs[0]} that my {inputs[1]}
-        is still recovering from it. When I arrived, the music was {inputs[2]} and the dance floor was packed with 
-        {inputs[3]} people and wild {inputs[4]}. I started {inputs[5]} to the beat and before I knew 
-        it, I was {inputs[6]} with a group of {inputs[7]} strangers.
-
-        Things really got out of hand when someone suggested we play {inputs[8]} pong. I've never been good at that game, 
-        but I managed to {inputs[9]} {inputs[10]} a few shots and impress everyone. As the night went on, more and more 
-        people and {inputs[4]} showed up. 
-        Things really got out of hand when someone suggested we play {inputs[8]} pong. I've never been good at that game, 
-        but I managed to {inputs[9]} {inputs[10]} a few shots and impress everyone. As the night went on, more and more 
-        people and {inputs[4]} showed up. 
-        
-        There were {inputs[11]} characters in crazy costumes, some wearing {inputs[12]}{inputs[13]}. I even saw one 
-        magician trying to juggle {inputs[14]}{inputs[15]} while riding a unicycle. A lot of the night became blurry 
-        after that, but I found myself {inputs[16]}{inputs[17]} on a couch with a {inputs[18]} person who I had 
-        never met before. We started talking about {inputs[19]} and ended up {inputs[20]} all night.
-        There were {inputs[11]} characters in crazy costumes, some wearing {inputs[12]}{inputs[13]}. I even saw one 
-        magician trying to juggle {inputs[14]}{inputs[15]} while riding a unicycle. A lot of the night became blurry 
-        after that, but I found myself {inputs[16]}{inputs[17]} on a couch with a {inputs[18]} person who I had 
-        never met before. We started talking about {inputs[19]} and ended up {inputs[20]} all night.
-
-        The party didn't really start to wind down until the early hours of the morning. It was definitely a night I'll 
+        Last night I went to the craziest party ever. It was so
+        {inputs[0]} that my {inputs[1]} is still recovering from it.
+        When I arrived, the music was {inputs[2]} and the dance
+        floor was packed with {inputs[3]} people and wild {inputs[4]}.
+        I started {inputs[5]} to the beat and before I knew
+        it, I was {inputs[6]} with a group of {inputs[7]} strangers.\n
+        Things really got out of hand when someone suggested we play
+        {inputs[8]} pong. I've never been good at that game,
+        but I managed to {inputs[9]} {inputs[10]} a few shots and
+        impress everyone. As the night went on, more and more
+        people and {inputs[4]} showed up.\n
+        Things really got out of hand when someone suggested
+        we play {inputs[8]} pong. I've never been good at that game,
+        but I managed to {inputs[9]} {inputs[10]} a few shots and
+        impress everyone. As the night went on, more and more
+        people and {inputs[4]} showed up.\n
+        There were {inputs[11]} characters in crazy costumes,
+        some wearing {inputs[12]}{inputs[13]}. I even saw one
+        magician trying to juggle {inputs[14]}{inputs[15]} while
+        riding a unicycle. A lot of the night became blurry
+        after that, but I found myself {inputs[16]}{inputs[17]} on a
+        couch with a {inputs[18]} person who I had never met before.
+        We started talking about {inputs[19]} and ended up {inputs[20]}
+        all night.\n
+        There were {inputs[11]} characters in crazy costumes,
+        some wearing {inputs[12]}{inputs[13]}. I even saw one
+        magician trying to juggle {inputs[14]}{inputs[15]} while riding
+        a unicycle.\n
+        A lot of the night became blurry after that,
+        but I found myself {inputs[16]}{inputs[17]} on a couch with a
+        {inputs[18]} person who I had never met before. We started
+        talking about {inputs[19]} and ended up {inputs[20]} all night.
+        The party didn't really start to wind down until the early
+        hours of the morning. It was definitely a night I'll
         never forget!"""
 
         print(color.BOLD + textwrap.dedent(story_eight))
 
+
 def restart_game():
     response = input(color.BOLD + color.GREEN + textwrap.dedent("""\
-        
     Do you want to play again? Y/N: \n
     """ + color.END))
-    #Checks if user enters Y or N correctly
+    # Checks if user enters Y or N correctly
     while response.upper() not in ("Y", "N"):
-        print(color.BOLD + color.RED + "Invalid response. Please enter Y or N.\n" + color.END)
+        print(color.BOLD + color.RED +
+              "Invalid response. Please enter Y or N.\n" + color.END)
         response = input(color.BOLD + color.GREEN + textwrap.dedent(
-        """\
-        
-    Do you want to play again? Y/N: \n
-        
-        """ + color.END))
-    #Clears terminal and starts game again
+                         """\
+                         Do you want to play again? Y/N: \n
+                         """ + color.END))
+    # Clears terminal and starts game again
     if response.upper() == "Y":
         clear_terminal()
-        start_game()  
-        restart_game()      
+        start_game()
+        restart_game()
     else:
         clear_terminal()
         print(color.BOLD + color.PURPLE + textwrap.dedent("""\
-            We're sad to see you go, but we 
-            hope you had some good laughs!""" + color.END))
+              We're sad to see you go, but we
+              hope you had some good laughs!""" + color.END))
         reply = input(color.BOLD + color.GREEN + textwrap.dedent("""\
-            Would you like to return to the main page? Y/N: \n""" + color.END))
+                      Would you like to return to the main page? Y/N: \n"""
+                      + color.END))
         if reply.upper() == "Y":
             clear_terminal()
             start_game()
-        else: 
+        else:
             print(color.BOLD + textwrap.dedent("""\
-                Alrighty then! If you change your mind, 
-                just click the 'Run Program' button to 
+                Thanks for playing! If you change your mind,
+                and would like to play another round,
+                just click the 'Run Program' button to
                 start the game again!""" + color.END))
             sys.exit(0)
 
-        
+
 if __name__ == "__main__":
     start_game()
     restart_game()
