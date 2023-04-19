@@ -52,106 +52,95 @@ def start_game():
     Displays welcome message and instructions
     Starts the game after user enters "Y"
     '''
-    typewriter_print(color.BOLD + color.GREEN +
-    textwrap.dedent("""\
-        
-        WELCOME to the maddest game
-        of Mad Libs you will ever play!
-        """ + color.END))
+    typewriter_print(color.BOLD + color.GREEN + textwrap.dedent("""\
+                     WELCOME to the maddest game
+                     of Mad Libs you will ever play!\n
+                     """ + color.END))
     typewriter_print(color.BOLD + color.YELLOW +
-    "\nWhat are Mad Libs?\n" + color.END)
+                     "\nWhat are Mad Libs?\n" + color.END)
     typewriter_print(color.BOLD + textwrap.dedent("""\
-        
-        Mad Libs are stories with words
-        removed and replaced by blank spaces.
-        """))
+                     Mad Libs are stories with words
+                     removed and replaced by blank spaces.\n
+                     """))
     typewriter_print(textwrap.dedent("""\
-        
-        It is also one of the world's greatest
-        word games and can turn anyone into the
-        funniest person in the room!
-        """))
+                     It is also one of the world's greatest
+                     word games and can turn anyone into the
+                     funniest person in the room!\n
+                     """))
     typewriter_print(textwrap.dedent("""\
-        
-        So if you are looking for a night
-        of laughter and fun with your friends
-        and family, then look no further!
-
-        """) + color.END)
+                     So if you are looking for a night
+                     of laughter and fun with your friends
+                     and family, then look no further!\n
+                     """) + color.END)
 
     # Instructions Section
-    response = input(color.BOLD + color.GREEN
-    + textwrap.dedent("""\
-        Want to learn how to play? Y/N: \n"""
-    + color.END))
+    response = input(color.BOLD + color.GREEN +
+                     "Want to learn how to play? Y/N: \n"
+                     + color.END)
 
     while response.upper() not in ("Y", "N"):
         typewriter_print(color.BOLD + color.RED +
-        "\nInvalid response. Please enter Y or N.\n"
-        + color.END)
-        response = input(color.BOLD + color.GREEN + textwrap.dedent("""\
-            
-            Want to learn how to play? Y/N: \n""" + color.END))
+                         "\nInvalid response. Please enter Y or N.\n"
+                         + color.END)
+        response = input(color.BOLD + color.GREEN +
+                         "Want to learn how to play? Y/N: \n"
+                         + color.END)
     if response.upper() == "Y":
         clear_terminal()
         print(color.BOLD + color.YELLOW +
-        "\nHere's how to play: \n" + color.END)
+              "\nHere's how to play:\n" + color.END)
+        typewriter_print(color.BOLD + textwrap.dedent("""\
+                         1. Choose a story title from the list given,
+                            by entering the number of the title.\n
+                            """))
         typewriter_print(textwrap.dedent("""\
-            
-            1. Choose a story title from the list given,
-                by entering the number of the title.
-                
-                """))
+                         2. You must answer 20 prompts, asking you
+                            to enter a word (without seeing the
+                            story beforehand). E.g.
+                            'Enter a noun, e.g. "dog" or "table".\n
+                            """))
         typewriter_print(textwrap.dedent("""\
-            2. You must answer 20 prompts, asking you
-                to enter a word (without seeing the
-                story beforehand). E.g.
-                'Enter a noun, e.g. "dog" or "table".
-                
-                """))
+                         3. The prompts will ask you for a mix of adjectives,
+                            nouns, exclamations, colours, adverbs, and more!\n
+                            """))
         typewriter_print(textwrap.dedent("""\
-            3. The prompts will ask you for a mix of adjectives,
-                nouns, exclamations, colours, adverbs, and more!
-                
-                """))
-        typewriter_print(textwrap.dedent("""\
-            4. When you finish entering all of the prompts
-                correctly, your story will then be 
-                displayed for you to read aloud with
-                hilarious results.
-                
-                """))
+                         4. When you finish entering all of the prompts
+                            correctly, your story will then be
+                            displayed for you to read aloud with
+                            hilarious results.\n
+                            """))
         typewriter_print(color.BOLD + color.PURPLE + textwrap.dedent("""\
-            Remember: There are no winners or losers 
-                in this game, only laughter!
-                """) + color.END)
+                         5. Remember: There are no winners or losers
+                            in this game, only laughter!
+                            """) + color.END)
 
-        play_response = input(color.BOLD + color.GREEN + "\nReady to play? Y/N: \n" + color.END)
+        play_response = input(color.BOLD + color.GREEN +
+                              "\nReady to play? Y/N: \n" + color.END)
         while play_response.upper() not in ("Y", "N"):
-            print(color.BOLD + color.RED + "Invalid response. Please enter Y or N.\n" + color.END) 
-            play_response = input(color.BOLD + color.GREEN + "\nReady to play? Y/N: \n" + color.END)
+            print(color.BOLD + color.RED +
+                  "Invalid response. Please enter Y or N.\n" + color.END)
+            play_response = input(color.BOLD + color.GREEN +
+                                  "\nReady to play? Y/N: \n" + color.END)
         if play_response.upper() == "N":
             print(color.BOLD + "Okay, maybe next time!" + color.END)
             sys.exit(0)
         else:
             clear_terminal()
             print(color.BOLD + color.GREEN + textwrap.dedent("""\
-                Let's get started!
-                """) + color.END)
+                  Let the Madness begin!
+                  """) + color.END)
             play_madlibs()
 
-    #allows user to skip instructions
+    # allows user to skip instructions
     elif response.upper() == "N":
         clear_terminal()
-        print(color.BOLD + color.PURPLE + "We love to see an experienced Mad Lib-er!" + color.END)
+        print(color.BOLD + color.PURPLE +
+              "We love to see an experienced Mad Libber!" + color.END)
         play_madlibs()
     else:
         print(color.BOLD + "Okay, maybe next time!" + color.END)
         sys.exit(0)
-    
-# Story Title Selection 
 
-# Define the list of story titles
 
 def play_madlibs():
     '''
@@ -159,47 +148,41 @@ def play_madlibs():
     Asks the user to select a story title
     Launches the game once the user enters inputs
     '''
-    story_titles = ["A Peculiar Adventure", 
-                    "A Strange Fairytale", 
-                    "A Day at the Office", 
-                    "One Interesting Vacation", 
+    story_titles = ["A Peculiar Adventure",
+                    "A Strange Fairytale",
+                    "A Day at the Office",
+                    "One Interesting Vacation",
                     "A Scary Encounter",
-                    "A Day at the Beach", 
-                    "My First Day at School", 
+                    "A Day at the Beach",
+                    "My First Day at School",
                     "A Wild Party"]
 
     typewriter_print(color.BOLD + color.YELLOW + textwrap.dedent("""\
-        
-        Below is a list of story titles
-        for you to choose from: 
-
-        """) + color.END)
+                     Below is a list of story titles
+                     for you to choose from:\n
+                     """) + color.END)
     for i, title in enumerate(story_titles):
         print(color. BOLD + f"{i+1}. {title}\n")
 
     selected_story_index = None
     while selected_story_index is None:
-        user_input = input(color.BOLD + color.GREEN + textwrap.dedent(
-            """\
-
-            Enter the number of the story
-            you'd like to read: \n
-            """) + color.END)
+        user_input = input(color.BOLD + color.GREEN + textwrap.dedent("""\
+                           Enter the number of the story
+                           you'd like to read: \n
+                           """) + color.END)
         if user_input.isnumeric():
             selected_story_index = int(user_input) - 1
             clear_terminal()
-        else: 
-            print(color.BOLD + color.RED + "Invalid input. Please enter a number.\n" + color.END)
+        else:
+            print(color.BOLD + color.RED +
+                  "Invalid input. Please enter a number.\n" + color.END)
 
     selected_story_title = story_titles[selected_story_index]
 
     print(color.BOLD + color.YELLOW + textwrap.dedent(f"""\
             You have selected the story: {selected_story_title}
             """ + color.END))
-    
-
     # Story One
-
     if selected_story_title == "A Peculiar Adventure": 
 
         words = ['an adjective, e.g. "pretty"', 'a feeling', 'a noun, e.g. "dog" or "table"', 'a place, e.g. "park"',
@@ -752,8 +735,7 @@ def restart_game():
             We're sad to see you go, but we 
             hope you had some good laughs!""" + color.END))
         reply = input(color.BOLD + color.GREEN + textwrap.dedent("""\
-            
-            Would you like to return to the main page? Y/N: \n"""))
+            Would you like to return to the main page? Y/N: \n""" + color.END))
         if reply.upper() == "Y":
             clear_terminal()
             start_game()
