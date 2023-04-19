@@ -118,7 +118,7 @@ def start_game():
                 to read aloud with hilarious results.
                 
                 """) + color.END)
-        typewriter_print(color.BOLD + color.CYAN + textwrap.dedent("""\
+        typewriter_print(color.BOLD + color.PURPLE + textwrap.dedent("""\
             Remember: There are no winners or losers 
                 in this game, only laughter!
                 """) + color.END)
@@ -128,7 +128,7 @@ def start_game():
             print(color.BOLD + color.RED + "Invalid response. Please enter Y or N.\n" + color.END) 
             play_response = input(color.BOLD + color.GREEN + "\nReady to play? Y/N: \n" + color.END)
         if play_response.upper() == "N":
-            print(color.BOLD + color.CYAN + "Okay, maybe next time!" + color.END)
+            print(color.BOLD + "Okay, maybe next time!" + color.END)
             sys.exit(0)
         else:
             clear_terminal()
@@ -140,10 +140,10 @@ def start_game():
     #allows user to skip instructions
     elif response.upper() == "N":
         clear_terminal()
-        print(color.BOLD + color.CYAN + "We love to see an experienced Mad Lib-er!" + color.END)
+        print(color.BOLD + color.PURPLE + "We love to see an experienced Mad Lib-er!" + color.END)
         play_madlibs()
     else:
-        print(color.BOLD + color.CYAN + "Okay, maybe next time!" + color.END)
+        print(color.BOLD + "Okay, maybe next time!" + color.END)
         sys.exit(0)
     
 # Story Title Selection 
@@ -172,7 +172,7 @@ def play_madlibs():
 
         """) + color.END)
     for i, title in enumerate(story_titles):
-        print(color.BOLD + f"{i+1}. {title}\n" + color.END)
+        print(color. BOLD + f"{i+1}. {title}\n")
 
     selected_story_index = None
     while selected_story_index is None:
@@ -263,7 +263,7 @@ def play_madlibs():
         what kind of {inputs[7]} and {inputs[4]} things you might find
         along the way!"""
 
-        typewriter_print(textwrap.dedent(story_one))
+        typewriter_print(color.BOLD + textwrap.dedent(story_one))
 
     # Story Two
 
@@ -331,7 +331,7 @@ def play_madlibs():
         {inputs[11]} {inputs[15]} along the way.
         The end"""
 
-        typewriter_print(textwrap.dedent(story_two))
+        typewriter_print(color.BOLD + textwrap.dedent(story_two))
 
     # Story Three
 
@@ -401,7 +401,7 @@ def play_madlibs():
         {inputs[1]}!
         """
 
-        print(textwrap.dedent(story_three))
+        print(color.BOLD + textwrap.dedent(story_three))
 
     # Story Four
 
@@ -469,7 +469,7 @@ def play_madlibs():
         {inputs[19]}! I can't wait to see where my next crazy
         adventure takes me!"""
 
-        typewriter_print(textwrap.dedent(story_four))
+        typewriter_print(color.BOLD + textwrap.dedent(story_four))
 
     # Story Five
 
@@ -543,7 +543,7 @@ def play_madlibs():
         have in the future. But for now, I was just
         grateful to be safe and sound in bed."""
 
-        typewriter_print(textwrap.dedent(story_five))
+        typewriter_print(color.BOLD + textwrap.dedent(story_five))
 
     # Story Six
 
@@ -605,7 +605,7 @@ def play_madlibs():
         After that crazy encounter, we decided to pack up and head home. As we drove away, we 
         couldn't help but laugh at the absurdity of our day at the beach."""
 
-        print(textwrap.dedent(story_six))
+        print(color.BOLD + textwrap.dedent(story_six))
 
     # Story Seven
 
@@ -660,7 +660,7 @@ def play_madlibs():
         As the day came to an end, I felt happy and {inputs[19]}. So if you're feeling {inputs[19]} about your first day 
         of school, just remember that it's a new adventure full of surprises and {inputs[1]} moments."""
         
-        print(textwrap.dedent(story_seven))
+        print(color.BOLD + textwrap.dedent(story_seven))
 
     # Story Eight
 
@@ -722,7 +722,7 @@ def play_madlibs():
         The party didn't really start to wind down until the early hours of the morning. It was definitely a night I'll 
         never forget!"""
 
-        print(textwrap.dedent(story_eight))
+        print(color.BOLD + textwrap.dedent(story_eight))
 
 def restart_game():
     response = input(color.BOLD + color.GREEN + textwrap.dedent("""\
@@ -744,8 +744,10 @@ def restart_game():
         start_game()  
         restart_game()      
     else:
-        #clear_terminal()
-        print(color.BOLD + color.CYAN + "I hope you got some laughs!" + color.END)
+        clear_terminal()
+        print(color.BOLD + color.PURPLE + textwrap.dedent("""\
+            We're sad to see you go, but we 
+            hope you had some good laughs!""" + color.END))
         reply = input(color.BOLD + color.GREEN + textwrap.dedent("""\
             
             Would you like to return to the main page? Y/N: \n"""))
@@ -753,10 +755,10 @@ def restart_game():
             clear_terminal()
             start_game()
         else: 
-            print(color.BOLD + color.CYAN + textwrap.dedent("""\
+            print(color.BOLD + textwrap.dedent("""\
                 Alrighty then! If you change your mind, 
                 just click the 'Run Program' button to 
-                start again""" + color.END))
+                start the game again!""" + color.END))
             sys.exit(0)
 
         
