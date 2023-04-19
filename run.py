@@ -118,7 +118,7 @@ def start_game():
                 to read aloud with hilarious results.
                 
                 """) + color.END)
-        typewriter_print(color.BOLD + color.RED + textwrap.dedent("""\
+        typewriter_print(color.BOLD + color.CYAN + textwrap.dedent("""\
             Remember: There are no winners or losers 
                 in this game, only laughter!
                 """) + color.END)
@@ -140,7 +140,7 @@ def start_game():
     #allows user to skip instructions
     elif response.upper() == "N":
         clear_terminal()
-        print(color.BOLD + color.GREEN + "We love to see an experienced Mad Lib-er!" + color.END)
+        print(color.BOLD + color.CYAN + "We love to see an experienced Mad Lib-er!" + color.END)
         play_madlibs()
     else:
         print(color.BOLD + color.CYAN + "Okay, maybe next time!" + color.END)
@@ -745,13 +745,18 @@ def restart_game():
         restart_game()      
     else:
         #clear_terminal()
-        print(color.BOLD + "I hope you got some laughs!" + color.END)
-        reply = input("Would you like to return to the main page? Y/N: \n")
+        print(color.BOLD + color.CYAN + "I hope you got some laughs!" + color.END)
+        reply = input(color.BOLD + color.GREEN + textwrap.dedent("""\
+            
+            Would you like to return to the main page? Y/N: \n"""))
         if reply.upper() == "Y":
             clear_terminal()
             start_game()
         else: 
-            print(color.BOLD + "Alrighty then! If you change your mind, just click the 'Run Program' button to start again" + color.END)
+            print(color.BOLD + color.CYAN + textwrap.dedent("""\
+                Alrighty then! If you change your mind, 
+                just click the 'Run Program' button to 
+                start again""" + color.END))
             sys.exit(0)
 
         
