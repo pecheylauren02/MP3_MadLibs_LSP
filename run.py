@@ -414,7 +414,7 @@ def play_madlibs():
         {inputs[15]} might be waiting just around the corner in
         {inputs[19]} {inputs[1]}!\n\n"""
 
-        print(color.BOLD + textwrap.dedent(story_three))
+        typewriter_print(color.BOLD + textwrap.dedent(story_three))
 
     # Story Four
 
@@ -461,7 +461,7 @@ def play_madlibs():
 
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
-                
+               
         story_four = f"""
         Last {inputs[0]}, I decided to take a {inputs[1]}
         vacation to {inputs[2]}, and boy was it {inputs[3]}!
