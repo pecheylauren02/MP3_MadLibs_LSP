@@ -20,8 +20,8 @@ def typewriter_print(text, color=None):
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
-        time.sleep(0.00001)
-    time.sleep(0.00002)
+        time.sleep(0.05)
+    time.sleep(1)
 
 
 def clear_terminal():
