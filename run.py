@@ -272,7 +272,8 @@ def play_madlibs():
                  'another adjective', 'a verb ending in -ed, e.g. jumped',
                  'another verb ending in -ing', 'an adverb, e.g. quickly',
                  'another noun', 'another verb ending in -ed',
-                 'a holiday, e.g. "Christmas"', 'a number, e.g. "fifty seven"']
+                 'a holiday, e.g. "Christmas"', 'a number, e.g. "fifty seven"',
+                 'another adjective']
 
         inputs = []
         counter = 0
@@ -301,6 +302,7 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
+                clear_terminal()
 
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -327,10 +329,11 @@ def play_madlibs():
         {inputs[9]} stood tall and {inputs[16]} the {inputs[11]}
         {inputs[15]}.\n
         From {inputs[17]}, the {inputs[0]} {inputs[1]} made a
-        promise to themselves to always be open to new experiences
-        and never to be afraid of a little {inputs[2]}. And who
-        knows? Maybe they'll even meet another {inputs[18]}
-        {inputs[11]} {inputs[15]} along the way.
+        promise to themselves to always be open to new and
+        {inputs[19]} experiences and never to be afraid of
+        a little {inputs[2]}. And who knows? Maybe they'll
+        even meet another {inputs[18]} {inputs[11]}
+        {inputs[15]} along the way.
         The end\n\n"""
 
         typewriter_print(color.BOLD + textwrap.dedent(story_two))
@@ -376,6 +379,7 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
+                clear_terminal()
 
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -452,6 +456,7 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
+                clear_terminal()
 
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -529,6 +534,7 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
+                clear_terminal()
 
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -608,6 +614,7 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
+                clear_terminal()
 
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -684,6 +691,7 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
+                clear_terminal()
 
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -757,6 +765,7 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
+                clear_terminal()
 
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
