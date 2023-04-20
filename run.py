@@ -225,7 +225,6 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-                clear_terminal()
 
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -285,22 +284,16 @@ def play_madlibs():
                     print(color.BOLD + color.RED +
                           f"Invalid input. Please enter {word}.\n"
                           + color.END)
-                    # user_input = input(color.BOLD +
-                    #                    f"\nEnter {word}: \n" + color.END)
                 elif len(user_input) <= 2:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
                           Your input is too short.
                           Please try again.
                           """) + color.END)
-                    # user_input = input(color.BOLD +
-                    #                    f"\nEnter {word}: \n" + color.END) 
                 elif len(user_input) >= 20:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
                           Your input is too long.
                           Please try again.
                           """) + color.END)
-                    # user_input = input(color.BOLD +
-                    #                    f"\nEnter {word}: \n" + color.END)
                 else:
                     inputs.append(user_input)
                     counter += 1
@@ -308,7 +301,6 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-                # clear_terminal()
 
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -386,7 +378,6 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-                clear_terminal()
 
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -463,7 +454,6 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-                clear_terminal()
 
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -541,7 +531,6 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-                clear_terminal()
 
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -621,7 +610,6 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-                clear_terminal()
 
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -698,7 +686,6 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-                clear_terminal()
 
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -772,7 +759,6 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-                clear_terminal()
 
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
