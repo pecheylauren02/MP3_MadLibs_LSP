@@ -827,7 +827,15 @@ def play_madlibs():
         typewriter_print(color.BOLD + textwrap.dedent(story_eight))
         restart_game()
 
+
 def restart_game():
+    '''
+    Restarts the game if the user wishes to
+    Takes the user back to the main page if 
+    they choose to replay
+    Ends the game if the user does not choose
+    to replay
+    '''
     response = input(color.BOLD + color.GREEN + textwrap.dedent("""\
                      Do you want to play again? Y/N: \n
                      """ + color.END))
