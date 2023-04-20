@@ -122,7 +122,12 @@ def start_game():
             play_response = input(color.BOLD + color.GREEN +
                                   "\nReady to play? Y/N: \n" + color.END)
         if play_response.upper() == "N":
-            print(color.BOLD + "Okay, maybe next time!" + color.END)
+            print(color.BOLD + textwrap.dedent("""\
+                  Okay, maybe next time!\n
+                  If you change your mind, just
+                  press the "Run Terminal"
+                  button to get started!\n
+                  """ + color.END))
             sys.exit(0)
         else:
             clear_terminal()
@@ -139,7 +144,12 @@ def start_game():
               + color.END)
         play_madlibs()
     else:
-        print(color.BOLD + "Okay, maybe next time!" + color.END)
+        print(color.BOLD + textwrap.dedent("""\
+              Okay, maybe next time!\n
+              If you change your mind, just
+              press the "Run Terminal"
+              button to get started!\n
+              """ + color.END))
         sys.exit(0)
 
 
