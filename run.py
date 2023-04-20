@@ -126,7 +126,7 @@ def start_game():
             sys.exit(0)
         else:
             clear_terminal()
-            print(color.BOLD + color.GREEN + textwrap.dedent("""\
+            print(color.BOLD + color.CYAN + textwrap.dedent("""\
                   Let the Madness begin!
                   """) + color.END)
             play_madlibs()
@@ -285,16 +285,22 @@ def play_madlibs():
                     print(color.BOLD + color.RED +
                           f"Invalid input. Please enter {word}.\n"
                           + color.END)
+                    # user_input = input(color.BOLD +
+                    #                    f"\nEnter {word}: \n" + color.END)
                 elif len(user_input) <= 2:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
                           Your input is too short.
                           Please try again.
                           """) + color.END)
+                    # user_input = input(color.BOLD +
+                    #                    f"\nEnter {word}: \n" + color.END) 
                 elif len(user_input) >= 20:
                     print(color.BOLD + color.RED + textwrap.dedent("""\
                           Your input is too long.
                           Please try again.
                           """) + color.END)
+                    # user_input = input(color.BOLD +
+                    #                    f"\nEnter {word}: \n" + color.END)
                 else:
                     inputs.append(user_input)
                     counter += 1
@@ -302,7 +308,7 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-                clear_terminal()
+                # clear_terminal()
 
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -830,21 +836,23 @@ def restart_game():
         restart_game()
     else:
         clear_terminal()
-        print(color.BOLD + color.PURPLE + textwrap.dedent("""\
+        print(color.BOLD + color.CYAN + textwrap.dedent("""\
               We're sad to see you go, but we
-              hope you had some good laughs!""" + color.END))
+              hope you had some good laughs!\n
+              """ + color.END))
         reply = input(color.BOLD + color.GREEN + textwrap.dedent("""\
-                      Would you like to return to the main page? Y/N: \n"""
+                      Would you like to return to
+                      the main page? Y/N:\n
+                      """
                       + color.END))
         if reply.upper() == "Y":
             clear_terminal()
             start_game()
         else:
             print(color.BOLD + textwrap.dedent("""\
-                Thanks for playing! If you change your mind,
-                and would like to play another round,
-                just click the 'Run Program' button to
-                start the game again!""" + color.END))
+                  Thanks for playing! If you'd like to play again,
+                  just click the 'Run Program' button above the terminal
+                  to start the game again!""" + color.END))
             sys.exit(0)
 
 

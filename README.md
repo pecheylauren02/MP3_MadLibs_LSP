@@ -3,20 +3,13 @@
 ![The Maddest Madlibs Game](ADD SCREENSHOT HERE)
 
 #### By Lauren Pechey
-[Click here to view the live web application](LIVE LINK HERE)
+[Click here to view the live web application](https://mp3-madlibs-game.herokuapp.com/)
 
 #### HELLO AND WELCOME!
 
 Here you can find the documentation for my command-line Python terminal game: The Maddest Mad Libs Game! Mad Libs is known as one of the world’s funniest word games, and can turn anyone into a comedian without even trying! Originally invented by by Leonard Stern and Roger Price in 1953, [Mad Libs](https://www.madlibs.com/) are simple stories with words removed and replaced by blank spaces. 
 
 This project has been built using only Python, as an educational Project offered as part of Code Institute’s Diploma in Full Stack Software Development. The original game was designed in hardcopy books, so this version allows the player to play through an online platform. Please use the table of contents below to navigate through all of the planning, features, deployment, testing and more!
-
-### How To Play
-
-- In this version of the game, the player will be given the opportunity to select a story title from a list of titles displayed to them in a random order. 
-- Without knowing the story, the player is required to fill in the blanks with nouns, verbs, adjectives, colours, adverbs, exclamations, and many more! 
-- These words are inserted into the blank spaces, and after the player has completed all of the prompts, the full story is displayed to them with their inputs. 
-- Because the player is not aware of the context of the story beforehand, their inputs generate hilarious results which will entertain them and whoever they read it aloud to! 
 
 ## Table of Contents
 
@@ -75,6 +68,13 @@ This project has been built using only Python, as an educational Project offered
 
 This back-end python project was planned and developed using principles of User Experience (UX) design, which include the five planes of Strategy, Scope, Structure, Skeleton, and Surface. Using these principles, the aim was to create a fun, easy-to-use and entertaining version of Mad Libs on an online platform! 
 
+### How To Play
+
+- In this version of the game, the player will be given the opportunity to select a story title from a list of titles displayed to them in a random order. 
+- Without knowing the story, the player is required to fill in the blanks with nouns, verbs, adjectives, colours, adverbs, exclamations, and many more! 
+- These words are inserted into the blank spaces, and after the player has completed all of the prompts, the full story is displayed to them with their inputs. 
+- Because the player is not aware of the context of the story beforehand, their inputs generate hilarious results which will entertain them and whoever they read it aloud to! 
+
 #### Client Goals
 
 The Maddest Mad Libs game was built as a milestone project for my Diploma in Fullstack Software Development with [Code Institute](https://codeinstitute.net/global/full-stack-software-development-diploma/). It is an interactive word game designed to entertain users of all ages and backgrounds who want to be entertained while with friends or at a party. Despite this being built for educational reasons, it was still treated as a real-world application for potential clients interested in learning about their personalities in a fun, engaging way. Thus, this client's goals would be:
@@ -89,7 +89,7 @@ The Maddest Mad Libs game was built as a milestone project for my Diploma in Ful
 - It is also likely to draw in players who enjoy playing word games or creating stories
 - The simplicity of the website makes it easy for adults, teenagers and even children to play, and replay, the game as many times as they want, and access different results each time
 
-#### player Goals 
+#### Player Goals 
 
 This game aims to ensure that players can:
 
@@ -105,14 +105,14 @@ This game aims to ensure that players can:
 
 Before designing the game, I reviewed other Mad Libs games, as well as researched on the original version of the game to see how it could be implemented as an online game (see below). I did this in order to get a feel of how they presented themselves, as well as which content and features they offered. I also reviewed what appeared to work well for the player and what needed improvements (see Key Takeaways). 
 
-[jfbeq](LINK HERE) | [jfbeq](LINK HERE) | [jfbeq](LINK HERE) | [jfbeq](LINK HERE) | [jfbeq](LINK HERE)
+[Python Mad Libs Generator](https://data-flair.training/blogs/python-mad-libs-generator-game/) | [Beanz](https://kidscodecs.com/python-mad-libs/) | [Simple Mad Libs](https://www.codespeedy.com/simple-mad-libs-generator-game-in-python/) | [Teach with ICT](https://www.teachwithict.com/mad_libs.html) | [The Word Finder](https://www.thewordfinder.com/wordlibs/)
 
 #### Key Takeaways
 
 - The game should be clean, simple, and easy to navigate
 - The game should not have any delays or interruptions after the user enters a prompt
 - The instructions should be simple and easy to understand
-- There should be a maximum of 10 prompts, to keep the player engaged and interested
+- There should be a maximum of 20 prompts, to keep the player engaged and interested
 
 ### User Stories
 
