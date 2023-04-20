@@ -506,7 +506,7 @@ def play_madlibs():
                  'another verb ending in -ing',
                  'a body part', 'another feeling', 'another noun',
                  'another noun', 'another verb ending in -ing',
-                 'another feeling']
+                 'another feeling', 'another feeling']
 
         inputs = []
         counter = 0
@@ -543,7 +543,7 @@ def play_madlibs():
         story_five = f"""
         One {inputs[0]} night, I was
         walking home from a {inputs[1]} party when I
-        suddenly felt like someone was {inputs[2]} me.
+        suddenly felt like someone was {inputs[2]} at me.
         I turned around, but there was no one there.
         Feeling a bit {inputs[3]}, I quickened my pace
         and started walking faster. But then, I heard a
@@ -558,18 +558,18 @@ def play_madlibs():
         help, but no one seemed to hear me. The {inputs[9]}
         just stood there, {inputs[12]} at me with its tiny
         {inputs[13]}.\n
-        Feeling {inputs[3]}, I tried to think of a way to
-        escape. That's when I remembered the {inputs[1]}
-        that I had in my {inputs[14]}. I pulled it out and
+        Feeling {inputs[14]}, I tried to think of a way to
+        escape. That's when I remembered the {inputs[15]}
+        that I had in my {inputs[16]}. I pulled it out and
         aimed it at the {inputs[9]}, hoping that it would
         scare it away. To my surprise, the {inputs[9]} started
-        {inputs[15]} and ran away as fast as it could. I got
+        {inputs[17]} and ran away as fast as it could. I got
         up and ran home as quickly as possible, feeling
-        {inputs[16]} the entire time.\n
+        {inputs[18]} the entire time.\n
         As I lay in bed that night, I couldn't help but
         wonder what other {inputs[0]} encounters I might
         have in the future. But for now, I was just
-        grateful to be safe and sound in bed.\n\n"""
+        {inputs[19]} to be safe and sound in bed.\n\n"""
 
         typewriter_print(color.BOLD + textwrap.dedent(story_five))
 
