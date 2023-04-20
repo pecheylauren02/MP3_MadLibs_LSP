@@ -578,15 +578,15 @@ def play_madlibs():
     elif selected_story_title == "A Day at the Beach":
 
         words = ['an adjective, e.g. "pretty"', 'a type of holiday',
-                 'another adjective', 'a plural noun, e.g. "dogs"',
-                 'a noun, e.g. "dog" or "table"', 'another plural noun',
-                 'an adjective, e.g. "pretty"', 'a verb, e.g. "run"',
-                 'another adjective', 'a verb ending in -ing, e.g. "running"',
-                 'a body part', 'another noun', 'a place, e.g. "park"',
-                 'another adjective', 'another noun',
-                 'an adverb, e.g. quickly', 'another adjective',
-                 'another noun', 'a type of animal', 'another verb',
-                 'another adverb', 'a number, e.g. "fifty seven"']
+                     'another adjective', 'a plural noun, e.g. "dogs"',
+                     'a vehicle, e.g. "car"', 'another plural noun',
+                     'an adjective, e.g. "pretty"', 'a verb, e.g. "run"',
+                     'another adjective', 'a verb ending in -ing, e.g. "running"',
+                     'a body part', 'another noun', 'a place, e.g. "park"',
+                     'another adjective', 'another noun',
+                     'an adverb, e.g. quickly', 'another adjective',
+                     'another noun', 'a type of animal', 
+                     'another verb ending in -ing']
 
         inputs = []
         counter = 0
@@ -637,13 +637,13 @@ def play_madlibs():
         {inputs[14]} that had washed up {inputs[15]} on the beach.\n
         Feeling curious, we pushed our way through the crowd to get
         a closer look. As we approached, we could smell the
-        {inputs[16]} stench of the dead {inputs[17]}.\n
+        {inputs[16]} stench of a dead {inputs[17]}.\n
         Suddenly, a massive {inputs[18]} swooped down and
         started {inputs[19]} on the {inputs[17]}. We all screamed
-        and ran away {inputs[20]}, narrowly avoiding being
-        hit {inputs[21]} by the {inputs[18]}.\n
+        and ran away, narrowly avoiding being
+        hit hard by the {inputs[18]}.\n
         After that crazy encounter, we decided to pack up
-        and head home. As we drove away, we
+        our {inputs[5]} and head home. As we drove away, we
         couldn't help but laugh at the absurdity of
         our day at the beach.\n\n"""
 
