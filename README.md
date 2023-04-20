@@ -478,6 +478,7 @@ The project will now be cloned locally for you to use.
 
 ### Code
 
+- [Code Institute](https://codeinstitute.net/) for the deployment terminal and template.
 - [StackOverFlow](https://stackoverflow.com/questions/8924173/how-can-i-print-bold-text-in-python) for the built-in colour codes.
 - [Rhino](https://developer.rhino3d.com/guides/rhinopython/python-statements/#:~:text=You%20cannot%20split%20a%20statement%20into%20multiple%20lines%20in%20Python,continued%20on%20the%20next%20line.) helped with Python syntax errors.
 - [Tech Beamers](https://www.techbeamers.com/python-multiline-string/) assisted in forming multiline F strings.

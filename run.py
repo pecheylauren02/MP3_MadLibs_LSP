@@ -235,6 +235,7 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
+
         clear_terminal()
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -268,6 +269,7 @@ def play_madlibs():
         along the way!\n\n"""
 
         typewriter_print(color.BOLD + textwrap.dedent(story_one))
+        restart_game()
 
     # Story Two
 
@@ -312,6 +314,7 @@ def play_madlibs():
                         counter = 0
                     break
 
+        clear_terminal()
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
 
@@ -345,6 +348,7 @@ def play_madlibs():
         The end\n\n"""
 
         typewriter_print(color.BOLD + textwrap.dedent(story_two))
+        restart_game()
 
     # Story Three
 
@@ -388,7 +392,8 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-
+      
+        clear_terminal()
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
 
@@ -422,6 +427,7 @@ def play_madlibs():
         {inputs[19]} {inputs[1]}!\n\n"""
 
         typewriter_print(color.BOLD + textwrap.dedent(story_three))
+        restart_game()
 
     # Story Four
 
@@ -465,9 +471,10 @@ def play_madlibs():
                         counter = 0
                     break
 
+        clear_terminal()
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
-               
+
         story_four = f"""
         Last {inputs[0]}, I decided to take a {inputs[1]}
         vacation to {inputs[2]}, and boy was it {inputs[3]}!
@@ -497,6 +504,7 @@ def play_madlibs():
         adventure takes me!\n\n"""
 
         typewriter_print(color.BOLD + textwrap.dedent(story_four))
+        restart_game()
 
     # Story Five
 
@@ -542,6 +550,7 @@ def play_madlibs():
                         counter = 0
                     break
 
+        clear_terminal()
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
 
@@ -577,6 +586,7 @@ def play_madlibs():
         {inputs[19]} to be safe and sound in bed.\n\n"""
 
         typewriter_print(color.BOLD + textwrap.dedent(story_five))
+        restart_game()
 
     # Story Six
 
@@ -620,7 +630,8 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-
+        
+        clear_terminal()
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
 
@@ -651,8 +662,8 @@ def play_madlibs():
         couldn't help but laugh at the absurdity of
         our day at the beach.\n\n"""
 
-        print(color.BOLD + textwrap.dedent(story_six))
-
+        typewriter_print(color.BOLD + textwrap.dedent(story_six))
+        restart_game()
     # Story Seven
 
     elif selected_story_title == "My First Day at School":
@@ -696,7 +707,8 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-
+     
+        clear_terminal()
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
 
@@ -723,7 +735,8 @@ def play_madlibs():
         just remember that it's a new adventure full of surprises and
         {inputs[1]} moments.\n\n"""
 
-        print(color.BOLD + textwrap.dedent(story_seven))
+        typewriter_print(color.BOLD + textwrap.dedent(story_seven))
+        restart_game()
 
     # Story Eight
 
@@ -770,6 +783,7 @@ def play_madlibs():
                         counter = 0
                     break
 
+        clear_terminal()
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
 
@@ -810,8 +824,8 @@ def play_madlibs():
         hours of the morning. It was definitely a night I'll
         never forget!\n\n"""
 
-        print(color.BOLD + textwrap.dedent(story_eight))
-
+        typewriter_print(color.BOLD + textwrap.dedent(story_eight))
+        restart_game()
 
 def restart_game():
     response = input(color.BOLD + color.GREEN + textwrap.dedent("""\
@@ -829,7 +843,6 @@ def restart_game():
     if response.upper() == "Y":
         clear_terminal()
         start_game()
-        #restart_game()
     else:
         clear_terminal()
         print(color.BOLD + color.CYAN + textwrap.dedent("""\
@@ -845,6 +858,7 @@ def restart_game():
             clear_terminal()
             start_game()
         else:
+            clear_terminal()
             print(color.BOLD + textwrap.dedent("""\
                   Thanks for playing! If you'd like to play again,
                   just click the 'Run Program' button above the terminal
