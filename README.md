@@ -135,7 +135,7 @@ These user stories gave me a clear scope for the website and enabled me to stay 
 
 ### Existing Features
 
-## Welcome Section
+#### Welcome Section
 
 - This page welcomes the user and introduces them to the game of Mad Libs.
 - It then asks the user if they would like to learn how to play the game.
@@ -156,7 +156,7 @@ _Error Message_
 
 </details>
 
-## Instructions Section
+#### Instructions Section
 
 - The user is shown instructions on how to play the game. 
 - They are then asked "Ready to Play?"
@@ -169,11 +169,57 @@ _Error Message_
 
 <img src="docs/images/instructions.png">
 
-Instructions Page_
+_Instructions Page_
 
 <img src="docs/images/error_ready_to_play.png">
 
 _Error Message_
+
+<img src="docs/images/end_ready_to_play.png">
+
+_When user enters "N"_
+
+</details>
+
+#### Input Section
+
+- Here, the user will be given 20 prompts, with a mix of adjectives, nouns, verbs etc.
+- If the user enters the correct input, they will be taken to the next prompt.
+- The terminal is cleared everytime 5 inputs have been entered, to prevent too much text displaying at once.
+- If the user enters invalid input, e.g. a digit or blank space, they will be given an error message to re-enter.
+- Alternatively, if they enter a word less than 2 characters or more than 20 characters, they will also be shown an error message (see screenshots below).
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/images/input_section.png">
+
+_Input Section__
+
+<img src="docs/images/invalid_inputs.png">
+
+_Invalid Inputs_
+
+</details>
+
+#### Story Section
+
+- After the user has entered all 20 prompts correctly, their story will be revealed with all of their inputs. 
+- They will then be asked "Do you want to play again?"
+    - If the user answers "Y" they will be taken back to the welcome section.
+    - If the user answers "N" they will be given another question "Would you like to be taken back to the main menu?"
+        - If "Y", they will be taken back to the welcome section.
+        - If "N", they will be given a message that explains how they can restart the game with the "Run Terminal" button, should they change their minds.
+    - If the user answers neither "Y" nor "N", they will be given an error message (see screenshots).
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/images/story_reveal_one.png">
+
+_Story Section__
+
+<img src="docs/images/replay_function.png">
+
+_Replay option_
 
 </details>
 
