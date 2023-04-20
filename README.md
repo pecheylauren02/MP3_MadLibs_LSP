@@ -347,16 +347,15 @@ This was due to the restart_game() function not being recalled for every story. 
 
 <details><summary>Screenshots</summary>
 
-<img src="docs/quiz_bug.png">
+<img src="docs/images/replay_bug.png">
 
-_Quiz page shown after user clicked the retake quiz button_
+_No Option for user to replay after second round_
 
-<img src="docs/quiz_desktop.png">
+<img src="docs/images/replay_function.png">
 
-_Quiz page shown after bug was fixed_
+_Replay bug fixed_
 
 </details>
-### Bugs
 
 ## Deployment
 
