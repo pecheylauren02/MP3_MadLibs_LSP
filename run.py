@@ -350,7 +350,8 @@ def play_madlibs():
                  'another city', 'an adverb, e.g. quickly',
                  'another adjective', 'another noun', 'another adjective',
                  'a plural noun, e.g. "dogs"', 'another feeling',
-                 'another noun', 'an item of clothing (plural)']
+                 'another noun', 'an item of clothing (plural)',
+                 'another adjective']
 
         inputs = []
         counter = 0
@@ -410,8 +411,8 @@ def play_madlibs():
         So if you're ever feeling bored at work, just remember
         to keep your eyes and ears open for any weird moments
         that might come your way. You never know what kind of
-        {inputs[19]} might be waiting just around the corner in
-        {inputs[1]}\n\n!"""
+        {inputs[15]} might be waiting just around the corner in
+        {inputs[19]} {inputs[1]}!\n\n"""
 
         print(color.BOLD + textwrap.dedent(story_three))
 
