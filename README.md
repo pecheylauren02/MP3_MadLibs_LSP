@@ -68,13 +68,6 @@ This project has been built using only Python, as an educational Project offered
 
 This back-end python project was planned and developed using principles of User Experience (UX) design, which include the five planes of Strategy, Scope, Structure, Skeleton, and Surface. Using these principles, the aim was to create a fun, easy-to-use and entertaining version of Mad Libs on an online platform! 
 
-### How To Play
-
-- In this version of the game, the player will be given the opportunity to select a story title from a list of titles displayed to them in a random order. 
-- Without knowing the story, the player is required to fill in the blanks with nouns, verbs, adjectives, colours, adverbs, exclamations, and many more! 
-- These words are inserted into the blank spaces, and after the player has completed all of the prompts, the full story is displayed to them with their inputs. 
-- Because the player is not aware of the context of the story beforehand, their inputs generate hilarious results which will entertain them and whoever they read it aloud to! 
-
 #### Client Goals
 
 The Maddest Mad Libs game was built as a milestone project for my Diploma in Fullstack Software Development with [Code Institute](https://codeinstitute.net/global/full-stack-software-development-diploma/). It is an interactive word game designed to entertain users of all ages and backgrounds who want to be entertained while with friends or at a party. Despite this being built for educational reasons, it was still treated as a real-world application for potential clients interested in learning about their personalities in a fun, engaging way. Thus, this client's goals would be:
@@ -132,12 +125,16 @@ These user stories gave me a clear scope for the website and enabled me to stay 
 1. The player is first introduced to the game and how it works.
 2. The player will then be given a list of story titles to choose from, by entering the number of the story title. 
 3. After they have selected their story title, the player must enter "Y" to play. 
-4. The player will be given 10 prompts, one at a time, which will ask them to enter a particular part of speech, e.g. "Enter a noun: ".
+4. The player will be given 20 prompts, one at a time, which will ask them to enter a particular part of speech, e.g. "Enter a noun: ".
     - Note: If the player enters an invalid input, such as a number, they will be given an error message and asked to re-enter their word of choice.
     - Note 2: If the player enters an invalid part of speech, e.g. a noun instead of an adjective, they will also receive an error message and will be required to enter the correct part of speech.
-5.  The player will be timed per prompt for 7 seconds, to increase the urgency of the game and to keep the player engaged. 
-6. After the player answers all 10 prompts correctly, the story result with their inputs will be displayed to them and they will hopefully be entertained by their answers.
-7. The player has the option to replay the game as many times as they want, and can choose a different story title each time. 
+5. After the player answers all 20 prompts correctly, the story result with their inputs will be displayed to them and they will hopefully be entertained by their answers.
+6. The player has the option to replay the game as many times as they want, and can choose a different story title each time. 
+
+## Features 
+
+### Existing Features
+
 
 
 ## Technologies Used 

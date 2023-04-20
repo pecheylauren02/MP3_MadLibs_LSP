@@ -21,7 +21,7 @@ def typewriter_print(text, color=None):
         sys.stdout.write(character)
         sys.stdout.flush()
         time.sleep(0.05)
-    time.sleep(1)
+    time.sleep(0.05)
 
 
 def clear_terminal():
