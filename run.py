@@ -181,12 +181,13 @@ def play_madlibs():
                            Enter the number of the story
                            you'd like to read: \n
                            """) + color.END)
-        if user_input.isnumeric() and int(user_input) >=1 and int(user_input) <=8:
+        if user_input.isnumeric() and 1 <= int(user_input) <= 8:
             selected_story_index = int(user_input) - 1
             clear_terminal()
         else:
             print(color.BOLD + color.RED +
-                  "Invalid input. Please enter a number between 1 and 8.\n" + color.END)
+                  "Invalid input. Please enter a number between 1 and 8.\n"
+                  + color.END)
 
     selected_story_title = story_titles[selected_story_index]
 
@@ -235,7 +236,6 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-
         clear_terminal()
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -313,7 +313,6 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-
         clear_terminal()
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -392,7 +391,6 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-      
         clear_terminal()
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -470,7 +468,6 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-
         clear_terminal()
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -549,7 +546,6 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-
         clear_terminal()
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -600,7 +596,7 @@ def play_madlibs():
                  'a body part', 'another noun', 'a place, e.g. "park"',
                  'another adjective', 'another noun',
                  'an adverb, e.g. quickly', 'another adjective',
-                 'another noun', 'a type of animal', 
+                 'another noun', 'a type of animal',
                  'another verb ending in -ing']
 
         inputs = []
@@ -630,7 +626,6 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-        
         clear_terminal()
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -707,7 +702,6 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-     
         clear_terminal()
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -782,7 +776,6 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-
         clear_terminal()
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
@@ -831,7 +824,7 @@ def play_madlibs():
 def restart_game():
     '''
     Restarts the game if the user wishes to
-    Takes the user back to the main page if 
+    Takes the user back to the main page if
     they choose to replay
     Ends the game if the user does not choose
     to replay
