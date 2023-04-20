@@ -119,7 +119,7 @@ I used [Lucid Flow Charts](https://www.lucidchart.com/pages/landing?utm_source=g
 
 <img src="docs/images/flowchart.png">
 
-<details>
+</details>
 
 #### Design and Colour
 
@@ -273,11 +273,11 @@ _Story Section__
 
 _Replay option_
 
-<img src="docs/images/end_message.png">
+<img src="docs/images/return_main_page.png">
 
 _Return to main page message_
 
-<img src="docs/images/return_main_page.png">
+<img src="docs/images/end_message.png">
 
 _End message if user answers "N"_
 
