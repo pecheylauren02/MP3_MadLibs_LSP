@@ -29,31 +29,24 @@ This project has been built using only Python, as an educational Project offered
 2. [Technologies Used](#technologies-used)
     - [Languages](#languages)
     - [Tools](#tools)
-3. [Features](#features)
-    - [Welcome Section](#welcome-section)
-        - [How to play](#list-of-instructions)
-    - [Game Section](#game-section)
-     - [Game Section](#game-section)
-        - [Choose a Title](#choose-a-title)
-        - [User Input Prompts](#user-input-prompts)
-     - [Results Section](#results-section)
-        - [Story Reveal](#story-reveal)
-        - [Restart Game](#restart-game)
-    - [Other Pages](#other-pages)
-        - [404 page](#404-page)
+3. [How to Play](#how-to-play)
+4. [Features](#features)
+    - [Existing Features](#existing-features)
+        - [Welcome Section](#welcome-section)
+        - [Instructions Section](#instructions-section)
+        - [Story Title Section](#story-title-section)
+        - [Input Section](#input-section)
+        - [Story Section](#story-section)
     - [Future Features](#future-features)
-4. [Testing](#testing)
+5. [Testing](#testing)
     - [Manual Testing](#manual-testing)
+        - [Testing User Stories](#testing-user-stories)
+        - [PEP8 Validator Testing](#pep8-validator-testing)
         - [Responsiveness / Device Testing](#responsiveness-/-device-testing)
         - [Browser Compatibility](#browser-compatibility)
         - [Solved Bugs](#solved-bugs)
-        - [Testing User Stories](#testing-user-stories)
-    - [Automated Testing](#automated-testing)
-        - [PEP8 Validator Testing](#pep8-validator-testing)
-        - [Accessibility](#accessibility)
-        - [Performance](#performance)
-5. [Deployment](#deployment)
-6. [Credits](#credits)
+6. [Deployment](#deployment)
+7. [Credits](#credits)
 
 ## Project Development and Planning 
 
@@ -116,7 +109,7 @@ In a real-world application, this kind of game will mostly likely be used by a v
 
 These user stories gave me a clear scope for the website and enabled me to stay on track with the project, preventing issues like scope creep at a later stage after the coding process. 
 
-### Design, Layout and Structure
+### Design and Colour
 
 #### Flowchart
 
@@ -138,6 +131,28 @@ As this was a backend project, there was not as much focus on frontend design. H
 - All other messages, such as goodbye messages, were displayed in bold cyan or bold purple
 
 This colour display was done to help the user differentiate between the different sections of the game easily. It is also more visually appealing. 
+
+## Technologies Used 
+
+This website used Python as the main language, alongside some already built-in languages from the Code Institute Template. A list of those included in the project can be seen as follows: 
+
+### Languages 
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+### Tools 
+- [Lucid Flowchart](https://www.lucidchart.com/pages/)
+     - Lucid Flowchart was used to map the logic of the Mad Libs game during the initial design process.
+- [Git](https://git-scm.com/)
+    - Git was used for version control via GitPod, by using the terminal to Git and Push to GitHub.
+- [GitHub](https://github.com/)
+    - GitHub was used to store the project code after being created in GitPod/Git.
+- [Gitpod](https://www.gitpod.io/)
+    - Gitpod was used to create, edit and preview the project's code.
+- [Heroku](https://dashboard.heroku.com/login)
+    - Heroku was used to deploy the Project.
 
 ## How to Play
 
@@ -282,30 +297,6 @@ As a future feature, I would love to create code that enables more than 1 player
 
 I would like to add validation that checks if the user enters the correct part of speech, e.g. If the user enters a 'noun' instead of an 'adjective', the game should register this and display an error message. Unfortunately, this fell out of the scope of this project. 
 
-## Technologies Used 
-
-This website used Python as the main language, alongside some already built-in languages from the Code Institute Template. A list of those included in the project can be seen as follows: 
-
-### Languages 
-- [HTML5](https://en.wikipedia.org/wiki/HTML5)
-- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
-- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
-
-### Tools 
-- [Lucid Flowchart](https://www.lucidchart.com/pages/)
-     - Lucid Flowchart was used to map the logic of the Mad Libs game during the initial design process.
-- [Git](https://git-scm.com/)
-    - Git was used for version control via GitPod, by using the terminal to Git and Push to GitHub.
-- [GitHub](https://github.com/)
-    - GitHub was used to store the project code after being created in GitPod/Git.
-- [Gitpod](https://www.gitpod.io/)
-    - Gitpod was used to create, edit and preview the project's code.
-- [Heroku](https://dashboard.heroku.com/login)
-    - Heroku was used to deploy the Project.
-- [Favicon.io](https://favicon.io/favicon-converter/)
-    - Used to create and add the favicon to the browser tab.
-
 ## Testing
 
 ### Manual Testing
@@ -323,7 +314,7 @@ I ran manual tests on the website, based on the user stories mentioned above:
 | 5 | I want to have the option of replaying the game if I don't like the result | The user is asked if they would like to replay the game after they have finished a round. |
 | 6 | I want to access the game on any device | The game is functional on all devices, although due to the nature of python, it is better suited to desktops. |
 
-#### PEP8 Python Linter
+#### PEP8 Validator Testing
 
 I also ran my code through PEP8 Python Linter, provided by Code Institute. The code came back with no errors. 
 
