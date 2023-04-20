@@ -578,15 +578,15 @@ def play_madlibs():
     elif selected_story_title == "A Day at the Beach":
 
         words = ['an adjective, e.g. "pretty"', 'a type of holiday',
-                     'another adjective', 'a plural noun, e.g. "dogs"',
-                     'a vehicle, e.g. "car"', 'another plural noun',
-                     'an adjective, e.g. "pretty"', 'a verb, e.g. "run"',
-                     'another adjective', 'a verb ending in -ing, e.g. "running"',
-                     'a body part', 'another noun', 'a place, e.g. "park"',
-                     'another adjective', 'another noun',
-                     'an adverb, e.g. quickly', 'another adjective',
-                     'another noun', 'a type of animal', 
-                     'another verb ending in -ing']
+                 'another adjective', 'a plural noun, e.g. "dogs"',
+                 'a vehicle, e.g. "car"', 'another plural noun',
+                 'an adjective, e.g. "pretty"', 'a verb, e.g. "run"',
+                 'another adjective', 'a verb ending in -ing, e.g. "running"',
+                 'a body part', 'another noun', 'a place, e.g. "park"',
+                 'another adjective', 'another noun',
+                 'an adverb, e.g. quickly', 'another adjective',
+                 'another noun', 'a type of animal', 
+                 'another verb ending in -ing']
 
         inputs = []
         counter = 0
