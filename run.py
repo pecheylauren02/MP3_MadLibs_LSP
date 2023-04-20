@@ -20,8 +20,8 @@ def typewriter_print(text, color=None):
     for character in text:
         sys.stdout.write(character)
         sys.stdout.flush()
-        time.sleep(0.05)
-    time.sleep(0.05)
+        time.sleep(0.00005)
+    time.sleep(0.000005)
 
 
 def clear_terminal():
@@ -225,7 +225,7 @@ def play_madlibs():
                         clear_terminal()
                         counter = 0
                     break
-
+        clear_terminal()
         print(color.BOLD + color.YELLOW +
               "Here is your creation!" + color.END)
 
@@ -819,7 +819,7 @@ def restart_game():
     if response.upper() == "Y":
         clear_terminal()
         start_game()
-        restart_game()
+        #restart_game()
     else:
         clear_terminal()
         print(color.BOLD + color.CYAN + textwrap.dedent("""\

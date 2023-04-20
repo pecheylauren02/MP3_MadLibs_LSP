@@ -135,7 +135,47 @@ These user stories gave me a clear scope for the website and enabled me to stay 
 
 ### Existing Features
 
+## Welcome Section
 
+- This page welcomes the user and introduces them to the game of Mad Libs.
+- It then asks the user if they would like to learn how to play the game.
+- If the user enters "Y", they are taken to the [instructions section](#instructions-section).
+- If the user enters "N", they skip the instructions section and are taken to the [story title section](#story_title_section). 
+- If the user does not enter "Y" or "N", they are given an error message (see screenshot below). 
+- The text is displayed with a typewriter effect, for visual aesthetics. 
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/images/welcome_page.png">
+
+_Welcome Page_
+
+<img src="docs/images/invalid_response_want_learn.png">
+
+_Error Message_
+
+</details>
+
+## Instructions Section
+
+- The user is shown instructions on how to play the game. 
+- They are then asked "Ready to Play?"
+    - If the user answers "Y", they will be taken to the [input section](#input-section).
+    - If the user answers "N", the game will end (see screenshots).
+    - - If the user does not enter "Y" or "N", they are given an error message (see screenshot below). 
+- The text is displayed with a typewriter effect, for visual aesthetics. 
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/images/instructions.png">
+
+Instructions Page_
+
+<img src="docs/images/error_ready_to_play.png">
+
+_Error Message_
+
+</details>
 
 ## Technologies Used 
 
