@@ -23,18 +23,13 @@ This project has been built using only Python, as an educational Project offered
         - [Market Review](#market-review)
         - [Key Takeaways](#key-takeaways-from-market-review)
     - [User Stories](#user-stories)
-    - [Content](#content)
     - [Design, Layout and Structure](#design-layout-and-structure)
         - [Flowchart](#wireframes)
-        - [Structure and Layout](#structure-and-layout)
         - [Design and Colour](#design-and-colour)
 2. [Technologies Used](#technologies-used)
     - [Languages](#languages)
     - [Tools](#tools)
 3. [Features](#features)
-    - [Whole Site](#whole-site)
-        - [Favicon](#favicon)
-        - [Footer](#footer)
     - [Welcome Section](#welcome-section)
         - [How to play](#list-of-instructions)
     - [Game Section](#game-section)
@@ -82,7 +77,7 @@ The Maddest Mad Libs game was built as a milestone project for my Diploma in Ful
 - It is also likely to draw in players who enjoy playing word games or creating stories
 - The simplicity of the website makes it easy for adults, teenagers and even children to play, and replay, the game as many times as they want, and access different results each time
 
-#### Player Goals 
+#### User Goals 
 
 This game aims to ensure that players can:
 
@@ -93,6 +88,7 @@ This game aims to ensure that players can:
 - Be entertained with a fun or silly story result after answering all of the questions
 - Replay the game as many times as they want to, to explore different results
 
+### Research 
 
 #### Market Review 
 
@@ -119,6 +115,29 @@ In a real-world application, this kind of game will mostly likely be used by a v
 - access the game on any device
 
 These user stories gave me a clear scope for the website and enabled me to stay on track with the project, preventing issues like scope creep at a later stage after the coding process. 
+
+### Design, Layout and Structure
+
+#### Flowchart
+
+I used [Lucid Flow Charts](https://www.lucidchart.com/pages/landing?utm_source=google&utm_medium=cpc&utm_campaign=_chart_en_tier3_mixed_search_brand_exact_&km_CPC_CampaignId=1484560207&km_CPC_AdGroupID=60168114191&km_CPC_Keyword=lucid%20charts&km_CPC_MatchType=e&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=354596054350&km_CPC_TargetID=kwd-64262996435&km_CPC_Country=1028774&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&gclid=Cj0KCQjwxYOiBhC9ARIsANiEIfZbTi_DZEcZd44Qr8P8jtXtkVBhEBUusD0MFOj8v5I7a4BIyxlHtgAaAnpHEALw_wcB) to create the initial logic for the game. Please view the flowchart in the screenshot below:
+
+<details><summary>Flow Chart</summary>
+
+<img src="docs/images/flowchart.png">
+
+<details>
+
+#### Design and Colour
+
+As this was a backend project, there was not as much focus on frontend design. However, for a more positive user experience, all text was displayed as follows:
+- All headings were displayed in bold yellow
+- All text and story titles were displayed in bold white
+- All questions regarding playing or replaying the game were displayed in bold green
+- All invalid messages were displayed in bold red
+- All other messages, such as goodbye messages, were displayed in bold cyan or bold purple
+
+This colour display was done to help the user differentiate between the different sections of the game easily. It is also more visually appealing. 
 
 ## How to Play
 
@@ -178,6 +197,24 @@ _Error Message_
 <img src="docs/images/end_ready_to_play.png">
 
 _When user enters "N"_
+
+</details>
+
+#### Story Title Section
+
+- In this section, the user can select one of eight total story titles.
+- If the user enters a number outside of the range between 1 and 8, they will be displayed with an error message for validation purposes. 
+- If the user enters letters or blanks, they will also be displayed an error message. 
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/images/story_titles.png">
+
+_Story Titles_
+
+<img src="docs/images/error_story_title.png">
+
+_Error Messages_
 
 </details>
 
