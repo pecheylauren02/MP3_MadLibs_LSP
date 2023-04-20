@@ -221,7 +221,21 @@ _Story Section__
 
 _Replay option_
 
+<img src="docs/images/end_message.png">
+
+_Return to main page message_
+
+<img src="docs/images/return_main_page.png">
+
+_End message if user answers "N"_
+
+<img src="docs/images/invalid_replay_message.png">
+
+_Error message for invalid input_
+
 </details>
+
+
 
 ## Technologies Used 
 
