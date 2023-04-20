@@ -235,7 +235,15 @@ _Error message for invalid input_
 
 </details>
 
+#### Future Features
 
+1. Multiplayer Option
+
+As a future feature, I would love to create code that enables more than 1 player to play the game at the same time. For example, 2 plays entering inputs interchangeably for the same story. 
+
+2. Grammar Validation
+
+I would like to add validation that checks if the user enters the correct part of speech, e.g. If the user enters a 'noun' instead of an 'adjective', the game should register this and display an error message. Unfortunately, this fell out of the scope of this project. 
 
 ## Technologies Used 
 
@@ -260,6 +268,88 @@ This website used Python as the main language, alongside some already built-in l
     - Heroku was used to deploy the Project.
 - [Favicon.io](https://favicon.io/favicon-converter/)
     - Used to create and add the favicon to the browser tab.
+
+## Testing
+
+### Manual Testing
+
+#### Testing User Stories
+
+
+- be able to choose which type of story I want to create a Mad Lib about
+- navigate easily through the game prompts  
+- have the option of replaying the game if I don't like the result
+- access the game on any device
+
+
+I ran manual tests on the website, based on the user stories mentioned above:
+
+| No. | User Goal | How is it achieved? |
+| :--- | :--- | :--- |
+| 1 | I want to take part in a fun, interesting game | This game is a fun, interactive game with the aim of entertaining users and making them laugh. |
+| 2 | I want to find out what the game is about and what to expect before starting | The welcome section contains information about what the game is about, and the instructions explain how the game works. |
+| 3 | I want to be able to choose which type of story I want to create a Mad Lib about | The user can choose from a list of story titles before starting the game. |
+| 4 | I want to navigate easily through the game prompts | The user is taken to the next prompt as soon as they enter the correct prompt. |
+| 5 | I want to have the option of replaying the game if I don't like the result | The user is asked if they would like to replay the game after they have finished a round. |
+| 6 | I want to access the game on any device | The game is functional on all devices, although due to the nature of python, it is better suited to desktops. |
+
+#### Browser Compatibility
+
+The site was tested on the following browsers, with no browser-specific bugs detected. 
+
+- Google Chrome
+- Mozilla Firefox
+- Apple Safari
+
+#### Responsiveness/Device Testing
+
+The website was tested on the following devices:
+- HP Display 27-inch External Monitor
+- Apple Macbook Pro 13-inch
+- Galaxy S9+
+- Apple iPhone 12 Pro
+- Apple iPhone SE
+- Apple iPad mini
+- Apple iPad
+- Galaxy Tablet
+- Google Chrome Developer Tools - using responsive testing for all screen sizes
+
+The website functioned as expected on all devices. However, it is recommended that the game is played on desktop screens. Due to the nature of backend applications in general, the game plays better on non-touch screens. 
+
+### Solved Bugs
+
+#### All results were displayed at once
+
+When the user retakes the quiz, all of the results were displaying at the same time, rather than just one. This was an issue with the displaying results function in the JavaScript code: The "hide" class was not being re-added to the unwanted results in the function. Once this was added, the results functioned as expected:
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/results_bug.png">
+
+_Results bug_
+
+<img src="docs/results_section_ipad.png">
+
+_Results fixed_
+
+</details>
+
+#### Retake Quiz button not working
+
+When the user clicked the retake quiz button, the user was taken to question 10 of 10, instead of question 1 of 10. This is because the score and progress bar were not reset to 0, so the questions were not reset to the beginning. To fix this, I reset the score and progress bar to 0 and the quiz worked as expected again.
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/quiz_bug.png">
+
+_Quiz page shown after user clicked the retake quiz button_
+
+<img src="docs/quiz_desktop.png">
+
+_Quiz page shown after bug was fixed_
+
+</details>
+### Bugs
 
 ## Deployment
 
@@ -380,11 +470,11 @@ The project will now be cloned locally for you to use.
 
 ## Credits
 
-### Design and Planning
-
 ### Code
 
-- [StackOverFlow](https://stackoverflow.com/questions/8924173/how-can-i-print-bold-text-in-python) for the built-in colour codes
+- [StackOverFlow](https://stackoverflow.com/questions/8924173/how-can-i-print-bold-text-in-python) for the built-in colour codes.
+- [Rhino](https://developer.rhino3d.com/guides/rhinopython/python-statements/#:~:text=You%20cannot%20split%20a%20statement%20into%20multiple%20lines%20in%20Python,continued%20on%20the%20next%20line.) helped with Python syntax errors.
+- [Tech Beamers](https://www.techbeamers.com/python-multiline-string/) assisted in forming multiline F strings.
 
 ### Acknowledgements
 
