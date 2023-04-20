@@ -746,8 +746,7 @@ def play_madlibs():
                  'a colour', 'an item of clothing (plural)',
                  'a number, e.g. "fifty seven"', 'another plural noun',
                  'an adverb, e.g. quickly', 'another verb ending in -ing',
-                 'another adjective', 'another plural noun',
-                 'another verb ending in -ing']
+                 'another adjective', 'another plural noun']
 
         inputs = []
         counter = 0
@@ -792,27 +791,14 @@ def play_madlibs():
         but I managed to {inputs[9]} {inputs[10]} a few shots and
         impress everyone. As the night went on, more and more
         people and {inputs[4]} showed up.\n
-        Things really got out of hand when someone suggested
-        we play {inputs[8]} pong. I've never been good at that game,
-        but I managed to {inputs[9]} {inputs[10]} a few shots and
-        impress everyone. As the night went on, more and more
-        people and {inputs[4]} showed up.\n
         There were {inputs[11]} characters in crazy costumes,
         some wearing {inputs[12]}{inputs[13]}. I even saw one
         magician trying to juggle {inputs[14]}{inputs[15]} while
-        riding a unicycle. A lot of the night became blurry
-        after that, but I found myself {inputs[16]}{inputs[17]} on a
-        couch with a {inputs[18]} person who I had never met before.
-        We started talking about {inputs[19]} and ended up {inputs[20]}
-        all night.\n
-        There were {inputs[11]} characters in crazy costumes,
-        some wearing {inputs[12]}{inputs[13]}. I even saw one
-        magician trying to juggle {inputs[14]}{inputs[15]} while riding
-        a unicycle.\n
+        riding a unicycle.\n
         A lot of the night became blurry after that,
         but I found myself {inputs[16]}{inputs[17]} on a couch with a
         {inputs[18]} person who I had never met before. We started
-        talking about {inputs[19]} and ended up {inputs[20]} all night.
+        talking about {inputs[19]} and ended up dancing all night.
         The party didn't really start to wind down until the early
         hours of the morning. It was definitely a night I'll
         never forget!\n\n"""
