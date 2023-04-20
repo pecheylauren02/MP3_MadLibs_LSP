@@ -1,6 +1,6 @@
 # The Maddest Madlibs Game
 
-![The Maddest Madlibs Game](ADD SCREENSHOT HERE)
+![The Maddest Madlibs Game](docs/images/am_I_responsive.png)
 
 #### By Lauren Pechey
 [Click here to view the live web application](https://mp3-madlibs-game.herokuapp.com/)
@@ -275,13 +275,6 @@ This website used Python as the main language, alongside some already built-in l
 
 #### Testing User Stories
 
-
-- be able to choose which type of story I want to create a Mad Lib about
-- navigate easily through the game prompts  
-- have the option of replaying the game if I don't like the result
-- access the game on any device
-
-
 I ran manual tests on the website, based on the user stories mentioned above:
 
 | No. | User Goal | How is it achieved? |
@@ -292,6 +285,18 @@ I ran manual tests on the website, based on the user stories mentioned above:
 | 4 | I want to navigate easily through the game prompts | The user is taken to the next prompt as soon as they enter the correct prompt. |
 | 5 | I want to have the option of replaying the game if I don't like the result | The user is asked if they would like to replay the game after they have finished a round. |
 | 6 | I want to access the game on any device | The game is functional on all devices, although due to the nature of python, it is better suited to desktops. |
+
+#### PEP8 Python Linter
+
+I also ran my code through PEP8 Python Linter, provided by Code Institute. The code came back with no errors. 
+
+<details>
+
+<img src="docs/images/pep8.png">
+
+_PEP8 Results_
+
+</details>
 
 #### Browser Compatibility
 
@@ -318,25 +323,27 @@ The website functioned as expected on all devices. However, it is recommended th
 
 ### Solved Bugs
 
-#### All results were displayed at once
+#### Colour Running Bug
 
-When the user retakes the quiz, all of the results were displaying at the same time, rather than just one. This was an issue with the displaying results function in the JavaScript code: The "hide" class was not being re-added to the unwanted results in the function. Once this was added, the results functioned as expected:
+There was a colour running bug, whereby the colour of the text would run onto other printed text after the user input something. This was a simple fix, and required for the "color.END" ANSI code to be called in order to end the colour for that section. 
 
 <details><summary>Screenshots</summary>
 
-<img src="docs/results_bug.png">
+<img src="docs/images/colour_running.png">
 
-_Results bug_
+_Colour bug_
 
-<img src="docs/results_section_ipad.png">
+<img src="docs/images/instructions.png">
 
-_Results fixed_
+_Colour bug fixed_
 
 </details>
 
-#### Retake Quiz button not working
+#### User can only replay game once
 
-When the user clicked the retake quiz button, the user was taken to question 10 of 10, instead of question 1 of 10. This is because the score and progress bar were not reset to 0, so the questions were not reset to the beginning. To fix this, I reset the score and progress bar to 0 and the quiz worked as expected again.
+When the user tries to replay the game, they are taken through the prompts. However, after playing a second time, the game ends and does not give the user the option to play for a third time (or as many times as they wish).
+
+This was due to the restart_game() function not being recalled for every story. Once this was fixed, the user was able to play as many times as they wanted to. 
 
 <details><summary>Screenshots</summary>
 
