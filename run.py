@@ -255,7 +255,7 @@ def play_madlibs():
         grab your {inputs[2]} and set off into the
         {inputs[10]} unknown. Who knows
         what kind of {inputs[7]} and {inputs[4]} things you might find
-        along the way!"""
+        along the way!\n"""
 
         typewriter_print(color.BOLD + textwrap.dedent(story_one))
 
@@ -327,7 +327,7 @@ def play_madlibs():
         and never to be afraid of a little {inputs[2]}. And who
         knows? Maybe they'll even meet another {inputs[18]}
         {inputs[11]} {inputs[15]} along the way.
-        The end"""
+        The end\n"""
 
         typewriter_print(color.BOLD + textwrap.dedent(story_two))
 
@@ -400,8 +400,7 @@ def play_madlibs():
         to keep your eyes and ears open for any weird moments
         that might come your way. You never know what kind of
         {inputs[19]} might be waiting just around the corner in
-        {inputs[1]}!
-        """
+        {inputs[1]}\n!"""
 
         print(color.BOLD + textwrap.dedent(story_three))
 
@@ -473,7 +472,7 @@ def play_madlibs():
         {inputs[17]} and {inputs[18]} along to the music.\n
         It was so much fun that I almost forgot about my
         {inputs[19]}! I can't wait to see where my next crazy
-        adventure takes me!"""
+        adventure takes me!\n"""
 
         typewriter_print(color.BOLD + textwrap.dedent(story_four))
 
@@ -550,7 +549,7 @@ def play_madlibs():
         As I lay in bed that night, I couldn't help but
         wonder what other {inputs[0]} encounters I might
         have in the future. But for now, I was just
-        grateful to be safe and sound in bed."""
+        grateful to be safe and sound in bed.\n"""
 
         typewriter_print(color.BOLD + textwrap.dedent(story_five))
 
@@ -622,7 +621,7 @@ def play_madlibs():
         After that crazy encounter, we decided to pack up
         and head home. As we drove away, we
         couldn't help but laugh at the absurdity of
-        our day at the beach."""
+        our day at the beach.\n"""
 
         print(color.BOLD + textwrap.dedent(story_six))
 
@@ -691,7 +690,7 @@ def play_madlibs():
         As the day came to an end, I felt happy and {inputs[19]}. So if
         you're feeling {inputs[19]} about your first day of school,
         just remember that it's a new adventure full of surprises and
-        {inputs[1]} moments."""
+        {inputs[1]} moments.\n"""
 
         print(color.BOLD + textwrap.dedent(story_seven))
 
@@ -775,7 +774,7 @@ def play_madlibs():
         talking about {inputs[19]} and ended up {inputs[20]} all night.
         The party didn't really start to wind down until the early
         hours of the morning. It was definitely a night I'll
-        never forget!"""
+        never forget!\n"""
 
         print(color.BOLD + textwrap.dedent(story_eight))
 
