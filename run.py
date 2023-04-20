@@ -181,12 +181,12 @@ def play_madlibs():
                            Enter the number of the story
                            you'd like to read: \n
                            """) + color.END)
-        if user_input.isnumeric():
+        if user_input.isnumeric() and int(user_input) >=1 and int(user_input) <=8:
             selected_story_index = int(user_input) - 1
             clear_terminal()
         else:
             print(color.BOLD + color.RED +
-                  "Invalid input. Please enter a number.\n" + color.END)
+                  "Invalid input. Please enter a number between 1 and 8.\n" + color.END)
 
     selected_story_title = story_titles[selected_story_index]
 
@@ -839,7 +839,6 @@ def restart_game():
     response = input(color.BOLD + color.GREEN + textwrap.dedent("""\
                      Do you want to play again? Y/N: \n
                      """ + color.END))
-    # Checks if user enters Y or N correctly
     while response.upper() not in ("Y", "N"):
         print(color.BOLD + color.RED +
               "Invalid response. Please enter Y or N.\n" + color.END)
@@ -847,7 +846,6 @@ def restart_game():
                          """\
                          Do you want to play again? Y/N: \n
                          """ + color.END))
-    # Clears terminal and starts game again
     if response.upper() == "Y":
         clear_terminal()
         start_game()
