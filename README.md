@@ -58,7 +58,7 @@ This back-end python project was planned and developed using principles of User 
 
 #### Client Goals
 
-The Maddest Mad Libs game was built as a milestone project for my Diploma in Fullstack Software Development with [Code Institute](https://codeinstitute.net/global/full-stack-software-development-diploma/). It is an interactive word game designed to entertain users of all ages and backgrounds who want to be entertained while with friends or at a party. Despite this being built for educational reasons, it was still treated as a real-world application for potential clients interested in learning about their personalities in a fun, engaging way. Thus, this client's goals would be:
+The Maddest Mad Libs game was built as a milestone project for my Diploma in Fullstack Software Development with [Code Institute](https://codeinstitute.net/global/full-stack-software-development-diploma/). It is an interactive word game designed to entertain users of all ages and backgrounds who want to be entertained while with friends or at a party. Despite this being built for educational reasons, it was still treated as a real-world application for potential clients interested in playing word games in a fun, engaging way. Thus, this client's goals would be:
 
 - Engaging the players by allowing them to enter prompts of their choice
 - Entertaining players by generating random stories with their unique inputs
@@ -113,7 +113,7 @@ These user stories gave me a clear scope for the website and enabled me to stay 
 
 #### Flowchart
 
-I used [Lucid Flow Charts](https://www.lucidchart.com/pages/landing?utm_source=google&utm_medium=cpc&utm_campaign=_chart_en_tier3_mixed_search_brand_exact_&km_CPC_CampaignId=1484560207&km_CPC_AdGroupID=60168114191&km_CPC_Keyword=lucid%20charts&km_CPC_MatchType=e&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=354596054350&km_CPC_TargetID=kwd-64262996435&km_CPC_Country=1028774&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&gclid=Cj0KCQjwxYOiBhC9ARIsANiEIfZbTi_DZEcZd44Qr8P8jtXtkVBhEBUusD0MFOj8v5I7a4BIyxlHtgAaAnpHEALw_wcB) to create the initial logic for the game. Please view the flowchart in the screenshot below:
+I used [Lucid Flow Charts](https://www.lucidchart.com/pages/landing?utm_source=google&utm_medium=cpc&utm_campaign=_chart_en_tier3_mixed_search_brand_exact_&km_CPC_CampaignId=1484560207&km_CPC_AdGroupID=60168114191&km_CPC_Keyword=lucid%20charts&km_CPC_MatchType=e&km_CPC_ExtensionID=&km_CPC_Network=g&km_CPC_AdPosition=&km_CPC_Creative=354596054350&km_CPC_TargetID=kwd-64262996435&km_CPC_Country=1028774&km_CPC_Device=c&km_CPC_placement=&km_CPC_target=&gclid=Cj0KCQjwxYOiBhC9ARIsANiEIfZbTi_DZEcZd44Qr8P8jtXtkVBhEBUusD0MFOj8v5I7a4BIyxlHtgAaAnpHEALw_wcB) to create the initial logic for the game. This enabled me to envision how the game would run and take into consideration all aspects of the game from a player's perspective. Please view the flowchart in the screenshot below:
 
 <details><summary>Flow Chart</summary>
 
@@ -160,8 +160,8 @@ This website used Python as the main language, alongside some already built-in l
 2. The player will then be given a list of story titles to choose from, by entering the number of the story title. 
 3. After they have selected their story title, the player must enter "Y" to play. 
 4. The player will be given 20 prompts, one at a time, which will ask them to enter a particular part of speech, e.g. "Enter a noun: ".
-    - Note: If the player enters an invalid input, such as a number, they will be given an error message and asked to re-enter their word of choice.
-    - Note 2: If the player enters an invalid part of speech, e.g. a noun instead of an adjective, they will also receive an error message and will be required to enter the correct part of speech.
+    - Note: If the player enters an invalid input, such as a number or blank space, they will be given an error message and asked to re-enter their word of choice.
+    - Note 2: If the player enters two characters or less, or more than twenty characters, they will also receive an error message and will be required to enter the correct part of speech.
 5. After the player answers all 20 prompts correctly, the story result with their inputs will be displayed to them and they will hopefully be entertained by their answers.
 6. The player has the option to replay the game as many times as they want, and can choose a different story title each time. 
 
