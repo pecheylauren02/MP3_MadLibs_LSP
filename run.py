@@ -122,6 +122,7 @@ def start_game():
             play_response = input(color.BOLD + color.GREEN +
                                   "\nReady to play? Y/N: \n" + color.END)
         if play_response.upper() == "N":
+            clear_terminal()
             print(color.BOLD + textwrap.dedent("""\
                   Okay, maybe next time!\n
                   If you change your mind, just
